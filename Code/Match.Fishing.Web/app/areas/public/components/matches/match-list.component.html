@@ -1,0 +1,29 @@
+<h2 class="page-header">Matches</h2>
+<ul class="nav nav-pills bottom-spacer">
+    <li role="presentation" ng-class="model.isSeasonSelected(season) ? 'Active' : ''" ng-repeat="season in model.seasons">
+        <a ng-click="model.onSelectSeason(season)">{{season}}</a>
+    </li>
+</ul>
+<div class="well well-sm bottom-spacer">
+    <input type="text" class="form-control" id="searchText" placeholder="Search match" ng-model="searchText">
+</div>
+<table class="table">
+    <tr>
+        <th>Date</th>
+        <th>Match</th>
+        <th>Venue</th>
+        <th>Lake</th>
+        <th>No of Pegs</th>
+        <th></th>
+    </tr>
+    <tr ng-repeat="match in model.matches | matchFilter: model.selectedSeason:searchText | orderBy:'date'">
+        <td>{{match.date | date:'dd-MMM-yyyy'}}</td>
+        <td>{{match.leagueMatchNo}} {{match.league}} <span ng-if="match.isTropheyMatch">{{match.trophyName}}</span> </td>
+        <td>{{match.venue}}</td>
+        <td>{{match.lake}}</td>
+        <td>{{match.noOfPegs}}</td>
+        <td>
+            <a ng-click="model.onSelectMatch(match)" class="btn btn-primary">Details</a>
+        </td>
+    </tr>
+</table>

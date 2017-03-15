@@ -1,0 +1,27 @@
+<h2 class="page-header">Leagues</h2>
+<ul class="nav nav-pills bottom-spacer">
+    <li role="presentation" ng-class="model.isSeasonSelected(season) ? 'Active' : ''" ng-repeat="season in model.seasons">
+        <a ng-click="model.onSelectSeason(season)">{{season}}</a>
+    </li>
+</ul>
+<div class="well well-sm bottom-spacer">
+    <input type="text" class="form-control" id="searchText" placeholder="Search league" ng-model="searchText">
+</div>
+<table class="table">
+    <tr>
+        <th>Season</th>
+        <th>Name</th>
+        <th>No. of Rnds</th>
+        <th>Counting Rnds</th>
+        <th></th>
+    </tr>
+    <tr ng-repeat="league in model.leagues | filter: {season: model.selectedSeason}">
+        <td>{{league.season}}</td>
+        <td>{{league.name}}</td>
+        <td>{{league.noOfRounds}}</td>
+        <td>{{league.countingRounds}}</td>
+        <td>
+            <a ng-click="model.onSelectLeague(league)" class="btn btn-primary">Details</a>
+        </td>
+    </tr>
+</table>

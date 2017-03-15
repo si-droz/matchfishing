@@ -1,0 +1,33 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" ng-click="isCollapsed = !isCollapsed" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ng-link="['Home']">Match Fishing</a>
+        </div>
+        <div uib-collapse="isCollapsed" class="navbar-collapse collapse" aria-expanded="true">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a ng-link="['Anglers']">Anglers</a>
+                </li>
+                <li>
+                    <a ng-link="['Matches']">Matches</a>
+                </li>
+                <li>
+                    <a ng-link="['Leagues']">Leagues</a>
+                </li>
+                <li>
+                    <a ng-link="['Championships']">Championships</a>
+                </li>
+                <li>
+                    <a ng-link="['Overview']">Results overview</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<ng-outlet></ng-outlet>

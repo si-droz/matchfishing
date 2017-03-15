@@ -1,0 +1,19 @@
+{
+  "name": "match-fishing-web",
+  "description": "An application to record fishing matches.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/si-droz/matchfishing",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.6.2",
+    "angular-route": "~1.6.2",
+    "angular-component-router": "^0.2.1",
+    "angular-loader": "~1.6.2",
+    "angular-mocks": "~1.6.2",
+    "angular-animate": "~1.6.2",
+    "angular-touch": "~1.6.2",
+    "html5-boilerplate": "^5.3.0",
+    "bootstrap": "~3.3.7"
+  }
+}
