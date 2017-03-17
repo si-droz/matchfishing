@@ -3,10 +3,16 @@
 
   var module = angular.module("matchFishing", [
     "ngComponentRouter"
-    ,"ngAnimate"
-    ,"ui.bootstrap"
+    , "ngAnimate"
+    , "ui.bootstrap"
   ]);
 
-  module.value("$routerRootComponent", "matchFishingWeb");
+  module.config(function ($locationProvider) {
 
+    $locationProvider.html5Mode({
+      enabled: true
+    });
+  });
+
+  module.value("$routerRootComponent", "matchFishingWeb");
 }());
