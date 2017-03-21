@@ -18,15 +18,57 @@
             });
     };
 
-    var controller = function ($http) {
+    var controller = function ($http, seasonsService, matchEntriesService) {
         var model = this;
         model.angler = null;
+        model.seasons = [];
+        model.matches = [];
+        model.selectedSeason = '';
 
         model.$routerOnActivate = function (next) {
             fetchAngler($http, next.params.id).then(function (angler) {
                 model.angler = angler;
+
+                seasonsService.fetchUniqueSeasons($http).then(function (seasons) {
+                    model.seasons = seasons;
+                });
+
+                matchEntriesService.fetchMatchesForAngler($http, next.params.id).then(function (matches) {
+                    model.matches = matches;
+                });
             });
         };
+
+        model.onSelectSeason = function (season) {
+            if (season === 'All') {
+                season = '';
+            }
+            model.selectedSeason = season;
+        };
+
+        model.isSeasonSelected = function (season) {
+            if (season === 'All') {
+                season = '';
+            }
+
+            return (model.selectedSeason === season);
+        }
+
+        module.filter('matchFilter', function (helperService) {
+
+            return function (items, seasonSearch) {
+                var filtered = [];
+
+                angular.forEach(items, function (item) {
+                    if (helperService.startsWith(item.season, seasonSearch)) {
+                        filtered.push(item);
+                    }
+                });
+
+                return filtered;
+            };
+        });
+
     };
 
     module.component('anglerDetail', {
