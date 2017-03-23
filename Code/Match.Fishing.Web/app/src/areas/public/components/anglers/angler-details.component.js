@@ -18,7 +18,7 @@
             });
     };
 
-    var controller = function ($http, seasonsService, matchEntriesService) {
+    var controller = function ($http, seasonsService, matchesService) {
         var model = this;
         model.angler = null;
         model.seasons = [];
@@ -29,11 +29,11 @@
             fetchAngler($http, next.params.id).then(function (angler) {
                 model.angler = angler;
 
-                seasonsService.fetchUniqueSeasons($http).then(function (seasons) {
+                seasonsService.getUniqueSeasons($http).then(function (seasons) {
                     model.seasons = seasons;
                 });
 
-                matchEntriesService.fetchMatchesForAngler($http, next.params.id).then(function (matches) {
+                matchesService.getMatchesForAngler($http, next.params.id).then(function (matches) {
                     model.matches = matches;
                 });
             });

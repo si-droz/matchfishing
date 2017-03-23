@@ -9,11 +9,11 @@
         model.selectedSeason = '';
 
         model.$onInit = function () {
-            matchesService.fetchMatches($http).then(function (matches) {
+            matchesService.getMatches($http).then(function (matches) {
                 model.matches = matches;
             });
 
-            seasonsService.fetchUniqueSeasons($http).then(function (seasons) {
+            seasonsService.getUniqueSeasons($http).then(function (seasons) {
                 model.seasons = seasons;
             });
         };

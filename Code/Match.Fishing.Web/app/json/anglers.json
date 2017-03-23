@@ -32,7 +32,7 @@
     {
         "id": 6,
         "forename": "Paul",
-        "surname": "Balois",
+        "surname": "Balodis",
         "nickname": ""
     },
     {
@@ -118,5 +118,17 @@
         "forename": "George",
         "surname": "Baker",
         "nickname": "Ernie"
+    },
+    {
+        "id": 22,
+        "forename": "Tony",
+        "surname": "Taylor",
+        "nickname": ""
+    },
+    {
+        "id": 23,
+        "forename": "Nick",
+        "surname": "Rowe",
+        "nickname": ""
     }
 ]

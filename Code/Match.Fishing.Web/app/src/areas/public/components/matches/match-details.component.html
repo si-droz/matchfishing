@@ -74,10 +74,10 @@
                 <th>Position</th>
                 <th>Points</th>
             </tr>
-            <tr ng-repeat="angler in model.match.anglers">
+            <tr ng-repeat="angler in model.match.matchEntries | orderBy:'position'">
                 <td>{{angler.peg}}</td>
-                <td>{{angler.name}}</td>
-                <td>{{angler.weight}}</td>
+                <td>{{angler.anglerName}}</td>
+                <td>{{angler.weight | weightToText}}</td>
                 <td>{{angler.position}}</td>
                 <td>{{angler.points}}</td>
             </tr>

@@ -9,11 +9,11 @@
         model.selectedSeason = '';
 
         model.$onInit = function () {
-            leaguesService.fetchLeagues($http).then(function (leagues) {
+            leaguesService.getLeagues($http).then(function (leagues) {
                 model.leagues = leagues;
             });
 
-            seasonsService.fetchUniqueSeasons($http).then(function (seasons) {
+            seasonsService.getUniqueSeasons($http).then(function (seasons) {
                 model.seasons = seasons;
             });
         };
@@ -35,7 +35,7 @@
             }
 
             return (model.selectedSeason === season);
-        }
+        };
     }
 
     module.component("leagueList", {

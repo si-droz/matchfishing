@@ -6,7 +6,7 @@
     module.service('seasonsService', function () {
         var service = this;
 
-        service.fetchUniqueSeasons = function fetchUniqueSeasons($http) {
+        service.getUniqueSeasons = function getUniqueSeasons($http) {
             return $http.get("/json/matches.json")
                 .then(function (response) {
                     var matches = response.data;

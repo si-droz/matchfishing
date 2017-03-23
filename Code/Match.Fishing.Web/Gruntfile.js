@@ -76,7 +76,7 @@ module.exports = function (grunt) {
                     '<%= files.jsonData.src %>',
                     '<%= files.css.src %>',
                     '<%= files.index.src %>',
-                    '<%= files.componentHtml.src %>'
+                    '<%= files.componentHtml.src %>/**/*.html'
                 ],
                 tasks: ['copy:dev']
             }

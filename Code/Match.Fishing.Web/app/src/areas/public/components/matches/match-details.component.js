@@ -1,9 +1,9 @@
 (function () {
     'use strict';
 
-    var module = angular.module('matchFishing')
+    var module = angular.module('matchFishing');
 
-    function fetchMatch($http, id) {
+    function getMatch($http, id) {
         return $http.get("/json/matches.json")
             .then(function (response) {
                 var matches = response.data;
@@ -23,7 +23,7 @@
         model.match = null;
 
         model.$routerOnActivate = function (next) {
-            fetchMatch($http, next.params.id).then(function (match) {
+            getMatch($http, next.params.id).then(function (match) {
                 model.match = match;
             });
         };

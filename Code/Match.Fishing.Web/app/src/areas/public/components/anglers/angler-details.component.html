@@ -25,16 +25,16 @@
                 <th>Position</th>
                 <th>Points</th>
             </tr>
-            
+
             <tr ng-repeat="match in model.matches | matchFilter: model.selectedSeason:searchText | orderBy:'date'">
                 <td>{{match.date | date:'dd-MMM-yyyy'}}</td>
                 <td>{{match.leagueMatchNo}} {{match.league}} <span ng-if="match.isTropheyMatch">{{match.trophyName}}</span> </td>
                 <td>{{match.venue}}</td>
                 <td>{{match.lake}}</td>
-                <td>{{match.peg}}</td>
-                <td>{{match.weight}}</td>
-                <td>{{match.position}}</td>
-                <td>{{match.points}}</td>
+                <td>{{match.matchEntries[0].peg}}</td>
+                <td>{{match.matchEntries[0].weight| weightToText}}</td>
+                <td>{{match.matchEntries[0].position}}</td>
+                <td>{{match.matchEntries[0].points}}</td>
             </tr>
         </table>
     </div>

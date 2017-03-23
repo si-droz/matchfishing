@@ -28,6 +28,13 @@
         "countingRounds": 5
     },
     {
+        "id": 8,
+        "season": "16/17",
+        "name": "Kingfisher Summer League",
+        "noOfRounds": 6,
+        "countingRounds": 5
+    },
+    {
         "id": 5,
         "season": "16/17",
         "name": "Kingfisher Winter League",

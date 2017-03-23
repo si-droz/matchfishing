@@ -25,6 +25,12 @@
             Points total
         </th>
         <th rowspan="2">
+            Best {{model.league.countingRounds}} Points
+        </th>
+        <th rowspan="2">
+            Best {{model.league.countingRounds}} Weights
+        </th>
+        <th rowspan="2">
             Pos.
         </th>
     </tr>
@@ -40,22 +46,18 @@
             Pnts
         </th>
     </tr>
-    <tr>
-        <td>Simon Drozdziol</td>
-        <td>1lb</td>
-        <td>1</td>
-        <td>2lb</td>
-        <td>2</td>
-        <td>3lb</td>
-        <td>3</td>
-        <td>4lb</td>
-        <td>4</td>
-        <td>5lb</td>
-        <td>5</td>
-        <td>6lb</td>
-        <td>6</td>
-        <td>18lb</td>
-        <td>18</td>
-        <td>1</td>
+    <tr ng-repeat="angler in model.anglers| orderBy:['-adjustedPointsTotal','-adjustedWeightTotal']">
+        <td>{{angler.name}}</td>
+        <td ng-class="{'bg-danger' : round.isCounted == false}" ng-repeat-start="round in angler.rounds">
+            {{round.weight| weightToText}}
+        </td>
+        <td ng-class="{'bg-danger' : round.isCounted == false}" ng-repeat-end>
+            {{round.points}}
+        </td>
+        <td>{{angler.weightTotal | weightToText}}</td>
+        <td>{{angler.pointsTotal}}</td>
+        <td>{{angler.adjustedWeightTotal | weightToText}}</td>
+        <td>{{angler.adjustedPointsTotal}}</td>
+        <td>{{$index + 1}}</td>
     </tr>
 </table>
