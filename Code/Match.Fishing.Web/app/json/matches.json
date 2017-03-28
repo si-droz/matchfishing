@@ -1,6 +1,7 @@
 [
     {
         "id": 16,
+        "seasonId": 1,
         "season": "12/13",
         "date": "2013-03-24",
         "venue": "How End",
@@ -17,6 +18,7 @@
     },
     {
         "id": 17,
+        "seasonId": 2,
         "season": "13/14",
         "date": "2014-03-23",
         "venue": "How End",
@@ -33,6 +35,7 @@
     },
     {
         "id": 18,
+        "seasonId": 3,
         "season": "14/15",
         "date": "2015-03-29",
         "venue": "How End",
@@ -49,6 +52,7 @@
     },
     {
         "id": 19,
+        "seasonId": 4,
         "season": "15/16",
         "date": "2016-03-27",
         "venue": "How End",
@@ -65,6 +69,7 @@
     },
     {
         "id": 20,
+        "seasonId": 5,
         "season": "16/17",
         "date": "2016-05-08",
         "venue": "Rookery Waters",
@@ -186,6 +191,7 @@
     },
     {
         "id": 21,
+        "seasonId": 5,
         "season": "16/17",
         "date": "2016-06-05",
         "venue": "Decoy",
@@ -267,6 +273,7 @@
     },
     {
         "id": 22,
+        "seasonId": 5,
         "season": "16/17",
         "date": "2016-07-03",
         "venue": "Wold Farm",
@@ -347,6 +354,7 @@
     },
     {
         "id": 23,
+        "seasonId": 5,
         "season": "16/17",
         "date": "2016-07-17",
         "venue": "Nether Heyford",
@@ -419,6 +427,7 @@
     },
     {
         "id": 24,
+        "seasonId": 5,
         "season": "16/17",
         "date": "2016-08-14",
         "venue": "Wold Farm",
@@ -516,6 +525,7 @@
     },
     {
         "id": 25,
+        "seasonId": 5,
         "season": "16/17",
         "date": "2016-09-11",
         "venue": "How End",
@@ -604,6 +614,7 @@
     },
     {
         "id": 26,
+        "seasonId": 5,
         "season": "16/17",
         "date": "2016-09-18",
         "venue": "Wold Farm",
@@ -693,6 +704,7 @@
     },
     {
         "id": 27,
+        "seasonId": 5,
         "season": "16/17",
         "date": "2016-10-09",
         "venue": "How End",
@@ -790,6 +802,7 @@
     },
     {
         "id": 28,
+        "seasonId": 5,
         "season": "16/17",
         "date": "2016-10-23",
         "venue": "Rookery Waters",
@@ -863,6 +876,7 @@
     },
     {
         "id": 29,
+        "seasonId": 5,
         "season": "16/17",
         "date": "2016-11-06",
         "venue": "How End",
@@ -928,6 +942,7 @@
     },
     {
         "id": 30,
+        "seasonId": 5,
         "season": "16/17",
         "date": "2016-12-04",
         "venue": "How End",
@@ -985,6 +1000,7 @@
     },
     {
         "id": 31,
+        "seasonId": 5,
         "season": "16/17",
         "date": "2017-01-15",
         "venue": "How End",
@@ -1042,6 +1058,7 @@
     },
     {
         "id": 32,
+        "seasonId": 5,
         "season": "16/17",
         "date": "2017-02-26",
         "venue": "How End",
@@ -1123,6 +1140,7 @@
     },
     {
         "id": 33,
+        "seasonId": 5,
         "season": "16/17",
         "date": "2017-03-12",
         "venue": "How End",
@@ -1196,6 +1214,7 @@
     },
     {
         "id": 34,
+        "seasonId": 5,
         "season": "16/17",
         "date": "2017-03-26",
         "venue": "How End",
@@ -1208,10 +1227,68 @@
         "dayTicketFee": 0,
         "isTropheyMatch": true,
         "trophyName": "Shanks & McEwan",
-        "matchEntries": []
+        "matchEntries": [
+            {
+                "peg": 10,
+                "weight": 38.5625,
+                "position": 1,
+                "points": 13,
+                "anglerId": 1,
+                "anglerName": "Simon Drozdziol"
+            },
+            {
+                "peg": 14,
+                "weight": 9.875,
+                "position": 6,
+                "points": 7,
+                "anglerId": 3,
+                "anglerName": "Malcolm Harley"
+            },
+            {
+                "peg": 15,
+                "weight": 15.25,
+                "position": 5,
+                "points": 8,
+                "anglerId": 6,
+                "anglerName": "Paul Balodis"
+            },
+            {
+                "peg": 18,
+                "weight": 23.5,
+                "position": 4,
+                "points": 9,
+                "anglerId": 5,
+                "anglerName": "Darryl Anderson"
+            },
+            {
+                "peg": 19,
+                "weight": 5,
+                "position": 7,
+                "points": 6,
+                "anglerId": 8,
+                "anglerName": "Pete Deverick"
+            },
+            {
+                "peg": 11,
+                "weight": 31.125,
+                "position": 2,
+                "points": 11,
+                "anglerId": 7,
+                "anglerName": "Trev Jeans"
+            },
+            {
+                "peg": 3,
+                "weight": 19.75,
+                "position": 3,
+                "points": 10,
+                "anglerId": 13,
+                "anglerName": "Eric Cudlow"
+            }
+        ]
     },
     {
         "id": 1,
+        "seasonId": 6,
         "season": "17/18",
         "date": "2017-05-14",
         "venue": "Rookery Waters",
@@ -1228,6 +1305,7 @@
     },
     {
         "id": 2,
+        "seasonId": 6,
         "season": "17/18",
         "date": "2017-05-21",
         "venue": "How End",
@@ -1243,6 +1321,7 @@
     },
     {
         "id": 3,
+        "seasonId": 6,
         "season": "17/18",
         "date": "2017-06-04",
         "venue": "Wold Farm",
@@ -1259,6 +1338,7 @@
     },
     {
         "id": 4,
+        "seasonId": 6,
         "season": "17/18",
         "date": "2017-07-02",
         "venue": "Decoy",
@@ -1274,6 +1354,7 @@
     },
     {
         "id": 5,
+        "seasonId": 6,
         "season": "17/18",
         "date": "2017-07-06",
         "venue": "Rookery Waters",
@@ -1289,6 +1370,7 @@
     },
     {
         "id": 6,
+        "seasonId": 6,
         "season": "17/18",
         "date": "2017-08-13",
         "venue": "Decoy",
@@ -1305,6 +1387,7 @@
     },
     {
         "id": 7,
+        "seasonId": 6,
         "season": "17/18",
         "date": "2017-09-03",
         "venue": "Wold Farm",
@@ -1321,6 +1404,7 @@
     },
     {
         "id": 8,
+        "seasonId": 6,
         "season": "17/18",
         "date": "2017-10-08",
         "venue": "How End",
@@ -1337,6 +1421,7 @@
     },
     {
         "id": 9,
+        "seasonId": 6,
         "season": "17/18",
         "date": "2017-10-22",
         "venue": "Rookery Waters",
@@ -1353,6 +1438,7 @@
     },
     {
         "id": 10,
+        "seasonId": 6,
         "season": "17/18",
         "date": "2017-11-05",
         "venue": "How End",
@@ -1369,6 +1455,7 @@
     },
     {
         "id": 11,
+        "seasonId": 6,
         "season": "17/18",
         "date": "2017-12-03",
         "venue": "How End",
@@ -1385,6 +1472,7 @@
     },
     {
         "id": 12,
+        "seasonId": 6,
         "season": "17/18",
         "date": "2018-01-14",
         "venue": "How End",
@@ -1401,6 +1489,7 @@
     },
     {
         "id": 13,
+        "seasonId": 6,
         "season": "17/18",
         "date": "2018-02-11",
         "venue": "How End",
@@ -1417,6 +1506,7 @@
     },
     {
         "id": 14,
+        "seasonId": 6,
         "season": "17/18",
         "date": "2018-03-11",
         "venue": "How End",
@@ -1433,6 +1523,7 @@
     },
     {
         "id": 15,
+        "seasonId": 6,
         "season": "17/18",
         "date": "2018-03-25",
         "venue": "How End",

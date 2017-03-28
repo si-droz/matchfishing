@@ -7,7 +7,39 @@
 <div class="well well-sm bottom-spacer">
     <input type="text" class="form-control" id="searchText" placeholder="Search league" ng-model="searchText">
 </div>
-<table class="table">
+<ul>
+    <li class="list-unstyled" ng-repeat="league in model.leagues | filter: {season: model.selectedSeason}">
+        <div class="col-md-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h5><strong> {{league.name}} for season {{league.season}}</strong></h5>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-5">
+                            No of Rounds:
+                        </div>
+                        <div class="col-md-7">
+                            {{league.noOfRounds}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            Counting rounds:
+                        </div>
+                        <div class="col-md-7">
+                            {{league.countingRounds}}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <a ng-click="model.onSelectLeague(league)" class="btn btn-primary">Results</a>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+<!--<table class="table">
     <tr>
         <th>Season</th>
         <th>Name</th>
@@ -24,4 +56,4 @@
             <a ng-click="model.onSelectLeague(league)" class="btn btn-primary">Details</a>
         </td>
     </tr>
-</table>
+</table>-->

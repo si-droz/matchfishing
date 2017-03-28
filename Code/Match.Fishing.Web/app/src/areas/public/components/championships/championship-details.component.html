@@ -1,0 +1,51 @@
+<h2 class="page-header">{{model.season.description}} Championship</h2>
+<div class="row">
+    <div class="col-md-12">
+        <a ng-link="['../../Championships']" class="btn btn-primary">Back to championships</a>
+    </div>
+</div>
+<h4 class="page-header">
+    Results
+</h4>
+<table class="table table-hover">
+    <tr>
+        <th>
+            Round
+        </th>
+        <th colspan="2" ng-repeat="match in model.championshipMatches">
+            {{$index + 1}}
+        </th>
+        <th rowspan="2">
+            Weight total
+        </th>
+        <th rowspan="2">
+            Points total
+        </th>
+        <th rowspan="2">
+            Pos.
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Angler
+        </th>
+        <th ng-repeat-start="match in model.championshipMatches">
+            Weight
+        </th>
+        <th ng-repeat-end>
+            Pnts
+        </th>
+    </tr>
+    <tr ng-repeat="angler in model.anglers| orderBy:['-pointsTotal','-weightTotal']">
+        <td>{{angler.name}}</td>
+        <td ng-repeat-start="round in angler.rounds">
+            {{round.weight| weightToText}}
+        </td>
+        <td ng-repeat-end>
+            {{round.points}}
+        </td>
+        <td>{{angler.weightTotal | weightToText}}</td>
+        <td>{{angler.pointsTotal}}</td>
+        <td>{{$index + 1}}</td>
+    </tr>
+</table>
