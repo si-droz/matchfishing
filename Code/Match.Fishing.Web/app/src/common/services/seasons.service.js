@@ -20,5 +20,23 @@
                     return uniqueSeasons;
                 });
         };
+
+        service.getSeasonDescription = function getSeasonDescription($http, seasonId) {
+            return $http.get("json/matches.json")
+                .then(function (response) {
+                    var matches = response.data;
+                    var seasonDescription = 'season id ' + seasonId + ' not found';
+
+                    for (var index = 0; index < matches.length; index++) {
+                        var match = matches[index];
+                        if (match.seasonId == seasonId) {
+                            seasonDescription = match.season;
+                            break;
+                        }
+                    }
+
+                    return seasonDescription;
+                });
+        };
     });
 }());
