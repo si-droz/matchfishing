@@ -13,6 +13,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": true,
+        "isPairs": false,
         "trophyName": "Shanks & McEwan",
         "matchEntries": []
     },
@@ -30,6 +31,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": true,
+        "isPairs": false,
         "trophyName": "Shanks & McEwan",
         "matchEntries": []
     },
@@ -47,6 +49,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": true,
+        "isPairs": false,
         "trophyName": "Shanks & McEwan",
         "matchEntries": []
     },
@@ -64,6 +67,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": true,
+        "isPairs": false,
         "trophyName": "Shanks & McEwan",
         "matchEntries": []
     },
@@ -81,6 +85,7 @@
         "poolsFee": 5,
         "dayTicketFee": 7,
         "isTropheyMatch": false,
+        "isPairs": false,
         "trophyName": "",
         "matchEntries": [
             {
@@ -203,6 +208,7 @@
         "poolsFee": 5,
         "dayTicketFee": 7,
         "isTropheyMatch": false,
+        "isPairs": false,
         "trophyName": "",
         "matchEntries": [
             {
@@ -284,6 +290,7 @@
         "poolsFee": 5,
         "dayTicketFee": 10,
         "isTropheyMatch": true,
+        "isPairs": false,
         "trophyName": "Tarton Shield",
         "matchEntries": [
             {
@@ -365,10 +372,12 @@
         "poolsFee": 5,
         "dayTicketFee": 7,
         "isTropheyMatch": true,
+        "isPairs": true,
         "trophyName": "Pairs",
         "matchEntries": [
             {
                 "peg": 2,
+                "pairedWithPeg": 6,
                 "weight": 0.375,
                 "position": 5,
                 "points": 8,
@@ -377,6 +386,7 @@
             },
             {
                 "peg": 5,
+                "pairedWithPeg": 3,
                 "weight": 1.25,
                 "position": 4,
                 "points": 9,
@@ -385,6 +395,7 @@
             },
             {
                 "peg": 1,
+                "pairedWithPeg": 7,
                 "weight": 0.125,
                 "position": 6,
                 "points": 7,
@@ -393,6 +404,7 @@
             },
             {
                 "peg": 7,
+                "pairedWithPeg": 1,
                 "weight": 0.125,
                 "position": 6,
                 "points": 7,
@@ -401,6 +413,7 @@
             },
             {
                 "peg": 6,
+                "pairedWithPeg": 2,
                 "weight": 3.125,
                 "position": 2,
                 "points": 11,
@@ -409,6 +422,7 @@
             },
             {
                 "peg": 3,
+                "pairedWithPeg": 5,
                 "weight": 2.5,
                 "position": 3,
                 "points": 10,
@@ -417,6 +431,7 @@
             },
             {
                 "peg": 4,
+                "pairedWithPeg": 4,
                 "weight": 5.5,
                 "position": 1,
                 "points": 13,
@@ -439,6 +454,7 @@
         "poolsFee": 5,
         "dayTicketFee": 10,
         "isTropheyMatch": true,
+        "isPairs": false,
         "trophyName": "Dick Mitchell",
         "matchEntries": [
             {
@@ -536,6 +552,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": true,
+        "isPairs": false,
         "trophyName": "Phil Stone Cup",
         "matchEntries": [
             {
@@ -626,6 +643,7 @@
         "poolsFee": 5,
         "dayTicketFee": 10,
         "isTropheyMatch": true,
+        "isPairs": false,
         "trophyName": "Lund Conlon",
         "matchEntries": [
             {
@@ -716,6 +734,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": false,
+        "isPairs": false,
         "trophyName": "",
         "matchEntries": [
             {
@@ -814,6 +833,7 @@
         "poolsFee": 5,
         "dayTicketFee": 7,
         "isTropheyMatch": true,
+        "isPairs": false,
         "trophyName": "Appledore Cup",
         "matchEntries": [
             {
@@ -888,6 +908,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": false,
+        "isPairs": false,
         "trophyName": "",
         "matchEntries": [
             {
@@ -954,6 +975,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": false,
+        "isPairs": false,
         "trophyName": "",
         "matchEntries": [
             {
@@ -1012,6 +1034,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": false,
+        "isPairs": false,
         "trophyName": "",
         "matchEntries": [
             {
@@ -1070,6 +1093,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": false,
+        "isPairs": false,
         "trophyName": "",
         "matchEntries": [
             {
@@ -1152,6 +1176,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": false,
+        "isPairs": false,
         "trophyName": "",
         "matchEntries": [
             {
@@ -1226,6 +1251,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": true,
+        "isPairs": false,
         "trophyName": "Shanks & McEwan",
         "matchEntries": [
             {
@@ -1300,6 +1326,7 @@
         "poolsFee": 5,
         "dayTicketFee": 7,
         "isTropheyMatch": false,
+        "isPairs": false,
         "trophyName": "",
         "matchEntries": []
     },
@@ -1316,6 +1343,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": true,
+        "isPairs": false,
         "trophyName": "Phil Stone Cup",
         "matchEntries": []
     },
@@ -1333,6 +1361,7 @@
         "poolsFee": 5,
         "dayTicketFee": 10,
         "isTropheyMatch": false,
+        "isPairs": false,
         "trophyName": "",
         "matchEntries": []
     },
@@ -1349,6 +1378,7 @@
         "poolsFee": 5,
         "dayTicketFee": 7,
         "isTropheyMatch": true,
+        "isPairs": false,
         "trophyName": "Tartan Shield",
         "matchEntries": []
     },
@@ -1365,6 +1395,7 @@
         "poolsFee": 5,
         "dayTicketFee": 7,
         "isTropheyMatch": true,
+        "isPairs": true,
         "trophyName": "Pairs",
         "matchEntries": []
     },
@@ -1382,6 +1413,7 @@
         "poolsFee": 5,
         "dayTicketFee": 7,
         "isTropheyMatch": true,
+        "isPairs": false,
         "trophyName": "Dick Mitchell",
         "matchEntries": []
     },
@@ -1399,6 +1431,7 @@
         "poolsFee": 5,
         "dayTicketFee": 10,
         "isTropheyMatch": true,
+        "isPairs": false,
         "trophyName": "Lund Conlon",
         "matchEntries": []
     },
@@ -1416,6 +1449,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": false,
+        "isPairs": false,
         "trophyName": "",
         "matchEntries": []
     },
@@ -1433,6 +1467,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": true,
+        "isPairs": false,
         "trophyName": "Appledore Cup",
         "matchEntries": []
     },
@@ -1450,6 +1485,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": false,
+        "isPairs": false,
         "trophyName": "",
         "matchEntries": []
     },
@@ -1467,6 +1503,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": false,
+        "isPairs": false,
         "trophyName": "",
         "matchEntries": []
     },
@@ -1484,6 +1521,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": false,
+        "isPairs": false,
         "trophyName": "",
         "matchEntries": []
     },
@@ -1501,6 +1539,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": false,
+        "isPairs": false,
         "trophyName": "",
         "matchEntries": []
     },
@@ -1518,6 +1557,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": false,
+        "isPairs": false,
         "trophyName": "",
         "matchEntries": []
     },
@@ -1535,6 +1575,7 @@
         "poolsFee": 5,
         "dayTicketFee": 0,
         "isTropheyMatch": true,
+        "isPairs": false,
         "trophyName": "Shanks & McEwan",
         "matchEntries": []
     }
