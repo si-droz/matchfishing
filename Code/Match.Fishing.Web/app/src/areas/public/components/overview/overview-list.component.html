@@ -1,0 +1,13 @@
+<h2 class="page-header">Season Overview</h2>
+<ul class="nav nav-pills bottom-spacer">
+    <li role="presentation" ng-class="model.isSeasonSelected(season) ? 'Active' : ''" ng-repeat="season in model.seasons">
+        <a ng-click="model.onSelectSeason(season)">{{season}}</a>
+    </li>
+</ul>
+<div class="well well-sm bottom-spacer">
+    <input type="text" class="form-control" id="searchText" placeholder="Search season overview" ng-model="searchText">
+</div>
+<ul>
+    <li class="list-unstyled">
+    </li>
+</ul>

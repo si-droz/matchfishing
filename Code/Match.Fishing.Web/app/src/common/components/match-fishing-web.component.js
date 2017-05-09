@@ -16,7 +16,7 @@
             { path: "/match/...", component: "matches", name: "Matches" },
             { path: "/league/...", component: "leagues", name: "Leagues" },
             { path: "/championship/...", component: "championships", name: "Championships" },
-            { path: "/overview", component: "overview", name: "Overview" },
+            { path: "/overview/...", component: "overview", name: "Overview" },
             { path: "/**", redirectTo: ["Home"] }
         ],
         controllerAs: "model",
