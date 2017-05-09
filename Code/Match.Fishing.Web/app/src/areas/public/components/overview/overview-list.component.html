@@ -1,13 +1,35 @@
-<h2 class="page-header">Season Overview</h2>
-<ul class="nav nav-pills bottom-spacer">
-    <li role="presentation" ng-class="model.isSeasonSelected(season) ? 'Active' : ''" ng-repeat="season in model.seasons">
-        <a ng-click="model.onSelectSeason(season)">{{season}}</a>
-    </li>
-</ul>
-<div class="well well-sm bottom-spacer">
-    <input type="text" class="form-control" id="searchText" placeholder="Search season overview" ng-model="searchText">
+<div class="container">
+    <h2 class="page-header">Season Overview</h2>
+    <ul>
+        <li class="list-unstyled" ng-repeat="season in model.seasons">
+            <div class="col-md-4">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h5><strong> {{season.season}} Season Overview</strong></h5>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-5">
+                                No of Matches:
+                            </div>
+                            <div class="col-md-7">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5">
+                                No of Anglers:
+                            </div>
+                            <div class="col-md-7">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <a ng-click="model.onSelectSeason(season)" class="btn btn-primary">Results</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
 </div>
-<ul>
-    <li class="list-unstyled">
-    </li>
-</ul>
