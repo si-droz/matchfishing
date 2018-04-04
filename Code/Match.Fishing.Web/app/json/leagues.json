@@ -54,5 +54,18 @@
         "name": "Kingfisher Winter League",
         "noOfRounds": 6,
         "countingRounds": 5
+    },{
+        "id": 8,
+        "season": "18/19",
+        "name": "Kingfisher Summer League",
+        "noOfRounds": 6,
+        "countingRounds": 5
+    },
+    {
+        "id": 9,
+        "season": "18/19",
+        "name": "Kingfisher Winter League",
+        "noOfRounds": 6,
+        "countingRounds": 5
     }
 ]
