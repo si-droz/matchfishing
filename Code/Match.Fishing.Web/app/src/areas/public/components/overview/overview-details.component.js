@@ -3,14 +3,18 @@
 
     var module = angular.module('matchFishing');
 
-    var controller = function ($http, seasonsService) {
+    var controller = function ($http, championshipsService, seasonsService, matchesService) {
         var model = this;
         model.seasonDescription = null;
-        model.results = [];
+        model.overviewResults = [];
 
         model.$routerOnActivate = function (next) {
             seasonsService.getSeasonDescription($http, next.params.id).then(function (seasonDescription) {
                 model.seasonDescription = seasonDescription;
+            });
+
+            championshipsService.getOverviewResults($http, next.params.id, matchesService).then(function (overviewResults) {
+                model.overviewResults = overviewResults;
             });
         };
     };
@@ -21,6 +25,6 @@
             $router: '<'
         },
         controllerAs: "model",
-        controller: ['$http', 'seasonsService', controller]
+        controller: ['$http', 'championshipsService', 'seasonsService', 'matchesService', controller]
     });
 }());

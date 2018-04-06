@@ -4,3 +4,47 @@
         <a ng-link="['../../Overview']" class="btn btn-primary">Back to overview</a>
     </div>
 </div>
+<h4 class="page-header">
+    Results
+</h4>
+<ul>
+    <li class="list-unstyled" ng-repeat="overviewResult in model.overviewResults">
+        <div class="col-md-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h5>
+                        <strong> {{overviewResult.matchName}} at {{overviewResult.matchVenue}} - {{overviewResult.matchLake}}</strong>
+                    </h5>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            Date:
+                        </div>
+                        <div class="col-md-8">
+                            {{overviewResult.matchDate | date:'dd-MMM-yyyy'}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Winner:
+                        </div>
+                        <div class="col-md-8">
+                            {{overviewResult.winner}} - {{overviewResult.winnerWeight | weightToText}} 
+                        </div>                        
+                    </div>
+                    <div class="row">
+                            <div class="col-md-4">
+                                Runner Up:
+                            </div>
+                            <div class="col-md-8">
+                                {{overviewResult.runnerUp}} - {{overviewResult.runnerUpWeight| weightToText}}
+                            </div>                        
+                        </div>
+                </div>
+                <div class="panel-footer">
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
