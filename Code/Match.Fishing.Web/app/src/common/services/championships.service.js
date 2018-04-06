@@ -25,57 +25,88 @@
                 });
         };
 
-        service.getOverviewResults = function getOverviewResults($http, seasonId, matchesService) {
+        service.getOverviewResults = function getOverviewResults($http, seasonId, matchesService, leaguesService) {
             return $http.get("/json/matches.json")
                 .then(function (response) {
                     var matches = response.data;
                     var overviewResults = [];
+                    var uniqueLeagueIds = [];
 
                     matches.forEach(function (match) {
-                        if (match.seasonId == seasonId && match.isTropheyMatch) {
+                        if (match.seasonId == seasonId) {
+                            if (match.isTropheyMatch) {
 
-                            var winner = '';
-                            var winningWeight = '';
-                            var runnerUp = '';
-                            var runnerUpWeight = '';
+                                var winner = '';
+                                var winningWeight = '';
+                                var runnerUp = '';
+                                var runnerUpWeight = '';
 
-                            match.matchEntries.forEach(function (matchEntry) {
-                                if (match.isPairs === false) {
-                                    if (matchEntry.position === 1) {
-                                        winner = matchEntry.anglerName;
-                                        winningWeight = matchEntry.weight;
+                                match.matchEntries.forEach(function (matchEntry) {
+                                    if (match.isPairs === false) {
+                                        if (matchEntry.position === 1) {
+                                            winner = matchEntry.anglerName;
+                                            winningWeight = matchEntry.weight;
+                                        }
+                                        if (matchEntry.position === 2) {
+                                            runnerUp = matchEntry.anglerName;
+                                            runnerUpWeight = matchEntry.weight;
+                                        }
                                     }
-                                    if (matchEntry.position === 2) {
-                                        runnerUp = matchEntry.anglerName;
-                                        runnerUpWeight = matchEntry.weight;
+                                    if (match.isPairs === true) {
+                                        var pairs = matchesService.getPairs(match);
+                                        var orderedPairs = pairs.sort(function (a, b) { return b.weight - a.weight });
+
+                                        winner = orderedPairs[0].angler1 + ' ' + orderedPairs[0].angler2;
+                                        winningWeight = orderedPairs[0].weight;
+
+                                        runnerUp = orderedPairs[1].angler1 + ' ' + orderedPairs[1].angler2;
+                                        runnerUpWeight = orderedPairs[1].weight;
                                     }
+                                }, this);
+
+                                var overviewResult = {
+                                    matchName: match.trophyName,
+                                    isTropheyMatch: match.isTropheyMatch,
+                                    matchDate: match.date,
+                                    matchVenue: match.venue,
+                                    matchLake: match.lake,
+                                    winner: winner,
+                                    winnerWeight: winningWeight,
+                                    runnerUp: runnerUp,
+                                    runnerUpWeight: runnerUpWeight
+                                };
+
+                                overviewResults.push(overviewResult)
+                            } else {
+                                var leagueId = match.leagueId;
+
+                                if (!uniqueLeagueIds.includes(leagueId)) {
+                                    uniqueLeagueIds.push(leagueId);
                                 }
-                                if (match.isPairs === true) {
-                                    var pairs = matchesService.getPairs(match);
-                                    var orderedPairs = pairs.sort(function (a, b) { return b.weight-a.weight });
-
-                                    winner = orderedPairs[0].angler1 + ' ' + orderedPairs[0].angler2;
-                                    winningWeight = orderedPairs[0].weight;
-
-                                    runnerUp = orderedPairs[1].angler1 + ' ' + orderedPairs[1].angler2;
-                                    runnerUpWeight = orderedPairs[1].weight;
-                                }
-                            }, this);
-
-                            var overviewResult = {
-                                matchName: match.trophyName,
-                                isTropheyMatch: match.isTropheyMatch,
-                                matchDate: match.date,
-                                matchVenue: match.venue,
-                                matchLake: match.lake,
-                                winner: winner,
-                                winnerWeight: winningWeight,
-                                runnerUp: runnerUp,
-                                runnerUpWeight: runnerUpWeight
-                            };
-
-                            overviewResults.push(overviewResult)
+                            }
                         }
+                    }, this);
+
+                    uniqueLeagueIds.forEach(function (leagueId) {
+                        leaguesService.getLeague($http, leagueId).then(function (league) {
+                            leaguesService.getAnglersForLeague($http, league.id, league.countingRounds).then(function (anglers) {
+                                var orderedAnglers = anglers.sort(function (a, b) { return b.adjustedPointsTotal - a.adjustedPointsTotal });
+
+                                var overviewResult = {
+                                    matchName: league.name,
+                                    isTropheyMatch: false,
+                                    matchDate: 'N/A',
+                                    matchVenue: 'N/A',
+                                    matchLake: 'N/A',
+                                    winner: orderedAnglers[0].name,
+                                    winnerPoints: orderedAnglers[0].adjustedPointsTotal,
+                                    runnerUp: orderedAnglers[1].name,
+                                    runnerUpPoints: orderedAnglers[1].adjustedPointsTotal
+                                };
+
+                                overviewResults.push(overviewResult)
+                            });
+                        });
                     }, this);
 
                     return overviewResults;

@@ -13,11 +13,19 @@
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <h5>
-                        <strong> {{overviewResult.matchName}} at {{overviewResult.matchVenue}} - {{overviewResult.matchLake}}</strong>
+                        <strong> {{overviewResult.matchName}}</strong>
                     </h5>
                 </div>
                 <div class="panel-body">
-                    <div class="row">
+                    <div class="row" ng-show="overviewResult.isTropheyMatch==true">
+                        <div class="col-md-4">
+                            Venue:
+                        </div>
+                        <div class="col-md-8">
+                            {{overviewResult.matchVenue}} - {{overviewResult.matchLake}}
+                        </div>
+                    </div>
+                    <div class="row" ng-show="overviewResult.isTropheyMatch==true">
                         <div class="col-md-4">
                             Date:
                         </div>
@@ -29,18 +37,24 @@
                         <div class="col-md-4">
                             Winner:
                         </div>
-                        <div class="col-md-8">
-                            {{overviewResult.winner}} - {{overviewResult.winnerWeight | weightToText}} 
-                        </div>                        
+                        <div class="col-md-8" ng-if="overviewResult.isTropheyMatch==true" ng-show="overviewResult.isTropheyMatch==true">
+                            {{overviewResult.winner}} - {{overviewResult.winnerWeight | weightToText}}
+                        </div>
+                        <div class="col-md-8" ng-if="overviewResult.isTropheyMatch==false" ng-show="overviewResult.isTropheyMatch==false">
+                            {{overviewResult.winner}} - {{overviewResult.winnerPoints}} points
+                        </div>
                     </div>
                     <div class="row">
-                            <div class="col-md-4">
-                                Runner Up:
-                            </div>
-                            <div class="col-md-8">
-                                {{overviewResult.runnerUp}} - {{overviewResult.runnerUpWeight| weightToText}}
-                            </div>                        
+                        <div class="col-md-4">
+                            Runner Up:
                         </div>
+                        <div class="col-md-8" ng-if="overviewResult.isTropheyMatch==true" ng-show="overviewResult.isTropheyMatch==true">
+                            {{overviewResult.runnerUp}} - {{overviewResult.runnerUpWeight| weightToText}}
+                        </div>
+                        <div class="col-md-8" ng-if="overviewResult.isTropheyMatch==false" ng-show="overviewResult.isTropheyMatch==false">
+                            {{overviewResult.runnerUp}} - {{overviewResult.runnerUpPoints}} points
+                        </div>
+                    </div>
                 </div>
                 <div class="panel-footer">
                 </div>
