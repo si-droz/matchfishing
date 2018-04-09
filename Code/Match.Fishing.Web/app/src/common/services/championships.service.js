@@ -73,10 +73,11 @@
                                     winner: winner,
                                     winnerWeight: winningWeight,
                                     runnerUp: runnerUp,
-                                    runnerUpWeight: runnerUpWeight
+                                    runnerUpWeight: runnerUpWeight,
+                                    sortOrder: 10
                                 };
 
-                                overviewResults.push(overviewResult)
+                                overviewResults.push(overviewResult);
                             } else {
                                 var leagueId = match.leagueId;
 
@@ -101,13 +102,56 @@
                                     winner: orderedAnglers[0].name,
                                     winnerPoints: orderedAnglers[0].adjustedPointsTotal,
                                     runnerUp: orderedAnglers[1].name,
-                                    runnerUpPoints: orderedAnglers[1].adjustedPointsTotal
+                                    runnerUpPoints: orderedAnglers[1].adjustedPointsTotal,
+                                    sortOrder: 3
                                 };
 
-                                overviewResults.push(overviewResult)
+                                overviewResults.push(overviewResult);
                             });
                         });
                     }, this);
+
+                    var championshipAnglers = service.getChampionship($http, seasonId).then(function (anglers) {
+                        var orderedAnglers = anglers.sort(function (a, b) { return b.pointsTotal - a.pointsTotal });
+
+                        var overviewResult = {
+                            matchName: "Championship",
+                            isTropheyMatch: false,
+                            matchDate: 'N/A',
+                            matchVenue: 'N/A',
+                            matchLake: 'N/A',
+                            winner: orderedAnglers[0].name,
+                            winnerPoints: orderedAnglers[0].pointsTotal,
+                            runnerUp: orderedAnglers[1].name,
+                            runnerUpPoints: orderedAnglers[1].pointsTotal,
+                            sortOrder: 1
+                        };
+
+                        overviewResults.push(overviewResult);
+
+                        var anglersForWoodenSpoon = [];
+                        orderedAnglers.forEach(function (angler) {
+                            if (angler.matchCount >= 5) {
+                                anglersForWoodenSpoon.push(angler);
+                            }
+                        }, this);
+
+                        var orderedAnglersForWoodenSpoon = anglersForWoodenSpoon.sort(function (a, b) { return (a.pointsTotal / a.matchCount) - (b.pointsTotal / b.matchCount) });
+                        var averagePoints = orderedAnglersForWoodenSpoon[0].pointsTotal / orderedAnglersForWoodenSpoon[0].matchCount;
+                        var overviewResult = {
+                            matchName: "Wooden Spoon",
+                            isTropheyMatch: false,
+                            matchDate: 'N/A',
+                            matchVenue: 'N/A',
+                            matchLake: 'N/A',
+                            winner: orderedAnglersForWoodenSpoon[0].name,
+                            winnerPoints: averagePoints.toFixed(2),
+                            sortOrder: 2
+                        };
+
+                        overviewResults.push(overviewResult);
+
+                    });
 
                     return overviewResults;
                 });

@@ -8,7 +8,7 @@
     Results
 </h4>
 <ul>
-    <li class="list-unstyled" ng-repeat="overviewResult in model.overviewResults">
+    <li class="list-unstyled" ng-repeat="overviewResult in model.overviewResults | orderBy:'sortOrder'">
         <div class="col-md-4">
             <div class="panel panel-info">
                 <div class="panel-heading">
