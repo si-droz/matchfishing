@@ -2726,6 +2726,14 @@
                 "anglerName": "Doug Robinson"
             },
             {
+                "peg": 14,
+                "weight": 5,
+                "position": 6,
+                "points": 7,
+                "anglerId": 8,
+                "anglerName": "Pete Deverick"
+            },
+            {
                 "peg": 12,
                 "weight": 8.375,
                 "position": 3,
@@ -2735,19 +2743,19 @@
             },
             {
                 "peg": 8,
+                "weight": 18.25,
+                "position": 6,
+                "points": 7,
+                "anglerId": 3,
+                "anglerName": "Malcolm Harley"
+            },
+            {
+                "peg": 8,
                 "weight": 3.875,
                 "position": 7,
                 "points": 6,
                 "anglerId": 4,
                 "anglerName": "Darren James"
-            },
-            {
-                "peg": 14,
-                "weight": 5,
-                "position": 6,
-                "points": 7,
-                "anglerId": 8,
-                "anglerName": "Pete Deverick"
             },            
             {
                 "peg": 16,
@@ -2807,7 +2815,73 @@
         "isTropheyMatch": true,
         "isPairs": false,
         "trophyName": "Dick Mitchell",
-        "matchEntries": []
+        "matchEntries": [
+            {
+                "peg": 0,
+                "weight": 0,
+                "position": 0,
+                "points": 0,
+                "anglerId": 1,
+                "anglerName": "Simon Drozdziol"
+            },
+            {
+                "peg": 0,
+                "weight": 0,
+                "position": 0,
+                "points": 0,
+                "anglerId": 26,
+                "anglerName": "Doug Robinson"
+            },
+            {
+                "peg": 0,
+                "weight": 0,
+                "position": 0,
+                "points": 0,
+                "anglerId": 8,
+                "anglerName": "Pete Deverick"
+            },
+            {
+                "peg": 0,
+                "weight": 0,
+                "position": 0,
+                "points": 0,
+                "anglerId": 4,
+                "anglerName": "Darren James"
+            },
+            {
+                "peg": 0,
+                "weight": 0,
+                "position": 0,
+                "points": 0,
+                "anglerId": 6,
+                "anglerName": "Paul Balodis"
+            },            
+            {
+                "peg": 0,
+                "weight":0.00,
+                "position": 0,
+                "points": 0,
+                "anglerId": 5,
+                "anglerName": "Darryl Anderson"
+            },
+                        
+            {
+                "peg": 0,
+                "weight": 0.00,
+                "position": 0,
+                "points": 0,
+                "anglerId": 29,
+                "anglerName": "Paul Petrie"
+            },
+            {
+                "peg": 0,
+                "weight": 0.00,
+                "position": 0,
+                "points": 0,
+                "anglerId": 3,
+                "anglerName": "Malcolm Harley"
+            }
+        ]
     },
     {
         "id": 38,
