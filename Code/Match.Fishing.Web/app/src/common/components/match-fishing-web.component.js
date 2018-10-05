@@ -17,6 +17,7 @@
             { path: "/league/...", component: "leagues", name: "Leagues" },
             { path: "/championship/...", component: "championships", name: "Championships" },
             { path: "/overview/...", component: "overview", name: "Overview" },
+            { path: "/admin/...", component: "admin", name: "Admin" },
             { path: "/**", redirectTo: ["Home"] }
         ],
         controllerAs: "model",

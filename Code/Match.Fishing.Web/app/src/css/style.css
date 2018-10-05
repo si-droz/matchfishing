@@ -8,6 +8,13 @@ html {
 .bottom-spacer {
   margin-bottom: 10px;
 }
+.admin-title h3 {
+  color: grey;
+  margin-top: 0px;
+}
+.admin-content {
+  margin-top: 10px;
+}
 /*.page-header{
   background: #C5C7C5;
   color: #13A1A4;
