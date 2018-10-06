@@ -34,7 +34,7 @@
 
                     matches.forEach(function (match) {
                         if (match.seasonId == seasonId) {
-                            if (match.isTropheyMatch) {
+                            if (match.isTrophyMatch) {
 
                                 var winner = '';
                                 var winningWeight = '';
@@ -66,7 +66,7 @@
 
                                 var overviewResult = {
                                     matchName: match.trophyName,
-                                    isTropheyMatch: match.isTropheyMatch,
+                                    isTrophyMatch: match.isTrophyMatch,
                                     matchDate: match.date,
                                     matchVenue: match.venue,
                                     matchLake: match.lake,
@@ -95,7 +95,7 @@
 
                                 var overviewResult = {
                                     matchName: league.name,
-                                    isTropheyMatch: false,
+                                    isTrophyMatch: false,
                                     matchDate: 'N/A',
                                     matchVenue: 'N/A',
                                     matchLake: 'N/A',
@@ -116,7 +116,7 @@
 
                         var overviewResult = {
                             matchName: "Championship",
-                            isTropheyMatch: false,
+                            isTrophyMatch: false,
                             matchDate: 'N/A',
                             matchVenue: 'N/A',
                             matchLake: 'N/A',
@@ -140,7 +140,7 @@
                         var averagePoints = orderedAnglersForWoodenSpoon[0].pointsTotal / orderedAnglersForWoodenSpoon[0].matchCount;
                         var overviewResult = {
                             matchName: "Wooden Spoon",
-                            isTropheyMatch: false,
+                            isTrophyMatch: false,
                             matchDate: 'N/A',
                             matchVenue: 'N/A',
                             matchLake: 'N/A',

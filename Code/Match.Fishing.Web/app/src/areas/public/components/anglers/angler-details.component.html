@@ -28,7 +28,7 @@
 
             <tr ng-repeat="match in model.matches | matchFilter: model.selectedSeason:searchText | orderBy:'date'">
                 <td>{{match.date | date:'dd-MMM-yyyy'}}</td>
-                <td>{{match.leagueMatchNo}} {{match.league}} <span ng-if="match.isTropheyMatch">{{match.trophyName}}</span> </td>
+                <td>{{match.leagueMatchNo}} {{match.league}} <span ng-if="match.isTrophyMatch">{{match.trophyName}}</span> </td>
                 <td>{{match.venue}}</td>
                 <td>{{match.lake}}</td>
                 <td>{{match.matchEntries[0].peg}}</td>

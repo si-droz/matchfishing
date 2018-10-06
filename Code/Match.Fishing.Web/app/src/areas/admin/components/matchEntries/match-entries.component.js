@@ -7,8 +7,8 @@
         var model = this;        
     };
 
-    module.component("adminLeagueAdd", {
-        templateUrl: "/areas/admin/components/leagues/league-add.component.html",
+    module.component("adminMatchEntries", {
+        templateUrl: "/areas/admin/components/matchEntries/match-entries.component.html",
         bindings: {
             $router: '<'
         },

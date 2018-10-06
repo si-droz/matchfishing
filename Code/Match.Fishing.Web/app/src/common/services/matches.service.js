@@ -7,9 +7,11 @@
         var service = this;
 
         service.getMatches = function getMatches($http) {
-            return $http.get("/json/matches.json")
+            return $http.get("http://localhost:61573/api/v1/matches")
                 .then(function (response) {
                     return response.data;
+                }).catch(function (data) {
+                    console.debug(data);
                 });
         };
 
@@ -27,6 +29,10 @@
                     return match;
                 });
         };
+
+        service.postMatchEntry = function postMatchEntry($http, id){
+            
+        }
 
         service.getMatchesForAngler = function getMatchesForAngler($http, anglerId) {
             return $http.get("/json/matches.json")

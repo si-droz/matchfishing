@@ -7,7 +7,7 @@
         var model = this;        
     };
 
-    module.component("seasonAdd", {
+    module.component("adminSeasonAdd", {
         templateUrl: "/areas/admin/components/seasons/season-add.component.html",
         bindings: {
             $router: '<'

@@ -1,0 +1,34 @@
+<h2 class="page-header">Matches</h2>
+<div class="row bottom-spacer">
+    <div class="col-md-offset-10 col-md-2">
+        <a href="/admin/matches/add" class="btn btn-primary" role="button">Add Match</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <table class="table table-striped table-hover">
+            <tr>
+                <th>Date</th>
+                <th>Match</th>
+                <th>Venue</th>
+                <th>Lake</th>
+                <th>Pegs</th>
+                <th>Pools</th>
+                <th>Peg Fee</th>
+                <th></th>
+            </tr>
+            <tr ng-repeat="match in model.matches | orderBy:'date'">                
+                <td>{{match.date | date:'dd-MMM-yyyy'}}</td>
+                <td>{{match.league}} {{match.leagueMatchNo}}<span ng-if="match.isTrophyMatch"><span ng-if="match.league"> / </span>{{match.trophyName}}</span> </td>
+                <td>{{match.venue}}</td>
+                <td>{{match.lake}}</td>
+                <td>{{match.noOfPegs}}</td>
+                <td>{{match.poolsFee | currency: "£"}}</td>
+                <td>{{match.dayTicketFee | currency: "£"}}</td>
+                <td>
+                    <a ng-click="model.onSelectMatch(match)" class="btn btn-primary">Add Match Entries</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

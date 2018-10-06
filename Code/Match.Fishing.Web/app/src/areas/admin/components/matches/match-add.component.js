@@ -7,7 +7,7 @@
         var model = this;        
     };
 
-    module.component("matchAdd", {
+    module.component("adminMatchAdd", {
         templateUrl: "/areas/admin/components/matches/match-add.component.html",
         bindings: {
             $router: '<'

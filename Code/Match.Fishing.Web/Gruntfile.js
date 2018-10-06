@@ -104,10 +104,10 @@ module.exports = function (grunt) {
             }
         },
         server: {
-            webRoot: '<%= dirs.devPath.src %>',
+            webRoot: '<%= dirs.devPath.src %>',            
             web: {
-                port: 8000
-            }
+                port: 8000,
+            }            
         },
         open: {
             dev: {

@@ -7,7 +7,7 @@
         var model = this;        
     };
 
-    module.component("anglerAdd", {
+    module.component("adminAnglerAdd", {
         templateUrl: "/areas/admin/components/anglers/angler-add.component.html",
         bindings: {
             $router: '<'

@@ -1,5 +1,6 @@
 module.exports = function (grunt) {
     var express = require('express');
+    var cors = require('cors')
     var compression = require('compression');
     var errorHandler = require('errorhandler');
     grunt.registerTask('server', 'static file development server', function () {
@@ -9,6 +10,11 @@ module.exports = function (grunt) {
         webRoot = grunt.config.get('server.webRoot') || 'app/dist';
 
         app = express();
+        app.use(cors({
+            allowedOrigins: [
+                'http://localhost:61573/','http://localhost:8000/'
+            ]
+        }))
         app.use(compression())
         app.use(express.static('' + (process.cwd()) + '/' + webRoot));
         app.use(errorHandler());
