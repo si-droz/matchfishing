@@ -42,22 +42,4 @@ namespace Match.Fishing.Models
         [JsonProperty("matchEntries")]
         public List<MatchEntry> MatchEntries { get; set; }
     }
-
-    public class MatchEntry
-    {
-        [JsonProperty("peg")]
-        public int Peg { get; set; }
-        [JsonProperty("pairedWithPeg")]
-        public int PairedWithPeg { get; set; }
-        [JsonProperty("weight")]
-        public double Weight { get; set; }
-        [JsonProperty("position")]
-        public int Position { get; set; }
-        [JsonProperty("points")]
-        public double Points { get; set; }
-        [JsonProperty("anglerId")]
-        public int AnglerId { get; set; }
-        [JsonProperty("anglerName")]
-        public string AnglerName { get; set; }
-    }
 }

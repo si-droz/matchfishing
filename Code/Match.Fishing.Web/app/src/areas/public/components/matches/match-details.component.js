@@ -6,12 +6,14 @@
     var controller = function ($http, matchesService) {
         var model = this;
         model.match = null;
-        model.pairs = [];
+        model.pairs = null;
 
         model.$routerOnActivate = function (next) {
             matchesService.getMatch($http, next.params.id).then(function (match) {
                 model.match = match;
-                model.pairs = matchesService.getPairs(match);                
+                matchesService.getPairs($http, next.params.id).then(function(pairs){
+                    model.pairs = pairs;
+                });                
             });
         };
     };

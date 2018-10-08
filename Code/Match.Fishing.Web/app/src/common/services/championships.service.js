@@ -53,14 +53,15 @@
                                         }
                                     }
                                     if (match.isPairs === true) {
-                                        var pairs = matchesService.getPairs(match);
-                                        var orderedPairs = pairs.sort(function (a, b) { return b.weight - a.weight });
+                                        var pairs = matchesService.getPairs($http, match.id);
+                                        // TODO sort out
+                                        // var orderedPairs = pairs.sort(function (a, b) { return b.weight - a.weight });
 
-                                        winner = orderedPairs[0].angler1 + ' ' + orderedPairs[0].angler2;
-                                        winningWeight = orderedPairs[0].weight;
+                                        // winner = orderedPairs[0].angler1 + ' ' + orderedPairs[0].angler2;
+                                        // winningWeight = orderedPairs[0].weight;
 
-                                        runnerUp = orderedPairs[1].angler1 + ' ' + orderedPairs[1].angler2;
-                                        runnerUpWeight = orderedPairs[1].weight;
+                                        // runnerUp = orderedPairs[1].angler1 + ' ' + orderedPairs[1].angler2;
+                                        // runnerUpWeight = orderedPairs[1].weight;
                                     }
                                 }, this);
 

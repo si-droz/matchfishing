@@ -11,7 +11,9 @@
         model.$routerOnActivate = function (next) {
             matchesService.getMatch($http, next.params.matchId).then(function (match) {
                 model.match = match;
-                model.pairs = matchesService.getPairs(match);                
+                matchesService.getPairs($http, next.params.matchId).then(function(pairs){
+                    model.pairs = pairs;
+                });
             });
         };
     };
