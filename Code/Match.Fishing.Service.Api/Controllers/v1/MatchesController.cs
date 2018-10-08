@@ -24,7 +24,7 @@ namespace Match.Fishing.Controllers.v1
             return matches;
         }
 
-        [Route("api/v1/matches")]
+        [Route("api/v1/matches/{id}")]
         public Models.Match Get([FromUri]int id)
         {
             List<Models.Match> matches = Get().ToList();
@@ -32,42 +32,16 @@ namespace Match.Fishing.Controllers.v1
             return matchToReturn;
         }
 
-        public void GetMatchesForAngler()
+        [Route("api/v1/anglers/{anglerId}/matches")]
+        public IEnumerable<Models.Match> GetMatchesForAngler([FromUri] int anglerId)
         {
-            //    service.getMatchesForAngler = function getMatchesForAngler($http, anglerId)
-            //    {
-            //        return $http.get("/json/matches.json")
-            //            .then(function(response) {
-            //            var matches = response.data;
-            //            var filteredMatches = [];
-            //            var filteredMatchEntries = [];
-
-            //            for (var index = 0; index < matches.length; index++)
-            //            {
-            //                filteredMatchEntries = [];
-            //                if (matches[index].matchEntries !== undefined && matches[index].matchEntries !== null)
-            //                {
-            //                    for (var matchEntryIndex = 0; matchEntryIndex < matches[index].matchEntries.length; matchEntryIndex++)
-            //                    {
-            //                        if (matches[index].matchEntries[matchEntryIndex].anglerId === anglerId)
-            //                        {
-            //                            filteredMatchEntries.push(matches[index].matchEntries[matchEntryIndex]);
-            //                        }
-            //                    }
-            //                    if (filteredMatchEntries.length > 0)
-            //                    {
-            //                        matches[index].matchEntries = filteredMatchEntries;
-            //                        filteredMatches.push(matches[index]);
-            //                    }
-            //                }
-            //            }
-
-            //            return filteredMatches;
-            //        });
-            //    };
+            List<Models.Match> matches = Get().ToList();
+            IEnumerable<Models.Match> anglerMatches = matches.Where(m => m.MatchEntries.Any(me => me.AnglerId == anglerId));
+            return anglerMatches;
         }
 
-        public void GetPairsMatch()
+
+        private void GetPairsMatch()
         {
 
             //    service.getPairs = function getPairs(match)

@@ -47,6 +47,8 @@ namespace Match.Fishing.Models
     {
         [JsonProperty("peg")]
         public int Peg { get; set; }
+        [JsonProperty("pairedWithPeg")]
+        public int PairedWithPeg { get; set; }
         [JsonProperty("weight")]
         public double Weight { get; set; }
         [JsonProperty("position")]

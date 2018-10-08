@@ -5,7 +5,10 @@
     "ngComponentRouter"
     , "ngAnimate"
     , "ui.bootstrap"
-  ]);
+  ]).constant("EnvironmentConfig",
+  {
+      "serviceApi": "http://localhost:61573"
+  });
 
   module.config(function ($locationProvider) {
 
