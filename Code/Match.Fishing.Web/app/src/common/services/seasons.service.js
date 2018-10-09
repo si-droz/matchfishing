@@ -1,13 +1,14 @@
 (function () {
     'use strict';
 
-    var module = angular.module("matchFishing");
+    var module = angular.module('matchFishing');
 
-    module.service('seasonsService', function () {
+    module.service('seasonsService', function (EnvironmentConfig) {
         var service = this;
+        const matchesUrl = `${EnvironmentConfig.serviceApi}/api/v1/matches`;
 
         service.getUniqueSeasons = function getUniqueSeasons($http) {
-            return $http.get("/json/matches.json")
+            return $http.get(matchesUrl)
                 .then(function (response) {
                     var matches = response.data;
                     var uniqueSeasons = ['All'];
@@ -22,7 +23,7 @@
         };
 
         service.getSeasonDescription = function getSeasonDescription($http, seasonId) {
-            return $http.get("json/matches.json")
+            return $http.get(matchesUrl)
                 .then(function (response) {
                     var matches = response.data;
                     var seasonDescription = 'season id ' + seasonId + ' not found';

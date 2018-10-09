@@ -3,22 +3,7 @@
 
     var module = angular.module('matchFishing')
 
-    function fetchAngler($http, id) {
-        return $http.get("/json/anglers.json")
-            .then(function (response) {
-                var anglers = response.data;
-                var angler = null;
-
-                for (var index = 0; index < anglers.length; index++) {
-                    if (anglers[index].id == id) {
-                        return anglers[index];
-                    }
-                }
-                return angler;
-            });
-    };
-
-    var controller = function ($http, seasonsService, matchesService) {
+    var controller = function ($http, seasonsService, matchesService, anglersService) {
         var model = this;
         model.angler = null;
         model.seasons = [];
@@ -26,7 +11,7 @@
         model.selectedSeason = '';
 
         model.$routerOnActivate = function (next) {
-            fetchAngler($http, next.params.id).then(function (angler) {
+            anglersService.getAngler($http, next.params.id).then(function (angler) {
                 model.angler = angler;
 
                 seasonsService.getUniqueSeasons($http).then(function (seasons) {
@@ -54,29 +39,16 @@
             return (model.selectedSeason === season);
         }
 
-        module.filter('matchFilter', function (helperService) {
-
-            return function (items, seasonSearch) {
-                var filtered = [];
-
-                angular.forEach(items, function (item) {
-                    if (helperService.startsWith(item.season, seasonSearch)) {
-                        filtered.push(item);
-                    }
-                });
-
-                return filtered;
-            };
-        });
+        
 
     };
 
     module.component('anglerDetail', {
-        templateUrl: "/areas/public/components/anglers/angler-details.component.html",
+        templateUrl: '/areas/public/components/anglers/angler-details.component.html',
         bindings: {
             $router: '<'
         },
-        controllerAs: "model",
-        controller: controller
+        controllerAs: 'model',
+        controller: ['$http', 'seasonsService', 'matchesService', 'anglersService', controller]
     });
 }());

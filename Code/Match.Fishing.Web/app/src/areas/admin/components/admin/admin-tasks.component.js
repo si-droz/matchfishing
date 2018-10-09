@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    var module = angular.module("matchFishing");
+    var module = angular.module('matchFishing');
 
     function controller($http) {
         var model = this;

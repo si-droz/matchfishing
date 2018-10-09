@@ -1,13 +1,14 @@
 (function () {
     'use strict';
 
-    var module = angular.module("matchFishing");
+    var module = angular.module('matchFishing');
 
-    module.service('championshipsService', function () {
+    module.service('championshipsService', function (EnvironmentConfig) {
         var service = this;
+        const matchesUrl = `${EnvironmentConfig.serviceApi}/api/v1/matches`;
 
         service.getChampionship = function getChampionship($http, seasonId) {
-            return $http.get("/json/matches.json")
+            return $http.get(matchesUrl)
                 .then(function (response) {
                     var matches = response.data;
                     var championshipMatches = [];
@@ -26,7 +27,7 @@
         };
 
         service.getOverviewResults = function getOverviewResults($http, seasonId, matchesService, leaguesService) {
-            return $http.get("/json/matches.json")
+            return $http.get(matchesUrl)
                 .then(function (response) {
                     var matches = response.data;
                     var overviewResults = [];
@@ -116,7 +117,7 @@
                         var orderedAnglers = anglers.sort(function (a, b) { return b.pointsTotal - a.pointsTotal });
 
                         var overviewResult = {
-                            matchName: "Championship",
+                            matchName: 'Championship',
                             isTrophyMatch: false,
                             matchDate: 'N/A',
                             matchVenue: 'N/A',
@@ -140,7 +141,7 @@
                         var orderedAnglersForWoodenSpoon = anglersForWoodenSpoon.sort(function (a, b) { return (a.pointsTotal / a.matchCount) - (b.pointsTotal / b.matchCount) });
                         var averagePoints = orderedAnglersForWoodenSpoon[0].pointsTotal / orderedAnglersForWoodenSpoon[0].matchCount;
                         var overviewResult = {
-                            matchName: "Wooden Spoon",
+                            matchName: 'Wooden Spoon',
                             isTrophyMatch: false,
                             matchDate: 'N/A',
                             matchVenue: 'N/A',
@@ -159,7 +160,7 @@
         }
 
         service.getUniqueSeasons = function getUniqueSeasons($http) {
-            return $http.get("/json/matches.json")
+            return $http.get(matchesUrl)
                 .then(function (response) {
                     var matches = response.data;
                     var uniqueSeasons = [];

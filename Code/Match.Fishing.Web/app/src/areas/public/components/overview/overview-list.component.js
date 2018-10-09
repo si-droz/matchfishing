@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    var module = angular.module("matchFishing");
+    var module = angular.module('matchFishing');
 
     function controller($http, championshipsService) {
         var model = this;
@@ -17,12 +17,12 @@
         };
     }
 
-    module.component("overviewList", {
-        templateUrl: "/areas/public/components/overview/overview-list.component.html",
+    module.component('overviewList', {
+        templateUrl: '/areas/public/components/overview/overview-list.component.html',
         bindings: {
             $router: '<'
         },
-        controllerAs: "model",
+        controllerAs: 'model',
         controller: ['$http', 'championshipsService', controller]
     });
 }());

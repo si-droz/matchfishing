@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Web.Hosting;
 using System.Web.Http;
 using Match.Fishing.Models;

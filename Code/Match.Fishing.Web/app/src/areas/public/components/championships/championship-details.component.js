@@ -27,11 +27,11 @@
     };
 
     module.component('championshipDetail', {
-        templateUrl: "/areas/public/components/championships/championship-details.component.html",
+        templateUrl: '/areas/public/components/championships/championship-details.component.html',
         bindings: {
             $router: '<'
         },
-        controllerAs: "model",
+        controllerAs: 'model',
         controller: ['$http', 'championshipsService', 'seasonsService', controller]
     });
 }());

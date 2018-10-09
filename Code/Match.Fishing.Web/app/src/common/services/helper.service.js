@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var module = angular.module("matchFishing");
+    var module = angular.module('matchFishing');
 
     module.service('helperService', function () {
         var service = this;

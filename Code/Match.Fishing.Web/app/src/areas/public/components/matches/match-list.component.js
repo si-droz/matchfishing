@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    var module = angular.module("matchFishing");
+    var module = angular.module('matchFishing');
 
     function controller($http, seasonsService, matchesService) {
         var model = this;
@@ -38,25 +38,7 @@
         }
     };
 
-    module.filter('matchFilter', function (helperService) {
-
-        return function (items, seasonSearch, searchText) {
-            var filtered = [];
-            if (searchText === undefined) {
-                searchText = '';
-            }
-
-            angular.forEach(items, function (item) {
-                if (helperService.startsWith(item.season, seasonSearch) &&
-                    (helperService.containsText(item.league, searchText) ||
-                        helperService.containsText(item.trophyName, searchText))) {
-                    filtered.push(item);
-                }
-            });
-
-            return filtered;
-        };
-    });
+    
 
     module.component('matchList', {
         templateUrl: '/areas/public/components/matches/match-list.component.html',

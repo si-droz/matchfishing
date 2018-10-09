@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     
-    var module = angular.module("matchFishing");    
+    var module = angular.module('matchFishing');    
 
     function controller($http, matchesService) {
         var model = this;
@@ -18,12 +18,12 @@
 
     };
 
-    module.component("adminMatchList", {
-        templateUrl: "/areas/admin/components/matches/match-list.component.html",        
+    module.component('adminMatchList', {
+        templateUrl: '/areas/admin/components/matches/match-list.component.html',        
         bindings: {
             $router: '<'
         },
-        controllerAs: "model",
+        controllerAs: 'model',
         controller: ['$http','matchesService', controller]
     });
 }());

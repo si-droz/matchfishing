@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    var module = angular.module("matchFishing");
+    var module = angular.module('matchFishing');
 
     function controller($http, seasonsService, leaguesService) {
         var model = this;
@@ -38,12 +38,12 @@
         };
     }
 
-    module.component("leagueList", {
-        templateUrl: "/areas/public/components/leagues/league-list.component.html",
+    module.component('leagueList', {
+        templateUrl: '/areas/public/components/leagues/league-list.component.html',
         bindings: {
             $router: '<'
         },
-        controllerAs: "model",
+        controllerAs: 'model',
         controller: ['$http', 'seasonsService', 'leaguesService', controller]
     });
 }());

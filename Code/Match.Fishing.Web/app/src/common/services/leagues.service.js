@@ -1,20 +1,22 @@
 (function () {
     'use strict';
 
-    var module = angular.module("matchFishing");
+    var module = angular.module('matchFishing');
 
-    module.service('leaguesService', function () {
+    module.service('leaguesService', function (EnvironmentConfig) {
         var service = this;
+        const matchesUrl = `${EnvironmentConfig.serviceApi}/api/v1/matches`;
+        const leaguesUrl = '/json/leagues.json';
 
         service.getLeagues = function getUniqueLeagues($http) {
-            return $http.get("/json/leagues.json")
+            return $http.get(leaguesUrl)
                 .then(function (response) {
                     return response.data;
                 });
         };
 
         service.getLeague = function getLeague($http, id) {
-            return $http.get("/json/leagues.json")
+            return $http.get(leaguesUrl)
                 .then(function (response) {
                     var leagues = response.data;
                     var league = null;
@@ -30,7 +32,7 @@
 
         // this is woefully inefficient - but will eventually be replaced with web API calls 
         service.getAnglersForLeague = function getAnglersForLeague($http, leagueId, topMatchCount) {
-            return $http.get("/json/matches.json")
+            return $http.get(matchesUrl)
                 .then(function (response) {
                     var matches = response.data;
                     var leagueMatches = getLeagueMatches(matches, leagueId);
