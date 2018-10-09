@@ -5,7 +5,7 @@
 
     module.service('anglersService', function (EnvironmentConfig) {
         var service = this;
-        const anglersUrl = '/json/anglers.json';
+        const anglersUrl = `${EnvironmentConfig.serviceApi}/api/v1/anglers`;
 
         service.getAnglers = function getAnglers($http) {
             return $http.get(anglersUrl)
@@ -15,17 +15,9 @@
         };
 
         service.getAngler = function getAngler($http, id) {
-            return $http.get(anglersUrl)
+            return $http.get(`${anglersUrl}/${id}`)
                 .then(function (response) {
-                    var anglers = response.data;
-                    var angler = null;
-
-                    for (var index = 0; index < anglers.length; index++) {
-                        if (anglers[index].id == id) {
-                            return anglers[index];
-                        }
-                    }
-                    return angler;
+                    return response.data;                    
                 });
         };
 

@@ -6,10 +6,12 @@
     module.service('championshipsService', function (EnvironmentConfig) {
         var service = this;
         const matchesUrl = `${EnvironmentConfig.serviceApi}/api/v1/matches`;
+        const championshipsUrl = `${EnvironmentConfig.serviceApi}/api/v1/championships`;
 
         service.getChampionship = function getChampionship($http, seasonId) {
-            return $http.get(matchesUrl)
+            return $http.get(`${championshipsUrl}/${seasonId}/anglers`)
                 .then(function (response) {
+                    // return response.data;
                     var matches = response.data;
                     var championshipMatches = [];
 
@@ -113,7 +115,7 @@
                         });
                     }, this);
 
-                    var championshipAnglers = service.getChampionship($http, seasonId).then(function (anglers) {
+                    service.getChampionship($http, seasonId).then(function (anglers) {
                         var orderedAnglers = anglers.sort(function (a, b) { return b.pointsTotal - a.pointsTotal });
 
                         var overviewResult = {

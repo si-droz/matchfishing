@@ -1,55 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web.Hosting;
 using System.Web.Http;
+using Match.Fishing.Enums;
 using Match.Fishing.Models;
-using Newtonsoft.Json;
+using Match.Fishing.Services;
 
 namespace Match.Fishing.Controllers.v1
 {
     public class MatchesController : ApiController
     {
         [Route("api/v1/matches")]
-        public IEnumerable<Models.Match> Get()
+        public IEnumerable<FishingMatch> Get()
         {
-            string matchesJsonFilePath = HostingEnvironment.MapPath(@"~/App_Data/json/matches.json");
-
-            if (string.IsNullOrWhiteSpace(matchesJsonFilePath)) throw new ArgumentNullException();
-
-            string jsonContent = File.ReadAllText(matchesJsonFilePath);
-
-            var matches = JsonConvert.DeserializeObject<List<Models.Match>>(jsonContent);
-
-            return matches;
+            return DataFileService.GetDataFile<FishingMatch>(DataFileType.Matches);            
         }
 
         [Route("api/v1/matches/{id}")]
-        public Models.Match Get([FromUri]int id)
+        public FishingMatch Get([FromUri]int id)
         {
-            List<Models.Match> matches = Get().ToList();
-            Models.Match matchToReturn = matches.SingleOrDefault(match => match.Id == id);
-            return matchToReturn;
+            List<FishingMatch> matches = Get().ToList();
+            FishingMatch fishingMatchToReturn = matches.SingleOrDefault(match => match.Id == id);
+            return fishingMatchToReturn;
         }
 
         [Route("api/v1/anglers/{anglerId}/matches")]
-        public IEnumerable<Models.Match> GetMatchesForAngler([FromUri] int anglerId)
+        public IEnumerable<FishingMatch> GetMatchesForAngler([FromUri] int anglerId)
         {
-            List<Models.Match> matches = Get().ToList();
-            IEnumerable<Models.Match> anglerMatches = matches.Where(m => m.MatchEntries.Any(me => me.AnglerId == anglerId));
+            List<FishingMatch> matches = Get().ToList();
+            IEnumerable<FishingMatch> anglerMatches = matches.Where(m => m.MatchEntries.Any(me => me.AnglerId == anglerId));
             return anglerMatches;
         }
 
         [Route("api/v1/matches/{id}/pairs")]
         public IEnumerable<PairResult> GetPairsMatch([FromUri]int id)
         {
-            Models.Match match = Get(id);
+            FishingMatch fishingMatch = Get(id);
             var pairResults = new List<PairResult>();
 
-            if (!match.IsPairs) return pairResults;
+            if (!fishingMatch.IsPairs) return pairResults;
 
-            foreach (MatchEntry matchEntry in match.MatchEntries)
+            foreach (MatchEntry matchEntry in fishingMatch.MatchEntries)
             {
                 bool toAdd = !pairResults.Any(pair => pair.Peg1 == matchEntry.Peg || pair.Peg2 == matchEntry.Peg);
 
@@ -57,7 +47,7 @@ namespace Match.Fishing.Controllers.v1
 
                 var matchEntryPair = new List<MatchEntry> { matchEntry };
 
-                MatchEntry pairedMatchEntry = match.MatchEntries.Single(me => me.PairedWithPeg == matchEntry.Peg);
+                MatchEntry pairedMatchEntry = fishingMatch.MatchEntries.Single(me => me.PairedWithPeg == matchEntry.Peg);
                 matchEntryPair.Add(pairedMatchEntry);
 
                 var pairResult = new PairResult

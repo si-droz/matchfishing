@@ -6,7 +6,7 @@
     module.service('leaguesService', function (EnvironmentConfig) {
         var service = this;
         const matchesUrl = `${EnvironmentConfig.serviceApi}/api/v1/matches`;
-        const leaguesUrl = '/json/leagues.json';
+        const leaguesUrl = `${EnvironmentConfig.serviceApi}/api/v1/leagues`;
 
         service.getLeagues = function getUniqueLeagues($http) {
             return $http.get(leaguesUrl)
@@ -16,21 +16,13 @@
         };
 
         service.getLeague = function getLeague($http, id) {
-            return $http.get(leaguesUrl)
+            return $http.get(`${leaguesUrl}/${id}`)
                 .then(function (response) {
-                    var leagues = response.data;
-                    var league = null;
-
-                    for (var index = 0; index < leagues.length; index++) {
-                        if (leagues[index].id == id) {
-                            return leagues[index];
-                        }
-                    }
-                    return league;
+                    return response.data;
                 });
         };
 
-        // this is woefully inefficient - but will eventually be replaced with web API calls 
+        // this is woefully inefficient - It will eventually be replaced with web API calls 
         service.getAnglersForLeague = function getAnglersForLeague($http, leagueId, topMatchCount) {
             return $http.get(matchesUrl)
                 .then(function (response) {

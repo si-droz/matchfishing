@@ -3,9 +3,9 @@ using Newtonsoft.Json;
 
 namespace Match.Fishing.Models
 {
-    public class Match
+    public class FishingMatch
     {
-        public Match()
+        public FishingMatch()
         {
             MatchEntries = new List<MatchEntry>();
         }
