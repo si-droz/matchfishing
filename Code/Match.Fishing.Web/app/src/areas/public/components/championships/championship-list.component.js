@@ -2,12 +2,12 @@
     'use strict';
     var module = angular.module('matchFishing');
 
-    function controller($http, championshipsService) {
+    function controller($http, seasonsService) {
         var model = this;
         model.seasons = [];
 
         model.$onInit = function () {
-            championshipsService.getUniqueSeasons($http).then(function (seasons) {
+            seasonsService.getUniqueSeasons($http).then(function (seasons) {
                 model.seasons = seasons.splice(1);
             });
         };
@@ -23,6 +23,6 @@
             $router: '<'
         },
         controllerAs: 'model',
-        controller: ['$http', 'championshipsService', controller]
+        controller: ['$http', 'seasonsService', controller]
     });
 }());

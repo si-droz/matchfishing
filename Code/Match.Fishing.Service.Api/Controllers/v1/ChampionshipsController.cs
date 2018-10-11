@@ -4,7 +4,6 @@ using System.Web.Http;
 using Match.Fishing.Enums;
 using Match.Fishing.Models;
 using Match.Fishing.Services;
-using Newtonsoft.Json;
 
 namespace Match.Fishing.Controllers.v1
 {
@@ -21,93 +20,45 @@ namespace Match.Fishing.Controllers.v1
                                                      .GroupBy(matchEntry => matchEntry.AnglerName)
                                                      .Select(group => group.Key);
 
-            var details = new List<ChampionshipAnglerDetails>();
-            foreach (string anglerName in anglerNames)
+            return (from anglerName in anglerNames
+                    let rounds = GetChampionshipRounds(matches, anglerName)
+                    select new ChampionshipAnglerDetails
+                           {
+                               Rounds = rounds,
+                               PointsTotal = rounds.Sum(matchEntry => matchEntry.Points),
+                               WeightTotal = rounds.Sum(matchEntry => matchEntry.Weight),
+                               Name = anglerName,
+                               MatchCount = rounds.Count(matchEntry => matchEntry.MatchFished)
+                           }).ToList();
+        }
+
+        private static List<ChampionshipRound> GetChampionshipRounds(IEnumerable<FishingMatch> matches, string anglerName)
+        {
+            var rounds = new List<ChampionshipRound>();
+            var championshipRoundIndex = 1;
+            foreach(FishingMatch match in matches)
             {
-                //TODO include rounds not fished.
-                IEnumerable<MatchEntry> anglerMatchEntries = matches.SelectMany(m => m.MatchEntries.Where(me => me.AnglerName == anglerName));
+                MatchEntry anglerMatchEntry = match.MatchEntries.SingleOrDefault(matchEntry => matchEntry.AnglerName == anglerName);
+                var championshipRound = new ChampionshipRound
+                                        {
+                                            Number = championshipRoundIndex,
+                                            Weight = 0,
+                                            Points = 0,
+                                            MatchFished = false
+                                        };
 
-                List<ChampionshipRound> rounds = anglerMatchEntries.Select((matchEntry, index) => new ChampionshipRound
+                if(anglerMatchEntry != null)
                 {
-                    Number = index + 1,
-                    Weight = matchEntry.Weight,
-                    Points = matchEntry.Points
-                }).ToList();
+                    championshipRound.Weight = anglerMatchEntry.Weight;
+                    championshipRound.Points = anglerMatchEntry.Points;
+                    championshipRound.MatchFished = true;
+                }
 
-                var championship = new ChampionshipAnglerDetails
-                {
-                    Rounds = rounds,
-                    PointsTotal = rounds.Sum(x => x.Points),
-                    WeightTotal = rounds.Sum(x => x.Weight),
-                    Name = anglerName,
-                    MatchCount = rounds.Count
-                };
-
-                details.Add(championship);
+                rounds.Add(championshipRound);
+                championshipRoundIndex += 1;
             }
 
-            return details;
+            return rounds;
         }
-        //service.getChampionship = function getChampionship($http, seasonId)
-        //{
-        //        var anglers = getAnglerDetails(uniqueAnglers, championshipMatches);
-
-        //        return anglers;
-        //    });
-        //};
-
-        //    function getAnglerDetails(uniqueAnglers, matches)
-        //    {
-        //        var anglers = [];
-        //        for (var anglerIndex = 0; anglerIndex < uniqueAnglers.length; anglerIndex++)
-        //        {
-        //            var angler = {
-        //            name: uniqueAnglers[anglerIndex],
-        //            rounds: [],
-        //            pointsTotal: 0,
-        //            weightTotal: 0,
-        //            matchCount: 0
-        //            };
-
-        //        for (var matchIndex = 0; matchIndex < matches.length; matchIndex++)
-        //        {
-        //            angler = getAnglerRounds(matches[matchIndex], matchIndex, angler)
-        //        }
-
-        //        anglers.push(angler);
-        //    }
-
-        //    return anglers;
-        //};
-
-        //function getAnglerRounds(match, matchIndex, angler)
-        //{
-        //    var roundAdded = false;
-        //    var round = {
-        //        number: matchIndex,
-        //        weight: 0,
-        //        points: 0
-        //    }
-
-        //    for (var matchEntryIndex = 0; matchEntryIndex<match.matchEntries.length; matchEntryIndex++) {
-        //        var matchEntry = match.matchEntries[matchEntryIndex];
-
-        //        if (angler.name == matchEntry.anglerName) {
-        //            round.weight = matchEntry.weight;
-        //            round.points = matchEntry.points;
-        //            angler.rounds.push(round);
-        //            angler.pointsTotal += round.points;
-        //            angler.weightTotal += round.weight;
-        //            angler.matchCount += 1;
-        //            roundAdded = true;
-        //        }
-        //    }
-
-        //    if (!roundAdded) {
-        //        angler.rounds.push(round);
-        //    }
-
-        //    return angler;
-        //};
     }
 }

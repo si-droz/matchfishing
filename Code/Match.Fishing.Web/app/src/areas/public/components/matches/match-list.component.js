@@ -13,7 +13,7 @@
                 model.matches = matches;
             });
 
-            seasonsService.getUniqueSeasons($http).then(function (seasons) {
+            seasonsService.getUniqueSeasonNames($http).then(function (seasons) {
                 model.seasons = seasons;
             });
         };

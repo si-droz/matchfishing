@@ -13,7 +13,7 @@
                 model.leagues = leagues;
             });
 
-            seasonsService.getUniqueSeasons($http).then(function (seasons) {
+            seasonsService.getUniqueSeasonNames($http).then(function (seasons) {
                 model.seasons = seasons;
             });
         };

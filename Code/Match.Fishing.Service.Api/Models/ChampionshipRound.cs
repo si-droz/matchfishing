@@ -10,5 +10,7 @@ namespace Match.Fishing.Models
         public double Weight { get; set; }
         [JsonProperty("points")]
         public double Points { get; set; }
+        [JsonIgnore]
+        public bool MatchFished { get; set; }
     }
 }

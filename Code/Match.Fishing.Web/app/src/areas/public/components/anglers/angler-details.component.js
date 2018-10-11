@@ -14,7 +14,7 @@
             anglersService.getAngler($http, next.params.id).then(function (angler) {
                 model.angler = angler;
 
-                seasonsService.getUniqueSeasons($http).then(function (seasons) {
+                seasonsService.getUniqueSeasonNames($http).then(function (seasons) {
                     model.seasons = seasons;
                 });
 
@@ -38,9 +38,6 @@
 
             return (model.selectedSeason === season);
         }
-
-        
-
     };
 
     module.component('anglerDetail', {
