@@ -19,3 +19,39 @@ html {
   background: #C5C7C5;
   color: #13A1A4;
 }*/
+.scrolling table {
+  table-layout: inherit;
+}
+.scrolling td, th {
+  vertical-align: top;
+}
+
+.scrolling td.h-header
+{
+  font-weight: bold;
+}
+
+.scrolling td.weight{
+  min-width: 100px;
+}
+
+.scrolling td.points{
+  min-width: 50px;
+}
+
+.scrolling th 
+{
+  position: absolute;
+  left: 0;
+  width: 200px;
+}
+.outer 
+{
+  position: relative
+}
+.inner 
+{
+  overflow-x: auto;
+  overflow-y: visible;
+  margin-left: 200px;
+}

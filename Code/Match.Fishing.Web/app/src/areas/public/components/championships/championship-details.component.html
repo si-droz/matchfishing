@@ -7,55 +7,60 @@
 <h4 class="page-header">
     Results
 </h4>
-<div class="table-responsive">
-    <table class="table table-striped table-hover">
-        <tr>
-            <th class="">
-                Round
-            </th>
-            <th colspan="2" ng-repeat="match in model.rounds">
-                {{$index + 1}}
-            </th>
-            <th rowspan="2">
-                Matches fished
-            </th>
-            <th rowspan="2">
-                Avg. Pnts.
-            </th>
-            <th rowspan="2">
-                Weight total
-            </th>
-            <th rowspan="2">
-                Points total
-            </th>
-            <th rowspan="2">
-                Pos.
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Angler
-            </th>
-            <th ng-repeat-start="match in model.rounds">
-                Weight
-            </th>
-            <th ng-repeat-end>
-                Pnts
-            </th>
-        </tr>
-        <tr ng-repeat="angler in model.anglers| orderBy:['-pointsTotal','-weightTotal']">
-            <td>{{angler.name}}</td>
-            <td ng-repeat-start="round in angler.rounds">
-                {{round.weight| weightToText}}
-            </td>
-            <td ng-repeat-end>
-                {{round.points}}
-            </td>
-            <td>{{angler.matchCount}}</td>
-            <td>{{angler.pointsTotal / angler.matchCount | number :2 }}</td>
-            <td>{{angler.weightTotal | weightToText}}</td>
-            <td>{{angler.pointsTotal}}</td>
-            <td>{{$index + 1}}</td>
-        </tr>
-    </table>
+<div class="scrolling outer">
+    <div class="inner">
+
+        <div class="table-responsive">
+            <table class="table table-striped table-hover table-sm">
+                <tr>
+                    <th>
+                        Round
+                    </th>
+                    <td class="h-header" colspan="2" ng-repeat="match in model.rounds">
+                        {{match.number}}
+                    </td>
+                    <td class="h-header" rowspan="2">
+                        Matches fished
+                    </td>
+                    <td class="h-header" rowspan="2">
+                        Avg. Pnts.
+                    </td>
+                    <td class="h-header" rowspan="2">
+                        Weight total
+                    </td>
+                    <td class="h-header" rowspan="2">
+                        Points total
+                    </td>
+                    <td class="h-header" rowspan="2">
+                        Pos.
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Angler
+                    </th>
+                    <td class="weight h-header" ng-repeat-start="match in model.rounds">
+                        Weight
+                    </td>
+                    <td class="points h-header" ng-repeat-end>
+                        Pnts
+                    </td>
+                </tr>
+                <tr ng-repeat="angler in model.anglers| orderBy:['-pointsTotal','-weightTotal']">
+                    <th>{{angler.name}}</th>
+                    <td class="weight" ng-repeat-start="round in angler.rounds">
+                        {{round.weight| weightToText}}
+                    </td>
+                    <td class="points" ng-repeat-end>
+                        {{round.points}}
+                    </td>
+                    <td>{{angler.matchCount}}</td>
+                    <td class="points">{{angler.pointsTotal / angler.matchCount | number :2 }}</td>
+                    <td class="weight">{{angler.weightTotal | weightToText}}</td>
+                    <td class="points">{{angler.pointsTotal}}</td>
+                    <td>{{$index + 1}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </div>
