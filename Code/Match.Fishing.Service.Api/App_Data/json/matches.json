@@ -3461,7 +3461,72 @@
         "isTrophyMatch": true,
         "isPairs": false,
         "trophyName": "Appledore Cup",
-        "matchEntries": []
+      "matchEntries": [
+        {
+          "peg": 10,
+          "weight": 89,
+          "position": 2,
+          "points": 11,
+          "anglerId": 1,
+          "anglerName": "Simon Drozdziol"
+        },
+        {
+          "peg": 8,
+          "weight": 64.75,
+          "position": 6,
+          "points": 7,
+          "anglerId": 5,
+          "anglerName": "Darryl Anderson"
+        },
+        {
+          "peg": 3,
+          "weight": 51,
+          "position": 5,
+          "points": 8,
+          "anglerId": 28,
+          "anglerName": "Paul Stacey"
+        },
+        {
+          "peg": 4,
+          "weight": 97.75,
+          "position": 2,
+          "points": 13,
+          "anglerId": 26,
+          "anglerName": "Doug Robinson"
+        },
+        {
+          "peg": 9,
+          "weight": 27.5,
+          "position": 7,
+          "points": 6,
+          "anglerId": 8,
+          "anglerName": "Pete Deverick"
+        },
+        {
+          "peg": 7,
+          "weight": 71.75,
+          "position": 3,
+          "points": 10,
+          "anglerId": 24,
+          "anglerName": "Mike Clarke"
+        },
+        {
+          "peg": 1,
+          "weight": 51.75,
+          "position": 4,
+          "points": 9,
+          "anglerId": 4,
+          "anglerName": "Darren James"
+        },
+        {
+          "peg": 5,
+          "weight": 16.5,
+          "position": 8,
+          "points": 5,
+          "anglerId": 29,
+          "anglerName": "Paul Petrie"
+        }
+      ]
     },
     {
         "id": 44,
