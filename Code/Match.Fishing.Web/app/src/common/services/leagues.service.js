@@ -123,7 +123,10 @@
 
         function getTopRounds(angler, rounds, topMatchCount) {
             rounds.sort(function (a, b) {
-                return b.points - a.points
+                if(b.points !== a.points){
+                    return b.points - a.points;
+                }
+                return b.weight - a.weight;
             });
 
             var topRounds = rounds;

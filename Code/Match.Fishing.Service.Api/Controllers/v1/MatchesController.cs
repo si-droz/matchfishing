@@ -12,7 +12,7 @@ namespace Match.Fishing.Controllers.v1
         [Route("api/v1/matches")]
         public IEnumerable<FishingMatch> Get()
         {
-            return DataFileService.GetDataFile<FishingMatch>(DataFileType.Matches);            
+            return DataFileService.GetDataFile<FishingMatch>(DataFileType.Matches);
         }
 
         [Route("api/v1/matches/{id}")]
@@ -21,6 +21,15 @@ namespace Match.Fishing.Controllers.v1
             List<FishingMatch> matches = Get().ToList();
             FishingMatch fishingMatchToReturn = matches.SingleOrDefault(match => match.Id == id);
             return fishingMatchToReturn;
+        }
+
+        [Route("api/v1/seasons/{seasonId}/matches")]
+        public IEnumerable<FishingMatch> GetMatchesForSeason([FromUri]int seasonId)
+        {
+            List<FishingMatch> matches = Get().ToList();
+            IEnumerable<FishingMatch> matchesToReturn = matches.Where(match => match.SeasonId == seasonId)
+                                                               .OrderBy(match => match.Date);
+            return matchesToReturn;
         }
 
         [Route("api/v1/anglers/{anglerId}/matches")]
