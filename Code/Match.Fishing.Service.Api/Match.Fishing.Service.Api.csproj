@@ -116,6 +116,7 @@
     <Content Include="App_Data\json\anglers.json" />
     <Content Include="App_Data\json\leagues.json" />
     <Content Include="App_Data\json\matches.json" />
+    <Content Include="App_Data\json\leaguePointsMapping.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
