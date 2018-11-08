@@ -78,7 +78,7 @@ namespace Match.Fishing.Controllers.v1
 
             }
 
-            return pairResults;
+            return pairResults.OrderByDescending(result => result.Weight);
         }
 
         // POST: api/Matches
