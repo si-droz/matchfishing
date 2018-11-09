@@ -20,20 +20,23 @@
         service.getMatch = function getMatch($http, id) {
             return $http.get(`${matchesUrl}/${id}`)
                 .then(function (response) {
-                    return response.data;                    
+                    return response.data;
                 }).catch(function (data) {
                     console.debug(data);
                 });
         };
 
-        service.postMatchEntry = function postMatchEntry($http, id) {
-
+        service.addMatchEntry = function addMatchEntry($http, entryToAdd) {
+            return $http.post(`${EnvironmentConfig.serviceApi}/api/v1/matches/${entryToAdd.matchId}/entries`, entryToAdd)
+                .then(function (response) {
+                    return response.data;
+                });
         }
 
-        service.getMatchesForAngler = function getMatchesForAngler($http, anglerId) {           
+        service.getMatchesForAngler = function getMatchesForAngler($http, anglerId) {
             return $http.get(`${EnvironmentConfig.serviceApi}/api/v1/anglers/${anglerId}/matches`)
                 .then(function (response) {
-                    return response.data;                    
+                    return response.data;
                 }).catch(function (data) {
                     console.debug(data);
                 });
@@ -46,6 +49,6 @@
                 }).catch(function (data) {
                     console.debug(data);
                 });
-        };        
+        };
     });
 }());

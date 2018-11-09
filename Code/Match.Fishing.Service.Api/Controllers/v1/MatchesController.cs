@@ -4,6 +4,7 @@ using System.Web.Http;
 using Match.Fishing.Enums;
 using Match.Fishing.Models;
 using Match.Fishing.Services;
+using Newtonsoft.Json;
 
 namespace Match.Fishing.Controllers.v1
 {
@@ -82,18 +83,35 @@ namespace Match.Fishing.Controllers.v1
         }
 
         // POST: api/Matches
-        public void Post([FromBody]string value)
+        [Route("api/v1/matches/{matchId}/entries")]
+        [HttpPost]
+        public IHttpActionResult Post(int matchId, [FromBody] EntryToAdd entryToAdd)
         {
+            var model = new
+            {
+                matchId,
+                entryToAdd.Peg,
+                entryToAdd.AnglerName,
+                entryToAdd.Pounds,
+                entryToAdd.Ounces
+            };
+            
+            return Ok(model);
         }
+    }
 
-        // PUT: api/Matches/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
+    public class EntryToAdd
+    {
+        [JsonProperty("peg")]
+        public int Peg { get; set; }
 
-        // DELETE: api/Matches/5
-        public void Delete(int id)
-        {
-        }
+        [JsonProperty("anglerName")]
+        public string AnglerName { get; set; }
+
+        [JsonProperty("pounds")]
+        public int Pounds { get; set; }
+
+        [JsonProperty("ounces")]
+        public int Ounces { get; set; }
     }
 }

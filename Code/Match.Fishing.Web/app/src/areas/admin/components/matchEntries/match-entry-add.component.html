@@ -32,27 +32,26 @@
 </div>
 
 <div class="well clearfix">
-    <form>
+    <form>        
         <div class="form-row">
             <div class="col-md-1">
                 <label class="sr-only" for="inputPeg">Peg</label>
-                <input type="text" class="form-control" id="inputPeg" placeholder="Peg">
+                <input type="number" class="form-control" id="inputPeg" placeholder="Peg" ng-model="model.entryToAdd.peg">
             </div>
             <div class="col-md-5">
                 <label class="sr-only" for="inputAnglerName">Angler name</label>
-                <input type="text" class="form-control" id="inputAnglerName" placeholder="Angler name">
+                <input type="text" class="form-control" id="inputAnglerName" placeholder="Angler name" ng-model="model.entryToAdd.anglerName">
             </div>
             <div class="col-md-1">
                 <label class="sr-only" for="inputWeightPounds">Weight pounds</label>
-                <input type="text" class="form-control" id="inputWeightPounds" placeholder="Lbs">
+                <input type="number" class="form-control" id="inputWeightPounds" placeholder="Lbs" ng-model="model.entryToAdd.pounds">
             </div>
             <div class="col-md-1">
                 <label class="sr-only" for="inputWeightOunces">Weight ounces</label>
-                <input type="text" class="form-control" id="inputWeightOunces" placeholder="Oz">
+                <input type="number" class="form-control" id="inputWeightOunces" placeholder="Oz" ng-model="model.entryToAdd.ounces">
             </div>
             <div class="col-md-3">
-                <button type="submit" class="btn btn-primary">Add</button>
-                <button type="submit" class="btn btn-primary">Calculate Points</button>
+                <button type="button" class="btn btn-primary" ng-click="model.addMatchEntry(model.entryToAdd)">Add</button>
             </div>
         </div>
     </form>

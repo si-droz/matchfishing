@@ -6,14 +6,24 @@
     function controller($http, matchesService) {
         var model = this;        
         model.match = null;
+        model.entryToAdd = null;
         model.pairs = [];
 
         model.$routerOnActivate = function (next) {
             matchesService.getMatch($http, next.params.matchId).then(function (match) {
                 model.match = match;
+                model.entryToAdd = {
+                    "matchId": match.id
+                };
                 matchesService.getPairs($http, next.params.matchId).then(function(pairs){
                     model.pairs = pairs;
                 });
+            });
+        };
+
+        model.addMatchEntry = function(entryToAdd){
+            matchesService.addMatchEntry($http, entryToAdd).then(function(response) {
+                
             });
         };
     };

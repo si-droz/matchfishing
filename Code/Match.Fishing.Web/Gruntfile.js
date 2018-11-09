@@ -42,6 +42,9 @@ module.exports = function (grunt) {
             },
             bootstrapMinCss: {
                 src: 'node_modules/bootstrap/dist/css/'
+            },
+            webConfig: {
+                src: 'web.config'
             }
         },
         concat: {
@@ -87,6 +90,7 @@ module.exports = function (grunt) {
                     { '<%= dirs.devPath.src %>/app.js': '<%= files.appJs.src %>' },
                     { '<%= dirs.devPath.src %>/css/style.css': '<%= files.css.src %>' },
                     { '<%= dirs.devPath.src %>/index.html': '<%= files.index.src %>' },
+                    { '<%= dirs.devPath.src %>/web.config': '<%= files.webConfig.src %>' },
                     { expand: true, cwd: '<%= files.jsonData.src %>', src: '**/*.json', dest: '<%= dirs.devPath.src %>/json/' },
                     { expand: true, cwd: '<%= files.componentHtml.src %>', src: '**/*.html', dest: '<%= dirs.devPath.src %>/' },
                     { expand: true, cwd: '<%= files.bootstrapMinCss.src %>', src: '**/*.min.*', dest: '<%= dirs.devPath.src %>/css/' }
@@ -97,6 +101,7 @@ module.exports = function (grunt) {
                     { '<%= dirs.distPath.src %>/app.js': '<%= files.appJs.src %>' },
                     { '<%= dirs.distPath.src %>/css/style.css': '<%= files.css.src %>' },
                     { '<%= dirs.distPath.src %>/index.html': '<%= files.index.src %>' },
+                    { '<%= dirs.distPath.src %>/web.config': '<%= files.webConfig.src %>' },
                     { expand: true, cwd: '<%= files.jsonData.src %>', src: '**/*.json', dest: '<%= dirs.distPath.src %>/' },
                     { expand: true, cwd: '<%= files.componentHtml.src %>', src: '**/*.html', dest: '<%= dirs.distPath.src %>/' },
                     { expand: true, cwd: '<%= files.bootstrapMinCss.src %>', src: '**/*.min.*', dest: '<%= dirs.distPath.src %>/css/' }
