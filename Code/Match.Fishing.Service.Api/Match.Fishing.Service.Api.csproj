@@ -96,6 +96,7 @@
     <Compile Include="Models\ChampionshipAnglerDetails.cs" />
     <Compile Include="Controllers\v1\ChampionshipsController.cs" />
     <Compile Include="Controllers\v1\SeasonsController.cs" />
+    <Compile Include="Models\PositionToPointsMapping.cs" />
     <Compile Include="Models\League.cs" />
     <Compile Include="Models\Angler.cs" />
     <Compile Include="Controllers\v1\AnglersController.cs" />
@@ -116,7 +117,7 @@
     <Content Include="App_Data\json\anglers.json" />
     <Content Include="App_Data\json\leagues.json" />
     <Content Include="App_Data\json\matches.json" />
-    <Content Include="App_Data\json\leaguePointsMapping.json" />
+    <Content Include="App_Data\json\positionToPointsMapping.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

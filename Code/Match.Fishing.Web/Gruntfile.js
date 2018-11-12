@@ -15,7 +15,8 @@ module.exports = function (grunt) {
                     'node_modules/angular1-component-router/angular_1_router.js',
                     'node_modules/angular-animate/angular-animate.js',
                     'node_modules/angular-touch/angular-touch.js',
-                    'node_modules/angular-applicationinsights/build/angular-applicationinsights.min.js'
+                    'node_modules/angular-applicationinsights/build/angular-applicationinsights.min.js',
+                    'node_modules/angular-messages/angular-messages.js'
                 ]
             },
             appJs: {

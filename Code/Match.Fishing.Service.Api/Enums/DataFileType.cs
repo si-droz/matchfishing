@@ -4,6 +4,7 @@
     {
         Anglers = 0,
         Leagues = 1,
-        Matches = 2
+        Matches = 2,
+        PositionToPointsMapping = 3
     }
 }

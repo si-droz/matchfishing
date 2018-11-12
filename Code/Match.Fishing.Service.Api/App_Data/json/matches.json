@@ -15,6 +15,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Shanks & McEwan",
+    "positionToPointsMappingId": 1,
     "matchEntries": []
   },
   {
@@ -33,6 +34,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Shanks & McEwan",
+    "positionToPointsMappingId": 1,
     "matchEntries": []
   },
   {
@@ -51,6 +53,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Shanks & McEwan",
+    "positionToPointsMappingId": 1,
     "matchEntries": []
   },
   {
@@ -69,6 +72,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Shanks & McEwan",
+    "positionToPointsMappingId": 1,
     "matchEntries": []
   },
   {
@@ -87,6 +91,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 5,
@@ -210,6 +215,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 1,
@@ -292,6 +298,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Tarton Shield",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 5,
@@ -374,6 +381,7 @@
     "isTrophyMatch": true,
     "isPairs": true,
     "trophyName": "Pairs",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 2,
@@ -456,6 +464,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Dick Mitchell",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 9,
@@ -554,6 +563,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Phil Stone Cup",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 8,
@@ -645,6 +655,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Lund Conlon",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 11,
@@ -736,6 +747,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 16,
@@ -835,6 +847,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Appledore Cup",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 45,
@@ -910,6 +923,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 4,
@@ -977,6 +991,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 15,
@@ -1036,6 +1051,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 11,
@@ -1095,6 +1111,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 8,
@@ -1178,6 +1195,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 8,
@@ -1253,6 +1271,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Shanks & McEwan",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 10,
@@ -1328,6 +1347,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 3,
@@ -1458,6 +1478,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Phil Stone Cup",
+    "positionToPointsMappingId": 1,
     "matchEntries": []
   },
   {
@@ -1476,6 +1497,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 12,
@@ -1574,6 +1596,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Tartan Shield",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 2,
@@ -1648,6 +1671,7 @@
     "isTrophyMatch": true,
     "isPairs": true,
     "trophyName": "Pairs",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 16,
@@ -1730,6 +1754,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Dick Mitchell",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 10,
@@ -1797,6 +1822,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Lund Conlon",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 4,
@@ -1896,6 +1922,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 8,
@@ -1995,6 +2022,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Appledore Cup",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 25,
@@ -2062,6 +2090,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 3,
@@ -2153,6 +2182,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 7,
@@ -2260,6 +2290,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 1,
@@ -2391,6 +2422,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 18,
@@ -2482,6 +2514,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 5,
@@ -2581,6 +2614,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Shanks & McEwan",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 12,
@@ -2672,6 +2706,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 11,
@@ -2746,6 +2781,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Phil Stone Cup",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 13,
@@ -2853,6 +2889,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 4,
@@ -2952,6 +2989,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Dick Mitchell",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 34,
@@ -3034,6 +3072,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Tarton Shield",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 18,
@@ -3157,6 +3196,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Lund Conlon",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 53,
@@ -3279,6 +3319,7 @@
     "isTrophyMatch": true,
     "isPairs": true,
     "trophyName": "Pairs",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 6,
@@ -3370,6 +3411,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 34,
@@ -3461,6 +3503,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Appledore Cup",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 10,
@@ -3544,6 +3587,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": [
       {
         "peg": 9,
@@ -3643,6 +3687,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": []
   },
   {
@@ -3661,6 +3706,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": []
   },
   {
@@ -3679,6 +3725,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": []
   },
   {
@@ -3697,6 +3744,7 @@
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
+    "positionToPointsMappingId": 1,
     "matchEntries": []
   },
   {
@@ -3715,6 +3763,7 @@
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Shanks & McEwan",
+    "positionToPointsMappingId": 1,
     "matchEntries": []
   }
 ]

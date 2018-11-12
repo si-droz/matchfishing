@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 using Match.Fishing.Enums;
@@ -87,23 +88,95 @@ namespace Match.Fishing.Controllers.v1
         [HttpPost]
         public IHttpActionResult Post(int matchId, [FromBody] EntryToAdd entryToAdd)
         {
-            var model = new
+            List<FishingMatch> fishingMatches = Get().ToList();
+
+            FishingMatch fishingMatch = fishingMatches.SingleOrDefault(match => match.Id == matchId);
+
+            if (fishingMatch == null) return NotFound();
+
+            fishingMatch.MatchEntries.Add(new MatchEntry
             {
-                matchId,
-                entryToAdd.Peg,
-                entryToAdd.AnglerName,
-                entryToAdd.Pounds,
-                entryToAdd.Ounces
-            };
-            
-            return Ok(model);
+                AnglerName = entryToAdd.AnglerName,
+                AnglerId = entryToAdd.AnglerId,
+                Peg = entryToAdd.Peg,
+                Weight = entryToAdd.Pounds + (entryToAdd.Ounces / 16)
+            });
+
+            DataFileService.WriteDataFile(DataFileType.Matches, fishingMatches);
+
+            return Created(string.Empty, entryToAdd);
         }
+
+        [Route("api/v1/matches/{matchId}/calculate-points")]
+        [HttpPost]
+        public IHttpActionResult CalculatePoints(int matchId)
+        {
+            List<FishingMatch> fishingMatches = Get().ToList();
+
+            FishingMatch fishingMatch = fishingMatches.SingleOrDefault(match => match.Id == matchId);
+
+            if (fishingMatch == null) return NotFound();
+
+            CopyCalculatedMatchEntriesToMatch(fishingMatch);
+
+            DataFileService.WriteDataFile(DataFileType.Matches, fishingMatches);
+
+            return Ok();
+        }
+
+        private static void CopyCalculatedMatchEntriesToMatch(FishingMatch fishingMatch)
+        {
+            List<MatchEntry> sortedMatchEntries = GetMatchEntriesSortedByWeight(fishingMatch);
+
+            foreach (MatchEntry matchEntry in fishingMatch.MatchEntries)
+            {
+                MatchEntry calculatedMatchEntry = sortedMatchEntries.SingleOrDefault(entry => entry.AnglerId == matchEntry.AnglerId);
+                if (calculatedMatchEntry == null) throw new Exception("Angler not found");
+
+                matchEntry.Position = calculatedMatchEntry.Position;
+                matchEntry.Points = calculatedMatchEntry.Points;
+            }
+        }
+
+        private static List<MatchEntry> GetMatchEntriesSortedByWeight(FishingMatch fishingMatch)
+        {
+            List<MatchEntry> sortedMatchEntries = fishingMatch.MatchEntries.OrderByDescending(matchEntry => matchEntry.Weight).ToList();
+
+            PositionToPointsMapping positionToPointsMapping = DataFileService.GetDataFile<PositionToPointsMapping>(DataFileType.PositionToPointsMapping)
+                                                                             .SingleOrDefault(mapping => mapping.Id == fishingMatch.PositionToPointsMappingId);
+
+            if (positionToPointsMapping == null) throw new Exception("Position to points mapping not found");
+
+            for (var index = 0; index < sortedMatchEntries.Count; index++)
+            {
+                sortedMatchEntries[index].Position = index + 1;
+
+                if (Math.Abs(sortedMatchEntries[index].Weight) <= 0)
+                {
+                    sortedMatchEntries[index].Points = positionToPointsMapping.DidNotWeighPoints;
+                    continue;
+                }
+
+                if (index > positionToPointsMapping.PositionToPoints.Count - 1)
+                {
+                    sortedMatchEntries[index].Points = positionToPointsMapping.PositionToPoints.Last().Points;
+                    continue;
+                }
+
+                sortedMatchEntries[index].Points = positionToPointsMapping.PositionToPoints[index].Points;
+            }
+
+            return sortedMatchEntries;
+        }        
     }
 
     public class EntryToAdd
     {
         [JsonProperty("peg")]
         public int Peg { get; set; }
+
+        [JsonProperty("anglerId")]
+        public int AnglerId { get; set; }
 
         [JsonProperty("anglerName")]
         public string AnglerName { get; set; }

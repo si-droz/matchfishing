@@ -28,7 +28,7 @@ namespace Match.Fishing.Models
         [JsonProperty("league")]
         public string League { get; set; }
         [JsonProperty("noOfPegs")]
-        public string NoOfPegs { get; set; }
+        public int NoOfPegs { get; set; }
         [JsonProperty("poolsFee")]
         public decimal PoolsFee { get; set; }
         [JsonProperty("dayTicketFee")]
@@ -39,6 +39,8 @@ namespace Match.Fishing.Models
         public bool IsPairs { get; set; }
         [JsonProperty("trophyName")]
         public string TrophyName { get; set; }
+        [JsonProperty("positionToPointsMappingId")]
+        public int PositionToPointsMappingId { get; set; }
         [JsonProperty("matchEntries")]
         public List<MatchEntry> MatchEntries { get; set; }
     }

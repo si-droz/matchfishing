@@ -32,27 +32,57 @@
 </div>
 
 <div class="well clearfix">
-    <form>        
+    <form name="matchEntryForm" novalidate autocomplete="off">
         <div class="form-row">
-            <div class="col-md-1">
+            <div class="col-md-1" ng-class="{'has-error': matchEntryForm.inputPeg.$invalid && matchEntryForm.inputPeg.$dirty}">
                 <label class="sr-only" for="inputPeg">Peg</label>
-                <input type="number" class="form-control" id="inputPeg" placeholder="Peg" ng-model="model.entryToAdd.peg">
+                <input type="number" class="form-control" id="inputPeg" name="inputPeg" placeholder="Peg" ng-model="model.entryToAdd.peg"
+                    min=1 required>
+                <div ng-messages="matchEntryForm.inputPeg.$error" ng-show="matchEntryForm.inputPeg.$dirty">
+                    <div ng-message="required" class="text-danger">
+                        Peg is required</div>
+                    <div ng-message="min" class="text-danger">
+                        Peg must be greater than 0</div>
+                </div>
             </div>
-            <div class="col-md-5">
-                <label class="sr-only" for="inputAnglerName">Angler name</label>
-                <input type="text" class="form-control" id="inputAnglerName" placeholder="Angler name" ng-model="model.entryToAdd.anglerName">
+        </div>
+        <div class="col-md-5" ng-class="{'has-error': matchEntryForm.inputAnglerName.$invalid && matchEntryForm.inputAnglerName.$dirty}">
+            <label class="sr-only" for="inputAnglerName">Angler name</label>               
+            <select class="form-control" id="inputAnglerName" placeholder="Angler name" name="inputAnglerName" ng-model="model.entryToAdd.selectedAngler" ng-options="angler.forename + ' ' + angler.surname for angler in model.anglers | orderBy:'forename'"></select>
+
+            <div ng-messages="matchEntryForm.inputAnglerName.$error" ng-show="matchEntryForm.inputAnglerName.$dirty">
+                <div ng-message="required" class="text-danger">
+                    Angler name is required.</div>
             </div>
-            <div class="col-md-1">
-                <label class="sr-only" for="inputWeightPounds">Weight pounds</label>
-                <input type="number" class="form-control" id="inputWeightPounds" placeholder="Lbs" ng-model="model.entryToAdd.pounds">
+        </div>
+        <div class="col-md-1" ng-class="{'has-error': matchEntryForm.inputWeightPounds.$invalid && matchEntryForm.inputWeightPounds.$dirty}">
+            <label class="sr-only" for="inputWeightPounds">Weight pounds</label>
+            <input type="number" class="form-control" id="inputWeightPounds" name="inputWeightPounds" placeholder="Lbs"
+                ng-model="model.entryToAdd.pounds" min=0 required>
+            <div ng-messages="matchEntryForm.inputWeightPounds.$error" ng-show="matchEntryForm.inputWeightPounds.$dirty">
+                <div ng-message="required" class="text-danger">
+                    Pounds are required.</div>
+                <div ng-message="min" class="text-danger">
+                    Pounds must be 0 or greater</div>
             </div>
-            <div class="col-md-1">
-                <label class="sr-only" for="inputWeightOunces">Weight ounces</label>
-                <input type="number" class="form-control" id="inputWeightOunces" placeholder="Oz" ng-model="model.entryToAdd.ounces">
+        </div>
+        <div class="col-md-1" ng-class="{'has-error': matchEntryForm.inputWeightOunces.$invalid && matchEntryForm.inputWeightOunces.$dirty}">
+            <label class="sr-only" for="inputWeightOunces">Weight ounces</label>
+            <input type="number" class="form-control" id="inputWeightOunces" name="inputWeightOunces" placeholder="Oz"
+                ng-model="model.entryToAdd.ounces" min=0 max=15 required>
+            <div ng-messages="matchEntryForm.inputWeightOunces.$error" ng-show="matchEntryForm.inputWeightOunces.$dirty">
+                <div ng-message="required" class="text-danger">
+                    Ounces are required.</div>
+                <div ng-message="min" class="text-danger">
+                    Ounces must be 0 or greater</div>
+                <div ng-message="max" class="text-danger">
+                    Ounces must be 15 or less</div>
             </div>
-            <div class="col-md-3">
-                <button type="button" class="btn btn-primary" ng-click="model.addMatchEntry(model.entryToAdd)">Add</button>
-            </div>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary" ng-class="{'disabled': matchEntryForm.$invalid}" ng-click="model.addMatchEntry(model.entryToAdd, matchEntryForm)"
+                ng-disabled="matchEntryForm.$invalid">Add</button>
+            <!-- <button type="button" class="btn btn-primary" ng-click="model.addMatchEntry(model.entryToAdd)">Add</button> -->
         </div>
     </form>
 </div>

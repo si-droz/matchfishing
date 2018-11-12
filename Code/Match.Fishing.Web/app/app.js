@@ -4,6 +4,7 @@
   var module = angular.module("matchFishing", [
     "ngComponentRouter"
     , "ngAnimate"
+    , "ngMessages"
     , "ui.bootstrap"
   ]).constant("EnvironmentConfig",
   {

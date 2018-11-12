@@ -9,9 +9,11 @@ namespace Match.Fishing.Services
 {
     internal static class DataFileService
     {
+        private const string JsonPath = "~/App_Data/json/{0}.json";
+
         public static IEnumerable<TModel> GetDataFile<TModel>(DataFileType dataFileType)
         {
-            string jsonFilePath = HostingEnvironment.MapPath($"~/App_Data/json/{dataFileType.ToString().ToLower()}.json");
+            string jsonFilePath = HostingEnvironment.MapPath(string.Format(JsonPath, dataFileType.ToString().ToLower()));
 
             if (string.IsNullOrWhiteSpace(jsonFilePath)) throw new ArgumentNullException();
 
@@ -20,6 +22,17 @@ namespace Match.Fishing.Services
             var models = JsonConvert.DeserializeObject<IEnumerable<TModel>>(jsonContent);
 
             return models;
+        }
+
+        public static void WriteDataFile<TModel>(DataFileType dataFileType, IEnumerable<TModel> model)
+        {
+            string jsonFilePath = HostingEnvironment.MapPath(string.Format(JsonPath, dataFileType.ToString().ToLower()));
+
+            if (string.IsNullOrWhiteSpace(jsonFilePath)) throw new ArgumentNullException();
+
+            string jsonDataToWrite = JsonConvert.SerializeObject(model, Formatting.Indented);
+
+            File.WriteAllText(jsonFilePath, jsonDataToWrite);
         }
     }
 }

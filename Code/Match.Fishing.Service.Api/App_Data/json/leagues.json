@@ -4,16 +4,15 @@
     "season": "12/13",
     "name": "Kingfisher Winter League",
     "noOfRounds": 6,
-    "countingRounds": 5,
-    "leaguePointsMappingId": 1
+    "countingRounds": 5
+    
   },
   {
     "id": 2,
     "season": "13/14",
     "name": "Kingfisher Winter League",
     "noOfRounds": 6,
-    "countingRounds": 5,
-    "leaguePointsMappingId": 1
+    "countingRounds": 5
   },
   {
     "id": 3,
@@ -27,55 +26,48 @@
     "season": "15/16",
     "name": "Kingfisher Winter League",
     "noOfRounds": 6,
-    "countingRounds": 5,
-    "leaguePointsMappingId": 1
+    "countingRounds": 5
   },
   {
     "id": 8,
     "season": "16/17",
     "name": "Kingfisher Summer League",
     "noOfRounds": 6,
-    "countingRounds": 5,
-    "leaguePointsMappingId": 1
+    "countingRounds": 5
   },
   {
     "id": 5,
     "season": "16/17",
     "name": "Kingfisher Winter League",
     "noOfRounds": 6,
-    "countingRounds": 5,
-    "leaguePointsMappingId": 1
+    "countingRounds": 5
   },
   {
     "id": 6,
     "season": "17/18",
     "name": "Kingfisher Summer League",
     "noOfRounds": 6,
-    "countingRounds": 5,
-    "leaguePointsMappingId": 1
+    "countingRounds": 5
   },
   {
     "id": 7,
     "season": "17/18",
     "name": "Kingfisher Winter League",
     "noOfRounds": 6,
-    "countingRounds": 5,
-    "leaguePointsMappingId": 1
+    "countingRounds": 5
   },
   {
     "id": 9,
     "season": "18/19",
     "name": "Kingfisher Summer League",
     "noOfRounds": 6,
-    "countingRounds": 5,
-    "leaguePointsMappingId": 1
+    "countingRounds": 5
   },
   {
     "id": 10,
     "season": "18/19",
     "name": "Kingfisher Winter League",
     "noOfRounds": 6,
-    "countingRounds": 5,
-    "leaguePointsMappingId": 1
+    "countingRounds": 5
   }
 ]
