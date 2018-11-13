@@ -5,12 +5,13 @@ using System.Web.Http;
 using Match.Fishing.Enums;
 using Match.Fishing.Models;
 using Match.Fishing.Services;
-using Newtonsoft.Json;
 
 namespace Match.Fishing.Controllers.v1
 {
     public class MatchesController : ApiController
     {
+        private const double OuncesInPound = 16.0;
+
         [Route("api/v1/matches")]
         public IEnumerable<FishingMatch> Get()
         {
@@ -83,6 +84,19 @@ namespace Match.Fishing.Controllers.v1
             return pairResults.OrderByDescending(result => result.Weight);
         }
 
+        [Route("api/v1/matches/{matchId}/entries")]
+        [HttpGet]
+        public IHttpActionResult GetMatchEntries(int matchId)
+        {
+            List<FishingMatch> fishingMatches = Get().ToList();
+
+            FishingMatch fishingMatch = fishingMatches.SingleOrDefault(match => match.Id == matchId);
+
+            if (fishingMatch == null) return NotFound();
+
+            return Ok(fishingMatch.MatchEntries);
+        }
+
         // POST: api/Matches
         [Route("api/v1/matches/{matchId}/entries")]
         [HttpPost]
@@ -94,13 +108,17 @@ namespace Match.Fishing.Controllers.v1
 
             if (fishingMatch == null) return NotFound();
 
-            fishingMatch.MatchEntries.Add(new MatchEntry
+            var matchEntry = new MatchEntry
             {
                 AnglerName = entryToAdd.AnglerName,
                 AnglerId = entryToAdd.AnglerId,
                 Peg = entryToAdd.Peg,
-                Weight = entryToAdd.Pounds + (entryToAdd.Ounces / 16)
-            });
+                Weight = entryToAdd.Pounds + (entryToAdd.Ounces / OuncesInPound)
+            };
+
+            fishingMatch.MatchEntries.Add(matchEntry);
+
+            CalculateMatchPoints(fishingMatch);
 
             DataFileService.WriteDataFile(DataFileType.Matches, fishingMatches);
 
@@ -117,28 +135,14 @@ namespace Match.Fishing.Controllers.v1
 
             if (fishingMatch == null) return NotFound();
 
-            CopyCalculatedMatchEntriesToMatch(fishingMatch);
+            CalculateMatchPoints(fishingMatch);
 
             DataFileService.WriteDataFile(DataFileType.Matches, fishingMatches);
 
             return Ok();
         }
 
-        private static void CopyCalculatedMatchEntriesToMatch(FishingMatch fishingMatch)
-        {
-            List<MatchEntry> sortedMatchEntries = GetMatchEntriesSortedByWeight(fishingMatch);
-
-            foreach (MatchEntry matchEntry in fishingMatch.MatchEntries)
-            {
-                MatchEntry calculatedMatchEntry = sortedMatchEntries.SingleOrDefault(entry => entry.AnglerId == matchEntry.AnglerId);
-                if (calculatedMatchEntry == null) throw new Exception("Angler not found");
-
-                matchEntry.Position = calculatedMatchEntry.Position;
-                matchEntry.Points = calculatedMatchEntry.Points;
-            }
-        }
-
-        private static List<MatchEntry> GetMatchEntriesSortedByWeight(FishingMatch fishingMatch)
+        private static void CalculateMatchPoints(FishingMatch fishingMatch)
         {
             List<MatchEntry> sortedMatchEntries = fishingMatch.MatchEntries.OrderByDescending(matchEntry => matchEntry.Weight).ToList();
 
@@ -165,26 +169,6 @@ namespace Match.Fishing.Controllers.v1
 
                 sortedMatchEntries[index].Points = positionToPointsMapping.PositionToPoints[index].Points;
             }
-
-            return sortedMatchEntries;
-        }        
-    }
-
-    public class EntryToAdd
-    {
-        [JsonProperty("peg")]
-        public int Peg { get; set; }
-
-        [JsonProperty("anglerId")]
-        public int AnglerId { get; set; }
-
-        [JsonProperty("anglerName")]
-        public string AnglerName { get; set; }
-
-        [JsonProperty("pounds")]
-        public int Pounds { get; set; }
-
-        [JsonProperty("ounces")]
-        public int Ounces { get; set; }
+        }
     }
 }

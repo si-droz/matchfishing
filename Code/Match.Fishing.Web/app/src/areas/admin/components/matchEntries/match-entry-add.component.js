@@ -13,12 +13,12 @@
         model.$routerOnActivate = function (next) {
             anglersService.getAnglers($http).then(function (anglers) {
                 model.anglers = anglers;
-                
+
                 matchesService.getMatch($http, next.params.matchId).then(function (match) {
                     model.match = match;
                     model.entryToAdd = {
                         'matchId': match.id,
-                        'selectedAngler' : null
+                        'selectedAngler': null
                     };
                     matchesService.getPairs($http, next.params.matchId).then(function (pairs) {
                         model.pairs = pairs;
@@ -40,14 +40,6 @@
             entryToAdd.anglerId = entryToAdd.selectedAngler.id;
             entryToAdd.anglerName = entryToAdd.selectedAngler.forename + ' ' + entryToAdd.selectedAngler.surname
 
-            var matchEntry = {
-                "peg": entryToAdd.peg,
-                "anglerName": entryToAdd.anglerName,
-                "weight": entryToAdd.pounds + (entryToAdd.ounces / 16),
-                "points": 0
-            }
-            model.match.matchEntries.push(matchEntry)
-
             model.entryToAdd = {
                 "matchId": model.match.id
             }
@@ -56,7 +48,7 @@
             form.$setPristine();
 
             matchesService.addMatchEntry($http, entryToAdd).then(function (response) {
-
+                model.match.matchEntries = response;
             });
         };
     };

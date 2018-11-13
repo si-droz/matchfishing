@@ -28,12 +28,12 @@
 
         service.addMatchEntry = function addMatchEntry($http, entryToAdd) {
             return $http.post(`${EnvironmentConfig.serviceApi}/api/v1/matches/${entryToAdd.matchId}/entries`, entryToAdd)
+                .then(function (response) {
+                    return $http.get(`${EnvironmentConfig.serviceApi}/api/v1/matches/${response.config.data.matchId}/entries`)
                         .then(function (response) {
-                            return $http.post(`${EnvironmentConfig.serviceApi}/api/v1/matches/${response.config.data.matchId}/calculate-points`)
-                                        .then(function(){
-
-                            });
+                            return response.data;
                         });
+                });
         }
 
         service.getMatchesForAngler = function getMatchesForAngler($http, anglerId) {
