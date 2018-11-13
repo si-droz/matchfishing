@@ -37,22 +37,27 @@
             <div class="col-md-1" ng-class="{'has-error': matchEntryForm.inputPeg.$invalid && matchEntryForm.inputPeg.$dirty}">
                 <label class="sr-only" for="inputPeg">Peg</label>
                 <input type="number" class="form-control" id="inputPeg" name="inputPeg" placeholder="Peg" ng-model="model.entryToAdd.peg"
-                    min=1 required>
+                    min=1 required peg-validator>
                 <div ng-messages="matchEntryForm.inputPeg.$error" ng-show="matchEntryForm.inputPeg.$dirty">
                     <div ng-message="required" class="text-danger">
                         Peg is required</div>
                     <div ng-message="min" class="text-danger">
                         Peg must be greater than 0</div>
+                    <div ng-message="invalidPeg" class="text-danger">
+                        Peg already entered</div>
                 </div>
             </div>
         </div>
         <div class="col-md-5" ng-class="{'has-error': matchEntryForm.inputAnglerName.$invalid && matchEntryForm.inputAnglerName.$dirty}">
-            <label class="sr-only" for="inputAnglerName">Angler name</label>               
-            <select class="form-control" id="inputAnglerName" placeholder="Angler name" name="inputAnglerName" ng-model="model.entryToAdd.selectedAngler" ng-options="angler.forename + ' ' + angler.surname for angler in model.anglers | orderBy:'forename'"></select>
+            <label class="sr-only" for="inputAnglerName">Angler name</label>
+            <select angler-validator class="form-control" id="inputAnglerName" placeholder="Angler name" name="inputAnglerName"
+                ng-model="model.entryToAdd.selectedAngler" ng-options="angler.forename + ' ' + angler.surname for angler in model.anglers | orderBy:'forename'"></select>
 
             <div ng-messages="matchEntryForm.inputAnglerName.$error" ng-show="matchEntryForm.inputAnglerName.$dirty">
                 <div ng-message="required" class="text-danger">
                     Angler name is required.</div>
+                <div ng-message="invalidAngler" class="text-danger">
+                    Angler already entered</div>
             </div>
         </div>
         <div class="col-md-1" ng-class="{'has-error': matchEntryForm.inputWeightPounds.$invalid && matchEntryForm.inputWeightPounds.$dirty}">

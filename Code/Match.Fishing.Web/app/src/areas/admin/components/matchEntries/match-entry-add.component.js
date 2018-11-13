@@ -47,8 +47,8 @@
             form.$setUntouched();
             form.$setPristine();
 
-            matchesService.addMatchEntry($http, entryToAdd).then(function (response) {
-                model.match.matchEntries = response;
+            matchesService.addMatchEntry($http, entryToAdd).then(function (matchEntries) {
+                model.match.matchEntries = matchEntries;
             });
         };
     };
