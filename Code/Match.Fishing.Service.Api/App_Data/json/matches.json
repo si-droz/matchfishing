@@ -7,11 +7,11 @@
     "venue": "How End",
     "lake": "Danis",
     "leagueId": 1,
-    "leagueMatchNo": 6,
+    "leagueMatchNo": "6",
     "league": "Kingfisher Winter League",
     "noOfPegs": 20,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Shanks & McEwan",
@@ -26,11 +26,11 @@
     "venue": "How End",
     "lake": "Danis",
     "leagueId": 2,
-    "leagueMatchNo": 6,
+    "leagueMatchNo": "6",
     "league": "Kingfisher Winter League",
     "noOfPegs": 20,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Shanks & McEwan",
@@ -45,11 +45,11 @@
     "venue": "How End",
     "lake": "Danis",
     "leagueId": 3,
-    "leagueMatchNo": 6,
+    "leagueMatchNo": "6",
     "league": "Kingfisher Winter League",
     "noOfPegs": 20,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Shanks & McEwan",
@@ -64,11 +64,11 @@
     "venue": "How End",
     "lake": "Danis",
     "leagueId": 4,
-    "leagueMatchNo": 6,
+    "leagueMatchNo": "6",
     "league": "Kingfisher Winter League",
     "noOfPegs": 20,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Shanks & McEwan",
@@ -83,11 +83,11 @@
     "venue": "Rookery Waters",
     "lake": "Jay",
     "leagueId": 8,
-    "leagueMatchNo": 1,
+    "leagueMatchNo": "1",
     "league": "Kingfisher Summer League",
     "noOfPegs": 13,
-    "poolsFee": 5,
-    "dayTicketFee": 7,
+    "poolsFee": 5.0,
+    "dayTicketFee": 7.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -95,105 +95,118 @@
     "matchEntries": [
       {
         "peg": 5,
+        "pairedWithPeg": 0,
         "weight": 28.75,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 23,
+        "pairedWithPeg": 0,
         "weight": 4.625,
         "position": 11,
-        "points": 2,
+        "points": 2.0,
         "anglerId": 2,
         "anglerName": "Tracey Culley"
       },
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 67.875,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 11,
-        "weight": 30,
+        "pairedWithPeg": 0,
+        "weight": 30.0,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 13,
+        "pairedWithPeg": 0,
         "weight": 46.75,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 16,
         "anglerName": "Mark Wells"
       },
       {
         "peg": 7,
-        "weight": 51,
+        "pairedWithPeg": 0,
+        "weight": 51.0,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 9,
-        "weight": 36,
+        "pairedWithPeg": 0,
+        "weight": 36.0,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 19,
+        "pairedWithPeg": 0,
         "weight": 17.375,
         "position": 9,
-        "points": 4,
+        "points": 4.0,
         "anglerId": 13,
         "anglerName": "Eric Clulow"
       },
       {
         "peg": 1,
+        "pairedWithPeg": 0,
         "weight": 24.25,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 9,
         "anglerName": "Graham Parker"
       },
       {
         "peg": 17,
+        "pairedWithPeg": 0,
         "weight": 22.5,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 25,
+        "pairedWithPeg": 0,
         "weight": 0.375,
         "position": 12,
-        "points": 1,
+        "points": 1.0,
         "anglerId": 11,
         "anglerName": "Chris Davies"
       },
       {
         "peg": 15,
+        "pairedWithPeg": 0,
         "weight": 0.375,
         "position": 12,
-        "points": 1,
+        "points": 1.0,
         "anglerId": 10,
         "anglerName": "Bob Reed"
       },
       {
         "peg": 21,
+        "pairedWithPeg": 0,
         "weight": 12.25,
         "position": 10,
-        "points": 3,
+        "points": 3.0,
         "anglerId": 12,
         "anglerName": "Ian Jones"
       }
@@ -207,11 +220,11 @@
     "venue": "Decoy",
     "lake": "Oaks",
     "leagueId": 8,
-    "leagueMatchNo": 2,
+    "leagueMatchNo": "2",
     "league": "Kingfisher Summer League",
     "noOfPegs": 10,
-    "poolsFee": 5,
-    "dayTicketFee": 7,
+    "poolsFee": 5.0,
+    "dayTicketFee": 7.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -219,65 +232,73 @@
     "matchEntries": [
       {
         "peg": 1,
-        "weight": 127,
+        "pairedWithPeg": 0,
+        "weight": 127.0,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 15,
-        "weight": 86,
+        "pairedWithPeg": 0,
+        "weight": 86.0,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 2,
         "anglerName": "Tracey Culley"
       },
       {
         "peg": 3,
-        "weight": 82,
+        "pairedWithPeg": 0,
+        "weight": 82.0,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 11,
+        "pairedWithPeg": 0,
         "weight": 123.5,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 9,
+        "pairedWithPeg": 0,
         "weight": 58.5,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 10,
         "anglerName": "Bob Reed"
       },
       {
         "peg": 5,
-        "weight": 50,
+        "pairedWithPeg": 0,
+        "weight": 50.0,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 11,
         "anglerName": "Chris Davies"
       },
       {
         "peg": 7,
+        "pairedWithPeg": 0,
         "weight": 67.5,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 13,
+        "pairedWithPeg": 0,
         "weight": 134.25,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       }
@@ -290,11 +311,12 @@
     "date": "2016-07-03",
     "venue": "Wold Farm",
     "lake": "Islands",
+    "leagueId": 0,
     "leagueMatchNo": "",
     "league": "",
     "noOfPegs": 12,
-    "poolsFee": 5,
-    "dayTicketFee": 10,
+    "poolsFee": 5.0,
+    "dayTicketFee": 10.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Tarton Shield",
@@ -302,65 +324,73 @@
     "matchEntries": [
       {
         "peg": 5,
+        "pairedWithPeg": 0,
         "weight": 64.5,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 10,
+        "pairedWithPeg": 0,
         "weight": 41.5,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 2,
         "anglerName": "Tracey Culley"
       },
       {
         "peg": 1,
-        "weight": 16,
+        "pairedWithPeg": 0,
+        "weight": 16.0,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 12,
         "anglerName": "Ian Jones"
       },
       {
         "peg": 6,
+        "pairedWithPeg": 0,
         "weight": 5.5,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 11,
         "anglerName": "Chris Davies"
       },
       {
         "peg": 7,
-        "weight": 56,
+        "pairedWithPeg": 0,
+        "weight": 56.0,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 12,
-        "weight": 26,
+        "pairedWithPeg": 0,
+        "weight": 26.0,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 25.5,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 10,
         "anglerName": "Bob Reed"
       },
       {
         "peg": 8,
-        "weight": 42,
+        "pairedWithPeg": 0,
+        "weight": 42.0,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       }
@@ -373,11 +403,12 @@
     "date": "2016-07-17",
     "venue": "Nether Heyford",
     "lake": "Snake",
+    "leagueId": 0,
     "leagueMatchNo": "",
     "league": "",
     "noOfPegs": 10,
-    "poolsFee": 5,
-    "dayTicketFee": 7,
+    "poolsFee": 5.0,
+    "dayTicketFee": 7.0,
     "isTrophyMatch": true,
     "isPairs": true,
     "trophyName": "Pairs",
@@ -388,7 +419,7 @@
         "pairedWithPeg": 6,
         "weight": 0.375,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
@@ -397,7 +428,7 @@
         "pairedWithPeg": 3,
         "weight": 1.25,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
@@ -406,7 +437,7 @@
         "pairedWithPeg": 7,
         "weight": 0.125,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
@@ -415,7 +446,7 @@
         "pairedWithPeg": 1,
         "weight": 0.125,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 9,
         "anglerName": "Graham Parker"
       },
@@ -424,7 +455,7 @@
         "pairedWithPeg": 2,
         "weight": 3.125,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
@@ -433,7 +464,7 @@
         "pairedWithPeg": 5,
         "weight": 2.5,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
@@ -442,7 +473,7 @@
         "pairedWithPeg": 4,
         "weight": 5.5,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 10,
         "anglerName": "Bob Reed"
       }
@@ -456,11 +487,11 @@
     "venue": "Wold Farm",
     "lake": "Islands",
     "leagueId": 8,
-    "leagueMatchNo": 3,
+    "leagueMatchNo": "3",
     "league": "Kingfisher Summer League",
     "noOfPegs": 12,
-    "poolsFee": 5,
-    "dayTicketFee": 10,
+    "poolsFee": 5.0,
+    "dayTicketFee": 10.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Dick Mitchell",
@@ -468,81 +499,91 @@
     "matchEntries": [
       {
         "peg": 9,
+        "pairedWithPeg": 0,
         "weight": 83.625,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 42.25,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 2,
         "anglerName": "Tracey Culley"
       },
       {
         "peg": 6,
+        "pairedWithPeg": 0,
         "weight": 24.75,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 19,
         "anglerName": "Daniel Hawking"
       },
       {
         "peg": 7,
+        "pairedWithPeg": 0,
         "weight": 87.75,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 10,
+        "pairedWithPeg": 0,
         "weight": 55.25,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 5,
-        "weight": 27,
+        "pairedWithPeg": 0,
+        "weight": 27.0,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 1,
+        "pairedWithPeg": 0,
         "weight": 27.25,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 10,
         "anglerName": "Bob Reed"
       },
       {
         "peg": 8,
+        "pairedWithPeg": 0,
         "weight": 14.25,
         "position": 9,
-        "points": 4,
+        "points": 4.0,
         "anglerId": 13,
         "anglerName": "Eric Clulow"
       },
       {
         "peg": 11,
+        "pairedWithPeg": 0,
         "weight": 28.5,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 4,
-        "weight": 14,
+        "pairedWithPeg": 0,
+        "weight": 14.0,
         "position": 10,
-        "points": 3,
+        "points": 3.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       }
@@ -555,11 +596,12 @@
     "date": "2016-09-11",
     "venue": "How End",
     "lake": "Danis",
+    "leagueId": 0,
     "leagueMatchNo": "",
     "league": "",
     "noOfPegs": 20,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Phil Stone Cup",
@@ -567,73 +609,82 @@
     "matchEntries": [
       {
         "peg": 8,
+        "pairedWithPeg": 0,
         "weight": 41.625,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 18,
+        "pairedWithPeg": 0,
         "weight": 59.75,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 14,
+        "pairedWithPeg": 0,
         "weight": 43.875,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 16,
+        "pairedWithPeg": 0,
         "weight": 45.875,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 20,
+        "pairedWithPeg": 0,
         "weight": 8.625,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 9,
         "anglerName": "Graham Parker"
       },
       {
         "peg": 12,
+        "pairedWithPeg": 0,
         "weight": 48.75,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 49.75,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 10,
-        "weight": 1,
+        "pairedWithPeg": 0,
+        "weight": 1.0,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 10,
         "anglerName": "Bob Reed"
       },
       {
         "peg": 5,
-        "weight": 1,
+        "pairedWithPeg": 0,
+        "weight": 1.0,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 11,
         "anglerName": "Chris Davies"
       }
@@ -647,11 +698,11 @@
     "venue": "Wold Farm",
     "lake": "Oaks",
     "leagueId": 8,
-    "leagueMatchNo": 4,
+    "leagueMatchNo": "4",
     "league": "Kingfisher Summer League",
     "noOfPegs": 10,
-    "poolsFee": 5,
-    "dayTicketFee": 10,
+    "poolsFee": 5.0,
+    "dayTicketFee": 10.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Lund Conlon",
@@ -659,73 +710,82 @@
     "matchEntries": [
       {
         "peg": 11,
+        "pairedWithPeg": 0,
         "weight": 109.5,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 9,
+        "pairedWithPeg": 0,
         "weight": 92.5,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 2,
         "anglerName": "Tracey Culley"
       },
       {
         "peg": 7,
+        "pairedWithPeg": 0,
         "weight": 20.5,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 5,
+        "pairedWithPeg": 0,
         "weight": 25.75,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 2,
+        "pairedWithPeg": 0,
         "weight": 18.25,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 13,
-        "weight": 5,
+        "pairedWithPeg": 0,
+        "weight": 5.0,
         "position": 9,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 9,
         "anglerName": "Graham Parker"
       },
       {
         "peg": 4,
-        "weight": 13,
+        "pairedWithPeg": 0,
+        "weight": 13.0,
         "position": 8,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 11,
         "anglerName": "Chris Davies"
       },
       {
         "peg": 12,
-        "weight": 40,
+        "pairedWithPeg": 0,
+        "weight": 40.0,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 12,
         "anglerName": "Ian Jones"
       },
       {
         "peg": 1,
+        "pairedWithPeg": 0,
         "weight": 22.75,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 10,
         "anglerName": "Bob Reed"
       }
@@ -739,11 +799,11 @@
     "venue": "How End",
     "lake": "Yasis",
     "leagueId": 8,
-    "leagueMatchNo": 5,
+    "leagueMatchNo": "5",
     "league": "Kingfisher Summer League",
     "noOfPegs": 17,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -751,81 +811,91 @@
     "matchEntries": [
       {
         "peg": 16,
-        "weight": 32,
+        "pairedWithPeg": 0,
+        "weight": 32.0,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 9,
         "anglerName": "Graham Parker"
       },
       {
         "peg": 7,
+        "pairedWithPeg": 0,
         "weight": 27.375,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 13,
         "anglerName": "Eric Clulow"
       },
       {
         "peg": 12,
+        "pairedWithPeg": 0,
         "weight": 44.5,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 12,
         "anglerName": "Ian Jones"
       },
       {
         "peg": 9,
-        "weight": 1,
+        "pairedWithPeg": 0,
+        "weight": 1.0,
         "position": 10,
-        "points": 3,
+        "points": 3.0,
         "anglerId": 11,
         "anglerName": "Chris Davies"
       },
       {
         "peg": 10,
+        "pairedWithPeg": 0,
         "weight": 31.75,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 1,
+        "pairedWithPeg": 0,
         "weight": 50.1875,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 15,
+        "pairedWithPeg": 0,
         "weight": 103.875,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 16,
         "anglerName": "Mark Wells"
       },
       {
         "peg": 5,
+        "pairedWithPeg": 0,
         "weight": 20.5625,
         "position": 9,
-        "points": 4,
+        "points": 4.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 22.625,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 13,
+        "pairedWithPeg": 0,
         "weight": 37.0625,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       }
@@ -839,11 +909,11 @@
     "venue": "Rookery Waters",
     "lake": "Jay",
     "leagueId": 8,
-    "leagueMatchNo": 6,
+    "leagueMatchNo": "6",
     "league": "Kingfisher Summer League",
     "noOfPegs": 12,
-    "poolsFee": 5,
-    "dayTicketFee": 7,
+    "poolsFee": 5.0,
+    "dayTicketFee": 7.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Appledore Cup",
@@ -851,57 +921,64 @@
     "matchEntries": [
       {
         "peg": 45,
-        "weight": 36,
+        "pairedWithPeg": 0,
+        "weight": 36.0,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 41,
-        "weight": 23,
+        "pairedWithPeg": 0,
+        "weight": 23.0,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 2,
         "anglerName": "Tracey Culley"
       },
       {
         "peg": 43,
+        "pairedWithPeg": 0,
         "weight": 12.5,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 35,
+        "pairedWithPeg": 0,
         "weight": 94.875,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 37,
+        "pairedWithPeg": 0,
         "weight": 56.75,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 39,
-        "weight": 2,
+        "pairedWithPeg": 0,
+        "weight": 2.0,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 10,
         "anglerName": "Bob Reed"
       },
       {
         "peg": 47,
-        "weight": 19,
+        "pairedWithPeg": 0,
+        "weight": 19.0,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 11,
         "anglerName": "Chris Davies"
       }
@@ -915,11 +992,11 @@
     "venue": "How End",
     "lake": "Yasis",
     "leagueId": 5,
-    "leagueMatchNo": 1,
+    "leagueMatchNo": "1",
     "league": "Kingfisher Winter League",
     "noOfPegs": 17,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -927,49 +1004,55 @@
     "matchEntries": [
       {
         "peg": 4,
+        "pairedWithPeg": 0,
         "weight": 13.75,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 2,
         "anglerName": "Tracey Culley"
       },
       {
         "peg": 14,
+        "pairedWithPeg": 0,
         "weight": 40.4375,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 10,
+        "pairedWithPeg": 0,
         "weight": 32.625,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 7,
-        "weight": 1,
+        "pairedWithPeg": 0,
+        "weight": 1.0,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 1,
+        "pairedWithPeg": 0,
         "weight": 3.25,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 12,
+        "pairedWithPeg": 0,
         "weight": 4.875,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       }
@@ -983,11 +1066,11 @@
     "venue": "How End",
     "lake": "Danis",
     "leagueId": 5,
-    "leagueMatchNo": 2,
+    "leagueMatchNo": "2",
     "league": "Kingfisher Winter League",
     "noOfPegs": 20,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -995,41 +1078,46 @@
     "matchEntries": [
       {
         "peg": 15,
+        "pairedWithPeg": 0,
         "weight": 7.625,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 6,
-        "weight": 1,
+        "pairedWithPeg": 0,
+        "weight": 1.0,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 18,
+        "pairedWithPeg": 0,
         "weight": 0.125,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 9,
         "anglerName": "Graham Parker"
       },
       {
         "peg": 2,
+        "pairedWithPeg": 0,
         "weight": 2.5,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 11,
+        "pairedWithPeg": 0,
         "weight": 1.875,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       }
@@ -1043,11 +1131,11 @@
     "venue": "How End",
     "lake": "Danis",
     "leagueId": 5,
-    "leagueMatchNo": 3,
+    "leagueMatchNo": "3",
     "league": "Kingfisher Winter League",
     "noOfPegs": 20,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -1055,41 +1143,46 @@
     "matchEntries": [
       {
         "peg": 11,
+        "pairedWithPeg": 0,
         "weight": 15.625,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 2,
+        "pairedWithPeg": 0,
         "weight": 0.0625,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 6,
+        "pairedWithPeg": 0,
         "weight": 1.9375,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 15,
+        "pairedWithPeg": 0,
         "weight": 1.75,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 19,
-        "weight": 2,
+        "pairedWithPeg": 0,
+        "weight": 2.0,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       }
@@ -1103,11 +1196,11 @@
     "venue": "How End",
     "lake": "Yasis",
     "leagueId": 5,
-    "leagueMatchNo": 4,
+    "leagueMatchNo": "4",
     "league": "Kingfisher Winter League",
     "noOfPegs": 17,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -1115,65 +1208,73 @@
     "matchEntries": [
       {
         "peg": 8,
+        "pairedWithPeg": 0,
         "weight": 5.375,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 2,
         "anglerName": "Tracey Culley"
       },
       {
         "peg": 4,
+        "pairedWithPeg": 0,
         "weight": 14.9375,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 10,
+        "pairedWithPeg": 0,
         "weight": 6.5,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 2,
+        "pairedWithPeg": 0,
         "weight": 22.375,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 15,
+        "pairedWithPeg": 0,
         "weight": 24.125,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 11,
+        "pairedWithPeg": 0,
         "weight": 23.25,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 6,
+        "pairedWithPeg": 0,
         "weight": 6.5,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 5,
-        "weight": 12,
+        "pairedWithPeg": 0,
+        "weight": 12.0,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       }
@@ -1187,11 +1288,11 @@
     "venue": "How End",
     "lake": "Yasis",
     "leagueId": 5,
-    "leagueMatchNo": 5,
+    "leagueMatchNo": "5",
     "league": "Kingfisher Winter League",
     "noOfPegs": 17,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -1199,57 +1300,64 @@
     "matchEntries": [
       {
         "peg": 8,
+        "pairedWithPeg": 0,
         "weight": 69.1875,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 12,
+        "pairedWithPeg": 0,
         "weight": 65.1875,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 10,
+        "pairedWithPeg": 0,
         "weight": 33.75,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 16,
+        "pairedWithPeg": 0,
         "weight": 40.375,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 2,
+        "pairedWithPeg": 0,
         "weight": 13.75,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 6,
+        "pairedWithPeg": 0,
         "weight": 9.875,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 4,
+        "pairedWithPeg": 0,
         "weight": 6.125,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       }
@@ -1263,11 +1371,11 @@
     "venue": "How End",
     "lake": "Danis",
     "leagueId": 5,
-    "leagueMatchNo": 6,
+    "leagueMatchNo": "6",
     "league": "Kingfisher Winter League",
     "noOfPegs": 20,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Shanks & McEwan",
@@ -1275,57 +1383,64 @@
     "matchEntries": [
       {
         "peg": 10,
+        "pairedWithPeg": 0,
         "weight": 38.5625,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 14,
+        "pairedWithPeg": 0,
         "weight": 9.875,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 15,
+        "pairedWithPeg": 0,
         "weight": 15.25,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 18,
+        "pairedWithPeg": 0,
         "weight": 23.5,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 19,
-        "weight": 5,
+        "pairedWithPeg": 0,
+        "weight": 5.0,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 11,
+        "pairedWithPeg": 0,
         "weight": 31.125,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 19.75,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 13,
         "anglerName": "Eric Clulow"
       }
@@ -1339,11 +1454,11 @@
     "venue": "Rookery Waters",
     "lake": "Magpie",
     "leagueId": 6,
-    "leagueMatchNo": 1,
+    "leagueMatchNo": "1",
     "league": "Kingfisher Summer League",
     "noOfPegs": 10,
-    "poolsFee": 5,
-    "dayTicketFee": 7,
+    "poolsFee": 5.0,
+    "dayTicketFee": 7.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -1351,113 +1466,127 @@
     "matchEntries": [
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 55.875,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 12,
+        "pairedWithPeg": 0,
         "weight": 16.5,
         "position": 9,
-        "points": 4,
+        "points": 4.0,
         "anglerId": 2,
         "anglerName": "Tracey Culley"
       },
       {
         "peg": 2,
+        "pairedWithPeg": 0,
         "weight": 36.0,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 26,
+        "pairedWithPeg": 0,
         "weight": 8.75,
         "position": 10,
-        "points": 3,
+        "points": 3.0,
         "anglerId": 17,
         "anglerName": "Stewart Bell"
       },
       {
         "peg": 28,
+        "pairedWithPeg": 0,
         "weight": 24.0,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 38,
+        "pairedWithPeg": 0,
         "weight": 27.5,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 24,
         "anglerName": "Mike Clarke"
       },
       {
         "peg": 9,
+        "pairedWithPeg": 0,
         "weight": 46.25,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 5,
+        "pairedWithPeg": 0,
         "weight": 8.625,
         "position": 11,
-        "points": 2,
+        "points": 2.0,
         "anglerId": 13,
         "anglerName": "Eric Clulow"
       },
       {
         "peg": 24,
+        "pairedWithPeg": 0,
         "weight": 6.0,
         "position": 12,
-        "points": 1,
+        "points": 1.0,
         "anglerId": 9,
         "anglerName": "Graham Parker"
       },
       {
         "peg": 11,
+        "pairedWithPeg": 0,
         "weight": 43.5,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 14,
+        "pairedWithPeg": 0,
         "weight": 0.375,
         "position": 13,
-        "points": 1,
+        "points": 1.0,
         "anglerId": 12,
         "anglerName": "Ian Jones"
       },
       {
         "peg": 20,
+        "pairedWithPeg": 0,
         "weight": 0.375,
         "position": 13,
-        "points": 1,
+        "points": 1.0,
         "anglerId": 11,
         "anglerName": "Chris Davies"
       },
       {
         "peg": 35,
+        "pairedWithPeg": 0,
         "weight": 30.75,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 10,
         "anglerName": "Bob Reed"
       },
       {
         "peg": 25,
+        "pairedWithPeg": 0,
         "weight": 64.0,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 22,
         "anglerName": "Tony Taylor"
       }
@@ -1470,11 +1599,12 @@
     "date": "2017-05-21",
     "venue": "How End",
     "lake": "Danis",
+    "leagueId": 0,
     "leagueMatchNo": "",
     "league": "",
     "noOfPegs": 20,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Phil Stone Cup",
@@ -1489,11 +1619,11 @@
     "venue": "Wold Farm",
     "lake": "Islands",
     "leagueId": 6,
-    "leagueMatchNo": 2,
+    "leagueMatchNo": "2",
     "league": "Kingfisher Summer League",
     "noOfPegs": 12,
-    "poolsFee": 5,
-    "dayTicketFee": 10,
+    "poolsFee": 5.0,
+    "dayTicketFee": 10.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -1501,81 +1631,91 @@
     "matchEntries": [
       {
         "peg": 12,
+        "pairedWithPeg": 0,
         "weight": 79.75,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 5,
+        "pairedWithPeg": 0,
         "weight": 34.875,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 62.5,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 23,
         "anglerName": "Nick Rowe"
       },
       {
         "peg": 7,
+        "pairedWithPeg": 0,
         "weight": 93.5,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 8,
+        "pairedWithPeg": 0,
         "weight": 25.5,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 6,
+        "pairedWithPeg": 0,
         "weight": 71.0,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 24,
         "anglerName": "Mike Clarke"
       },
       {
         "peg": 4,
+        "pairedWithPeg": 0,
         "weight": 68.5,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 10,
+        "pairedWithPeg": 0,
         "weight": 22.5,
         "position": 9,
-        "points": 4,
+        "points": 4.0,
         "anglerId": 9,
         "anglerName": "Graham Parker"
       },
       {
         "peg": 11,
+        "pairedWithPeg": 0,
         "weight": 18.5,
         "position": 10,
-        "points": 3,
+        "points": 3.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 9,
+        "pairedWithPeg": 0,
         "weight": 78.25,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 22,
         "anglerName": "Tony Taylor"
       }
@@ -1588,11 +1728,12 @@
     "date": "2017-07-02",
     "venue": "Decoy",
     "lake": "4 Islands",
+    "leagueId": 0,
     "leagueMatchNo": "",
     "league": "",
     "noOfPegs": 10,
-    "poolsFee": 5,
-    "dayTicketFee": 7,
+    "poolsFee": 5.0,
+    "dayTicketFee": 7.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Tartan Shield",
@@ -1600,57 +1741,64 @@
     "matchEntries": [
       {
         "peg": 2,
+        "pairedWithPeg": 0,
         "weight": 99.75,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 6,
+        "pairedWithPeg": 0,
         "weight": 59.0,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 2,
         "anglerName": "Tracey Culley"
       },
       {
         "peg": 4,
+        "pairedWithPeg": 0,
         "weight": 32.5,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 7,
+        "pairedWithPeg": 0,
         "weight": 82.75,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 5,
+        "pairedWithPeg": 0,
         "weight": 51.5,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 149.5,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 1,
+        "pairedWithPeg": 0,
         "weight": 43.375,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       }
@@ -1663,11 +1811,12 @@
     "date": "2017-07-06",
     "venue": "Rookery Waters",
     "lake": "Jay",
+    "leagueId": 0,
     "leagueMatchNo": "",
     "league": "",
     "noOfPegs": 10,
-    "poolsFee": 5,
-    "dayTicketFee": 7,
+    "poolsFee": 5.0,
+    "dayTicketFee": 7.0,
     "isTrophyMatch": true,
     "isPairs": true,
     "trophyName": "Pairs",
@@ -1678,7 +1827,7 @@
         "pairedWithPeg": 16,
         "weight": 101.25,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
@@ -1687,7 +1836,7 @@
         "pairedWithPeg": 1,
         "weight": 22.5,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
@@ -1696,7 +1845,7 @@
         "pairedWithPeg": 4,
         "weight": 71.75,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 22,
         "anglerName": "Tony Taylor"
       },
@@ -1705,7 +1854,7 @@
         "pairedWithPeg": 10,
         "weight": 65.75,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
@@ -1714,7 +1863,7 @@
         "pairedWithPeg": 7,
         "weight": 29.5,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
@@ -1723,7 +1872,7 @@
         "pairedWithPeg": 13,
         "weight": 45.75,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
@@ -1732,7 +1881,7 @@
         "pairedWithPeg": 19,
         "weight": 18.125,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       }
@@ -1746,11 +1895,11 @@
     "venue": "Decoy",
     "lake": "Lou's",
     "leagueId": 6,
-    "leagueMatchNo": 3,
+    "leagueMatchNo": "3",
     "league": "Kingfisher Summer League",
     "noOfPegs": 10,
-    "poolsFee": 5,
-    "dayTicketFee": 7,
+    "poolsFee": 5.0,
+    "dayTicketFee": 7.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Dick Mitchell",
@@ -1758,49 +1907,55 @@
     "matchEntries": [
       {
         "peg": 10,
-        "weight": 99.00,
+        "pairedWithPeg": 0,
+        "weight": 99.0,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 1,
+        "pairedWithPeg": 0,
         "weight": 45.75,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 13,
+        "pairedWithPeg": 0,
         "weight": 82.75,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 6,
+        "pairedWithPeg": 0,
         "weight": 73.0,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 24,
         "anglerName": "Mike Clarke"
       },
       {
         "peg": 5,
-        "weight": 70,
+        "pairedWithPeg": 0,
+        "weight": 70.0,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 7,
+        "pairedWithPeg": 0,
         "weight": 40.25,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       }
@@ -1814,11 +1969,11 @@
     "venue": "Wold Farm",
     "lake": "Islands",
     "leagueId": 6,
-    "leagueMatchNo": 4,
+    "leagueMatchNo": "4",
     "league": "Kingfisher Summer League",
     "noOfPegs": 12,
-    "poolsFee": 5,
-    "dayTicketFee": 10,
+    "poolsFee": 5.0,
+    "dayTicketFee": 10.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Lund Conlon",
@@ -1826,81 +1981,91 @@
     "matchEntries": [
       {
         "peg": 4,
+        "pairedWithPeg": 0,
         "weight": 55.625,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 1,
+        "pairedWithPeg": 0,
         "weight": 24.0,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 2,
         "anglerName": "Tracey Culley"
       },
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 9.0,
         "position": 9,
-        "points": 4,
+        "points": 4.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 9,
+        "pairedWithPeg": 0,
         "weight": 66.25,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 5,
+        "pairedWithPeg": 0,
         "weight": 16.0,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 11,
+        "pairedWithPeg": 0,
         "weight": 8.5,
         "position": 10,
-        "points": 3,
+        "points": 3.0,
         "anglerId": 24,
         "anglerName": "Mike Clarke"
       },
       {
         "peg": 12,
-        "weight": 26.00,
+        "pairedWithPeg": 0,
+        "weight": 26.0,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 6,
+        "pairedWithPeg": 0,
         "weight": 36.625,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 12,
         "anglerName": "Ian Jones"
       },
       {
         "peg": 8,
+        "pairedWithPeg": 0,
         "weight": 21.25,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 11,
         "anglerName": "Chris Davies"
       },
       {
         "peg": 7,
+        "pairedWithPeg": 0,
         "weight": 56.375,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       }
@@ -1914,11 +2079,11 @@
     "venue": "How End",
     "lake": "Danis",
     "leagueId": 6,
-    "leagueMatchNo": 5,
+    "leagueMatchNo": "5",
     "league": "Kingfisher Summer League",
     "noOfPegs": 20,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -1926,81 +2091,91 @@
     "matchEntries": [
       {
         "peg": 8,
+        "pairedWithPeg": 0,
         "weight": 29.0,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 24,
         "anglerName": "Mike Clarke"
       },
       {
         "peg": 2,
+        "pairedWithPeg": 0,
         "weight": 34.875,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 16,
+        "pairedWithPeg": 0,
         "weight": 59.875,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 6,
+        "pairedWithPeg": 0,
         "weight": 38.6875,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 10,
+        "pairedWithPeg": 0,
         "weight": 28.875,
         "position": 9,
-        "points": 4,
+        "points": 4.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 20,
+        "pairedWithPeg": 0,
         "weight": 54.125,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 4,
+        "pairedWithPeg": 0,
         "weight": 55.625,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 15,
         "anglerName": "Phil Stone"
       },
       {
         "peg": 18,
+        "pairedWithPeg": 0,
         "weight": 45.0,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 22,
         "anglerName": "Tony Taylor"
       },
       {
         "peg": 14,
+        "pairedWithPeg": 0,
         "weight": 54.875,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 16,
         "anglerName": "Mark Wells"
       },
       {
         "peg": 12,
+        "pairedWithPeg": 0,
         "weight": 26.5,
         "position": 10,
-        "points": 3,
+        "points": 3.0,
         "anglerId": 25,
         "anglerName": "Kevin Miller"
       }
@@ -2014,11 +2189,11 @@
     "venue": "Rookery Waters",
     "lake": "Magpie",
     "leagueId": 6,
-    "leagueMatchNo": 6,
+    "leagueMatchNo": "6",
     "league": "Kingfisher Summer League",
     "noOfPegs": 10,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Appledore Cup",
@@ -2026,49 +2201,55 @@
     "matchEntries": [
       {
         "peg": 25,
+        "pairedWithPeg": 0,
         "weight": 27.25,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 17,
+        "pairedWithPeg": 0,
         "weight": 42.5,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 21,
+        "pairedWithPeg": 0,
         "weight": 8.25,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 27,
+        "pairedWithPeg": 0,
         "weight": 19.75,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 19,
+        "pairedWithPeg": 0,
         "weight": 24.0,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 23,
+        "pairedWithPeg": 0,
         "weight": 41.5,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       }
@@ -2082,11 +2263,11 @@
     "venue": "How End",
     "lake": "Yasis",
     "leagueId": 7,
-    "leagueMatchNo": 1,
+    "leagueMatchNo": "1",
     "league": "Kingfisher Winter League",
     "noOfPegs": 17,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -2094,15 +2275,17 @@
     "matchEntries": [
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 28.6875,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 1,
-        "weight": 0.00,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
         "position": 7,
         "points": 0.5,
         "anglerId": 6,
@@ -2110,23 +2293,26 @@
       },
       {
         "peg": 7,
+        "pairedWithPeg": 0,
         "weight": 29.5,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 22,
         "anglerName": "Tony Taylor"
       },
       {
         "peg": 13,
+        "pairedWithPeg": 0,
         "weight": 44.0,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 9,
-        "weight": 0.00,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
         "position": 7,
         "points": 0.5,
         "anglerId": 8,
@@ -2134,7 +2320,8 @@
       },
       {
         "peg": 5,
-        "weight": 0.00,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
         "position": 7,
         "points": 0.5,
         "anglerId": 9,
@@ -2142,25 +2329,28 @@
       },
       {
         "peg": 16,
+        "pairedWithPeg": 0,
         "weight": 14.0,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 15,
+        "pairedWithPeg": 0,
         "weight": 6.0,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 11,
+        "pairedWithPeg": 0,
         "weight": 40.375,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 26,
         "anglerName": "Doug Robinson"
       }
@@ -2174,11 +2364,11 @@
     "venue": "How End",
     "lake": "Danis",
     "leagueId": 7,
-    "leagueMatchNo": 2,
+    "leagueMatchNo": "2",
     "league": "Kingfisher Winter League",
     "noOfPegs": 20,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -2186,89 +2376,100 @@
     "matchEntries": [
       {
         "peg": 7,
+        "pairedWithPeg": 0,
         "weight": 8.5,
         "position": 9,
-        "points": 4,
+        "points": 4.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 16,
+        "pairedWithPeg": 0,
         "weight": 8.6875,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 18,
+        "pairedWithPeg": 0,
         "weight": 17.6875,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 19,
+        "pairedWithPeg": 0,
         "weight": 28.25,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 26,
         "anglerName": "Doug Robinson"
       },
       {
         "peg": 1,
+        "pairedWithPeg": 0,
         "weight": 21.8125,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 9,
         "anglerName": "Graham Parker"
       },
       {
         "peg": 10,
+        "pairedWithPeg": 0,
         "weight": 14.4375,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 25,
         "anglerName": "Kevin Miller"
       },
       {
         "peg": 9,
+        "pairedWithPeg": 0,
         "weight": 0.25,
         "position": 11,
-        "points": 2,
+        "points": 2.0,
         "anglerId": 27,
         "anglerName": "Alfie Miller"
       },
       {
         "peg": 5,
+        "pairedWithPeg": 0,
         "weight": 9.3125,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 14,
+        "pairedWithPeg": 0,
         "weight": 26.9375,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 12,
+        "pairedWithPeg": 0,
         "weight": 22.5,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 22,
         "anglerName": "Tony Taylor"
       },
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 4.75,
         "position": 10,
-        "points": 3,
+        "points": 3.0,
         "anglerId": 12,
         "anglerName": "Ian Jones"
       }
@@ -2282,11 +2483,11 @@
     "venue": "How End",
     "lake": "Yasis",
     "leagueId": 7,
-    "leagueMatchNo": 3,
+    "leagueMatchNo": "3",
     "league": "Kingfisher Winter League",
     "noOfPegs": 17,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -2294,15 +2495,17 @@
     "matchEntries": [
       {
         "peg": 1,
+        "pairedWithPeg": 0,
         "weight": 3.875,
         "position": 9,
-        "points": 4,
+        "points": 4.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 14,
-        "weight": 0.00,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
         "position": 12,
         "points": 0.5,
         "anglerId": 2,
@@ -2310,31 +2513,35 @@
       },
       {
         "peg": 5,
+        "pairedWithPeg": 0,
         "weight": 3.5,
         "position": 10,
-        "points": 3,
+        "points": 3.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 12,
+        "pairedWithPeg": 0,
         "weight": 10.0,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 15,
+        "pairedWithPeg": 0,
         "weight": 5.875,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 16,
-        "weight": 0.00,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
         "position": 12,
         "points": 0.5,
         "anglerId": 9,
@@ -2342,7 +2549,8 @@
       },
       {
         "peg": 6,
-        "weight": 0.00,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
         "position": 12,
         "points": 0.5,
         "anglerId": 8,
@@ -2350,57 +2558,64 @@
       },
       {
         "peg": 9,
+        "pairedWithPeg": 0,
         "weight": 17.125,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 16,
         "anglerName": "Mark Wells"
       },
       {
         "peg": 10,
+        "pairedWithPeg": 0,
         "weight": 14.875,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 23,
         "anglerName": "Nick Rowe"
       },
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 2.0,
         "position": 11,
-        "points": 2,
+        "points": 2.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 2,
+        "pairedWithPeg": 0,
         "weight": 6.1875,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 22,
         "anglerName": "Tony Taylor"
       },
       {
         "peg": 8,
+        "pairedWithPeg": 0,
         "weight": 5.9375,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 26,
         "anglerName": "Doug Robinson"
       },
       {
         "peg": 7,
+        "pairedWithPeg": 0,
         "weight": 5.5,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 11,
+        "pairedWithPeg": 0,
         "weight": 24.5625,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 24,
         "anglerName": "Mike Clarke"
       }
@@ -2414,11 +2629,11 @@
     "venue": "How End",
     "lake": "Danis",
     "leagueId": 7,
-    "leagueMatchNo": 4,
+    "leagueMatchNo": "4",
     "league": "Kingfisher Winter League",
     "noOfPegs": 20,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -2426,31 +2641,35 @@
     "matchEntries": [
       {
         "peg": 18,
+        "pairedWithPeg": 0,
         "weight": 9.75,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 16,
-        "weight": 6,
+        "pairedWithPeg": 0,
+        "weight": 6.0,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 2,
+        "pairedWithPeg": 0,
         "weight": 26.125,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 26,
         "anglerName": "Doug Robinson"
       },
       {
         "peg": 6,
-        "weight": 0,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
         "position": 8,
         "points": 0.5,
         "anglerId": 9,
@@ -2458,15 +2677,17 @@
       },
       {
         "peg": 14,
+        "pairedWithPeg": 0,
         "weight": 13.25,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 10,
-        "weight": 0,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
         "position": 8,
         "points": 0.5,
         "anglerId": 25,
@@ -2474,25 +2695,28 @@
       },
       {
         "peg": 20,
+        "pairedWithPeg": 0,
         "weight": 23.75,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 12,
+        "pairedWithPeg": 0,
         "weight": 18.25,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 8,
+        "pairedWithPeg": 0,
         "weight": 23.0,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       }
@@ -2506,11 +2730,11 @@
     "venue": "How End",
     "lake": "Yasis",
     "leagueId": 7,
-    "leagueMatchNo": 5,
+    "leagueMatchNo": "5",
     "league": "Kingfisher Winter League",
     "noOfPegs": 17,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -2518,70 +2742,79 @@
     "matchEntries": [
       {
         "peg": 5,
-        "weight": 3,
+        "pairedWithPeg": 0,
+        "weight": 3.0,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 0.25,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 8,
+        "pairedWithPeg": 0,
         "weight": 26.25,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 16,
+        "pairedWithPeg": 0,
         "weight": 5.5,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 24,
         "anglerName": "Mike Clarke"
       },
       {
         "peg": 15,
+        "pairedWithPeg": 0,
         "weight": 1.0,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 13,
+        "pairedWithPeg": 0,
         "weight": 24.75,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 1,
+        "pairedWithPeg": 0,
         "weight": 1.75,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 26,
         "anglerName": "Doug Robinson"
       },
       {
         "peg": 7,
+        "pairedWithPeg": 0,
         "weight": 4.25,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 22,
         "anglerName": "Tony Taylor"
       },
       {
         "peg": 6,
+        "pairedWithPeg": 0,
         "weight": 0.0,
         "position": 9,
         "points": 0.5,
@@ -2590,6 +2823,7 @@
       },
       {
         "peg": 2,
+        "pairedWithPeg": 0,
         "weight": 0.0,
         "position": 9,
         "points": 0.5,
@@ -2606,11 +2840,11 @@
     "venue": "How End",
     "lake": "Danis",
     "leagueId": 7,
-    "leagueMatchNo": 6,
+    "leagueMatchNo": "6",
     "league": "Kingfisher Winter League",
     "noOfPegs": 20,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Shanks & McEwan",
@@ -2618,73 +2852,82 @@
     "matchEntries": [
       {
         "peg": 12,
+        "pairedWithPeg": 0,
         "weight": 60.875,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 15,
+        "pairedWithPeg": 0,
         "weight": 38.625,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 26,
         "anglerName": "Doug Robinson"
       },
       {
         "peg": 17,
+        "pairedWithPeg": 0,
         "weight": 14.625,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 24,
         "anglerName": "Mike Clarke"
       },
       {
         "peg": 10,
+        "pairedWithPeg": 0,
         "weight": 20.625,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 6,
+        "pairedWithPeg": 0,
         "weight": 11.25,
         "position": 9,
-        "points": 4,
+        "points": 4.0,
         "anglerId": 9,
         "anglerName": "Graham Parker"
       },
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 15.5,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 8,
+        "pairedWithPeg": 0,
         "weight": 18.25,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 1,
+        "pairedWithPeg": 0,
         "weight": 27.25,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 19,
+        "pairedWithPeg": 0,
         "weight": 21.5,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       }
@@ -2698,11 +2941,11 @@
     "venue": "Decoy",
     "lake": "Damson",
     "leagueId": 9,
-    "leagueMatchNo": 1,
+    "leagueMatchNo": "1",
     "league": "Kingfisher Summer League",
     "noOfPegs": 10,
-    "poolsFee": 5,
-    "dayTicketFee": 8,
+    "poolsFee": 5.0,
+    "dayTicketFee": 8.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -2710,57 +2953,64 @@
     "matchEntries": [
       {
         "peg": 11,
+        "pairedWithPeg": 0,
         "weight": 252.0,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 2,
+        "pairedWithPeg": 0,
         "weight": 110.5,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 24,
         "anglerName": "Mike Clarke"
       },
       {
         "peg": 9,
+        "pairedWithPeg": 0,
         "weight": 55.75,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 102.75,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 6,
+        "pairedWithPeg": 0,
         "weight": 108.125,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 8,
+        "pairedWithPeg": 0,
         "weight": 103.25,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 5,
+        "pairedWithPeg": 0,
         "weight": 122.75,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 22,
         "anglerName": "Tony Taylor"
       }
@@ -2773,11 +3023,12 @@
     "date": "2018-06-03",
     "venue": "How End",
     "lake": "Yasis",
+    "leagueId": 0,
     "leagueMatchNo": "",
     "league": "",
     "noOfPegs": 16,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Phil Stone Cup",
@@ -2785,89 +3036,100 @@
     "matchEntries": [
       {
         "peg": 13,
+        "pairedWithPeg": 0,
         "weight": 70.625,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 8,
+        "pairedWithPeg": 0,
         "weight": 90.375,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 23,
         "anglerName": "Nick Rowe"
       },
       {
         "peg": 1,
+        "pairedWithPeg": 0,
         "weight": 53.125,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 35.75,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 29,
         "anglerName": "Paul Petrie"
       },
       {
         "peg": 15,
+        "pairedWithPeg": 0,
         "weight": 33.125,
         "position": 9,
-        "points": 4,
+        "points": 4.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 11,
+        "pairedWithPeg": 0,
         "weight": 107.5,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 7,
+        "pairedWithPeg": 0,
         "weight": 105.25,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 12,
+        "pairedWithPeg": 0,
         "weight": 30.75,
         "position": 10,
-        "points": 3,
+        "points": 3.0,
         "anglerId": 9,
         "anglerName": "Graham Parker"
       },
       {
         "peg": 5,
+        "pairedWithPeg": 0,
         "weight": 24.125,
         "position": 11,
-        "points": 2,
+        "points": 2.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 16,
+        "pairedWithPeg": 0,
         "weight": 110.625,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 26,
         "anglerName": "Doug Robinson"
       },
       {
         "peg": 10,
+        "pairedWithPeg": 0,
         "weight": 90.625,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 25,
         "anglerName": "Kevin Miller"
       }
@@ -2881,10 +3143,10 @@
     "venue": "Makins",
     "lake": "Reptile",
     "leagueId": 9,
-    "leagueMatchNo": 2,
+    "leagueMatchNo": "2",
     "league": "Kingfisher Summer League",
     "noOfPegs": 12,
-    "poolsFee": 5,
+    "poolsFee": 5.0,
     "dayTicketFee": 7.50,
     "isTrophyMatch": false,
     "isPairs": false,
@@ -2893,81 +3155,91 @@
     "matchEntries": [
       {
         "peg": 4,
+        "pairedWithPeg": 0,
         "weight": 5.5,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 2,
+        "pairedWithPeg": 0,
         "weight": 8.75,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 26,
         "anglerName": "Doug Robinson"
       },
       {
         "peg": 14,
-        "weight": 5,
+        "pairedWithPeg": 0,
+        "weight": 5.0,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 12,
+        "pairedWithPeg": 0,
         "weight": 8.375,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 24,
         "anglerName": "Mike Clarke"
       },
       {
         "peg": 8,
+        "pairedWithPeg": 0,
         "weight": 3.875,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 16,
+        "pairedWithPeg": 0,
         "weight": 0.3125,
         "position": 9,
-        "points": 4,
+        "points": 4.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 6,
+        "pairedWithPeg": 0,
         "weight": 6.125,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 10,
+        "pairedWithPeg": 0,
         "weight": 1.125,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 18,
+        "pairedWithPeg": 0,
         "weight": 40.25,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 28,
         "anglerName": "Paul Stacey"
       },
       {
         "peg": 20,
-        "weight": 0.00,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
         "position": 10,
-        "points": 1,
+        "points": 1.0,
         "anglerId": 29,
         "anglerName": "Paul Petrie"
       }
@@ -2981,11 +3253,11 @@
     "venue": "Decoy",
     "lake": "Willows",
     "leagueId": 9,
-    "leagueMatchNo": 3,
+    "leagueMatchNo": "3",
     "league": "Kingfisher Summer League",
     "noOfPegs": 12,
-    "poolsFee": 5,
-    "dayTicketFee": 8,
+    "poolsFee": 5.0,
+    "dayTicketFee": 8.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Dick Mitchell",
@@ -2993,65 +3265,73 @@
     "matchEntries": [
       {
         "peg": 34,
+        "pairedWithPeg": 0,
         "weight": 89.5,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 33,
+        "pairedWithPeg": 0,
         "weight": 54.0,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 29,
+        "pairedWithPeg": 0,
         "weight": 18.5,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 3,
-        "weight": 4.00,
+        "pairedWithPeg": 0,
+        "weight": 4.0,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 29,
         "anglerName": "Paul Petrie"
       },
       {
         "peg": 1,
+        "pairedWithPeg": 0,
         "weight": 52.25,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 30,
+        "pairedWithPeg": 0,
         "weight": 67.25,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 11,
+        "pairedWithPeg": 0,
         "weight": 59.0,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 25,
+        "pairedWithPeg": 0,
         "weight": 92.375,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 26,
         "anglerName": "Doug Robinson"
       }
@@ -3064,11 +3344,12 @@
     "date": "2018-07-22",
     "venue": "How End",
     "lake": "Danis",
+    "leagueId": 0,
     "leagueMatchNo": "",
     "league": "",
     "noOfPegs": 20,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Tarton Shield",
@@ -3076,105 +3357,118 @@
     "matchEntries": [
       {
         "peg": 18,
+        "pairedWithPeg": 0,
         "weight": 138.375,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 7,
+        "pairedWithPeg": 0,
         "weight": 34.1875,
         "position": 10,
-        "points": 3,
+        "points": 3.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 1,
+        "pairedWithPeg": 0,
         "weight": 58.125,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 25,
         "anglerName": "Kevin Miller"
       },
       {
         "peg": 2,
-        "weight": 0.00,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
         "position": 13,
-        "points": 1,
+        "points": 1.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 5,
+        "pairedWithPeg": 0,
         "weight": 111.5,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 13,
+        "pairedWithPeg": 0,
         "weight": 132.125,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 26,
         "anglerName": "Doug Robinson"
       },
       {
         "peg": 14,
+        "pairedWithPeg": 0,
         "weight": 15.0,
         "position": 12,
-        "points": 1,
+        "points": 1.0,
         "anglerId": 9,
         "anglerName": "Graham Parker"
       },
       {
         "peg": 19,
+        "pairedWithPeg": 0,
         "weight": 39.875,
         "position": 9,
-        "points": 4,
+        "points": 4.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 17,
+        "pairedWithPeg": 0,
         "weight": 20.5,
         "position": 11,
-        "points": 2,
+        "points": 2.0,
         "anglerId": 29,
         "anglerName": "Paul Petrie"
       },
       {
         "peg": 4,
+        "pairedWithPeg": 0,
         "weight": 111.5,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 28,
         "anglerName": "Paul Stacey"
       },
       {
         "peg": 7,
+        "pairedWithPeg": 0,
         "weight": 109.625,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 8,
+        "pairedWithPeg": 0,
         "weight": 56.75,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 10,
+        "pairedWithPeg": 0,
         "weight": 83.375,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 22,
         "anglerName": "Tony Taylor"
       }
@@ -3188,11 +3482,11 @@
     "venue": "Rib Valley",
     "lake": "Rib",
     "leagueId": 9,
-    "leagueMatchNo": 4,
+    "leagueMatchNo": "4",
     "league": "Kingfisher Summer League",
     "noOfPegs": 20,
-    "poolsFee": 5,
-    "dayTicketFee": 8,
+    "poolsFee": 5.0,
+    "dayTicketFee": 8.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Lund Conlon",
@@ -3200,105 +3494,118 @@
     "matchEntries": [
       {
         "peg": 53,
-        "weight": 20,
+        "pairedWithPeg": 0,
+        "weight": 20.0,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 50,
+        "pairedWithPeg": 0,
         "weight": 12.0,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 24,
         "anglerName": "Mike Clarke"
       },
       {
         "peg": 7,
-        "weight": 11,
+        "pairedWithPeg": 0,
+        "weight": 11.0,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 8,
-        "weight": 0.00,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
         "position": 9,
-        "points": 1,
+        "points": 1.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 2,
-        "weight": 0.00,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
         "position": 9,
-        "points": 1,
+        "points": 1.0,
         "anglerId": 25,
         "anglerName": "Kevin Miller"
       },
       {
         "peg": 47,
-        "weight": 0.00,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
         "position": 9,
-        "points": 1,
+        "points": 1.0,
         "anglerId": 27,
         "anglerName": "Alfie Miller"
       },
       {
         "peg": 56,
-        "weight": 0.00,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
         "position": 9,
-        "points": 1,
+        "points": 1.0,
         "anglerId": 22,
         "anglerName": "Tony Taylor"
       },
       {
         "peg": 54,
-        "weight": 0.00,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
         "position": 9,
-        "points": 1,
+        "points": 1.0,
         "anglerId": 29,
         "anglerName": "Paul Petrie"
       },
       {
         "peg": 49,
+        "pairedWithPeg": 0,
         "weight": 6.25,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 28,
         "anglerName": "Paul Stacey"
       },
       {
         "peg": 3,
+        "pairedWithPeg": 0,
         "weight": 11.75,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 57,
+        "pairedWithPeg": 0,
         "weight": 26.375,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 4,
+        "pairedWithPeg": 0,
         "weight": 9.5,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 26,
         "anglerName": "Doug Robinson"
       },
       {
         "peg": 5,
+        "pairedWithPeg": 0,
         "weight": 1.25,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       }
@@ -3311,11 +3618,12 @@
     "date": "2018-09-02",
     "venue": "Decoy",
     "lake": "4 Island",
+    "leagueId": 0,
     "leagueMatchNo": "",
     "league": "",
     "noOfPegs": 10,
-    "poolsFee": 5,
-    "dayTicketFee": 8,
+    "poolsFee": 5.0,
+    "dayTicketFee": 8.0,
     "isTrophyMatch": true,
     "isPairs": true,
     "trophyName": "Pairs",
@@ -3326,7 +3634,7 @@
         "pairedWithPeg": 7,
         "weight": 128.0,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
@@ -3335,7 +3643,7 @@
         "pairedWithPeg": 1,
         "weight": 28.0,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
@@ -3344,7 +3652,7 @@
         "pairedWithPeg": 2,
         "weight": 64.75,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
@@ -3353,7 +3661,7 @@
         "pairedWithPeg": 9,
         "weight": 75.25,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
@@ -3362,7 +3670,7 @@
         "pairedWithPeg": 8,
         "weight": 64.75,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 26,
         "anglerName": "Doug Robinson"
       },
@@ -3371,7 +3679,7 @@
         "pairedWithPeg": 10,
         "weight": 22.75,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
@@ -3380,7 +3688,7 @@
         "pairedWithPeg": 6,
         "weight": 42.375,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
@@ -3389,7 +3697,7 @@
         "pairedWithPeg": 3,
         "weight": 102.0,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 22,
         "anglerName": "Tony Taylor"
       }
@@ -3403,11 +3711,11 @@
     "venue": "Rookery",
     "lake": "Magpie",
     "leagueId": 9,
-    "leagueMatchNo": 5,
+    "leagueMatchNo": "5",
     "league": "Kingfisher Summer League",
     "noOfPegs": 13,
-    "poolsFee": 5,
-    "dayTicketFee": 7,
+    "poolsFee": 5.0,
+    "dayTicketFee": 7.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -3415,73 +3723,82 @@
     "matchEntries": [
       {
         "peg": 34,
+        "pairedWithPeg": 0,
         "weight": 129.5,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 4,
+        "pairedWithPeg": 0,
         "weight": 66.0,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 2,
         "anglerName": "Tracey Culley"
       },
       {
         "peg": 10,
+        "pairedWithPeg": 0,
         "weight": 22.25,
         "position": 9,
-        "points": 4,
+        "points": 4.0,
         "anglerId": 29,
         "anglerName": "Paul Petrie"
       },
       {
         "peg": 28,
+        "pairedWithPeg": 0,
         "weight": 98.625,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 32,
+        "pairedWithPeg": 0,
         "weight": 130.375,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 7,
         "anglerName": "Trevor Jeans"
       },
       {
         "peg": 33,
+        "pairedWithPeg": 0,
         "weight": 141.75,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 31,
+        "pairedWithPeg": 0,
         "weight": 153.375,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 26,
         "anglerName": "Doug Robinson"
       },
       {
         "peg": 8,
+        "pairedWithPeg": 0,
         "weight": 174.25,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 22,
         "anglerName": "Tony Taylor"
       },
       {
         "peg": 30,
+        "pairedWithPeg": 0,
         "weight": 30.25,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       }
@@ -3495,11 +3812,11 @@
     "venue": "Wold Farm",
     "lake": "Islands",
     "leagueId": 9,
-    "leagueMatchNo": 6,
+    "leagueMatchNo": "6",
     "league": "Kingfisher Summer League",
     "noOfPegs": 12,
-    "poolsFee": 5,
-    "dayTicketFee": 10,
+    "poolsFee": 5.0,
+    "dayTicketFee": 10.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Appledore Cup",
@@ -3507,65 +3824,73 @@
     "matchEntries": [
       {
         "peg": 10,
-        "weight": 89,
+        "pairedWithPeg": 0,
+        "weight": 89.0,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 8,
+        "pairedWithPeg": 0,
         "weight": 64.75,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 3,
-        "weight": 51,
+        "pairedWithPeg": 0,
+        "weight": 51.0,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 28,
         "anglerName": "Paul Stacey"
       },
       {
         "peg": 4,
+        "pairedWithPeg": 0,
         "weight": 97.75,
         "position": 2,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 26,
         "anglerName": "Doug Robinson"
       },
       {
         "peg": 9,
+        "pairedWithPeg": 0,
         "weight": 27.5,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       },
       {
         "peg": 7,
+        "pairedWithPeg": 0,
         "weight": 71.75,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 24,
         "anglerName": "Mike Clarke"
       },
       {
         "peg": 1,
+        "pairedWithPeg": 0,
         "weight": 51.75,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 4,
         "anglerName": "Darren James"
       },
       {
         "peg": 5,
+        "pairedWithPeg": 0,
         "weight": 16.5,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 29,
         "anglerName": "Paul Petrie"
       }
@@ -3579,11 +3904,11 @@
     "venue": "How End",
     "lake": "Yasis",
     "leagueId": 10,
-    "leagueMatchNo": 1,
+    "leagueMatchNo": "1",
     "league": "Kingfisher Winter League",
     "noOfPegs": 16,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -3591,81 +3916,91 @@
     "matchEntries": [
       {
         "peg": 9,
+        "pairedWithPeg": 0,
         "weight": 68.0625,
         "position": 1,
-        "points": 13,
+        "points": 13.0,
         "anglerId": 1,
         "anglerName": "Simon Drozdziol"
       },
       {
         "peg": 3,
-        "weight": 0,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
         "position": 10,
-        "points": 1,
+        "points": 1.0,
         "anglerId": 29,
         "anglerName": "Paul Petrie"
       },
       {
         "peg": 10,
+        "pairedWithPeg": 0,
         "weight": 39.5,
         "position": 4,
-        "points": 9,
+        "points": 9.0,
         "anglerId": 6,
         "anglerName": "Paul Balodis"
       },
       {
         "peg": 16,
+        "pairedWithPeg": 0,
         "weight": 32.625,
         "position": 5,
-        "points": 8,
+        "points": 8.0,
         "anglerId": 28,
         "anglerName": "Paul Stacey"
       },
       {
         "peg": 12,
+        "pairedWithPeg": 0,
         "weight": 45.375,
         "position": 3,
-        "points": 10,
+        "points": 10.0,
         "anglerId": 22,
         "anglerName": "Tony Taylor"
       },
       {
         "peg": 7,
+        "pairedWithPeg": 0,
         "weight": 56.125,
         "position": 2,
-        "points": 11,
+        "points": 11.0,
         "anglerId": 26,
         "anglerName": "Doug Robinson"
       },
       {
         "peg": 5,
+        "pairedWithPeg": 0,
         "weight": 18.25,
         "position": 6,
-        "points": 7,
+        "points": 7.0,
         "anglerId": 5,
         "anglerName": "Darryl Anderson"
       },
       {
         "peg": 1,
+        "pairedWithPeg": 0,
         "weight": 9.5,
         "position": 7,
-        "points": 6,
+        "points": 6.0,
         "anglerId": 15,
         "anglerName": "Phil Stone"
       },
       {
         "peg": 13,
+        "pairedWithPeg": 0,
         "weight": 6.875,
         "position": 8,
-        "points": 5,
+        "points": 5.0,
         "anglerId": 3,
         "anglerName": "Malcolm Harley"
       },
       {
         "peg": 15,
+        "pairedWithPeg": 0,
         "weight": 3.5,
         "position": 9,
-        "points": 4,
+        "points": 4.0,
         "anglerId": 8,
         "anglerName": "Pete Deverick"
       }
@@ -3679,16 +4014,116 @@
     "venue": "How End",
     "lake": "Danis",
     "leagueId": 10,
-    "leagueMatchNo": 2,
+    "leagueMatchNo": "2",
     "league": "Kingfisher Winter League",
     "noOfPegs": 20,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
     "positionToPointsMappingId": 1,
-    "matchEntries": []
+    "matchEntries": [
+      {
+        "peg": 5,
+        "pairedWithPeg": 0,
+        "weight": 23.3125,
+        "position": 5,
+        "points": 8.0,
+        "anglerId": 1,
+        "anglerName": "Simon Drozdziol"
+      },
+      {
+        "peg": 1,
+        "pairedWithPeg": 0,
+        "weight": 19.25,
+        "position": 7,
+        "points": 6.0,
+        "anglerId": 8,
+        "anglerName": "Pete Deverick"
+      },
+      {
+        "peg": 9,
+        "pairedWithPeg": 0,
+        "weight": 51.5,
+        "position": 2,
+        "points": 11.0,
+        "anglerId": 26,
+        "anglerName": "Doug Robinson"
+      },
+      {
+        "peg": 10,
+        "pairedWithPeg": 0,
+        "weight": 6.0,
+        "position": 11,
+        "points": 2.0,
+        "anglerId": 6,
+        "anglerName": "Paul Balodis"
+      },
+      {
+        "peg": 7,
+        "pairedWithPeg": 0,
+        "weight": 11.75,
+        "position": 9,
+        "points": 4.0,
+        "anglerId": 3,
+        "anglerName": "Malcolm Harley"
+      },
+      {
+        "peg": 16,
+        "pairedWithPeg": 0,
+        "weight": 11.5,
+        "position": 10,
+        "points": 3.0,
+        "anglerId": 7,
+        "anglerName": "Trevor Jeans"
+      },
+      {
+        "peg": 19,
+        "pairedWithPeg": 0,
+        "weight": 41.0,
+        "position": 4,
+        "points": 9.0,
+        "anglerId": 5,
+        "anglerName": "Darryl Anderson"
+      },
+      {
+        "peg": 12,
+        "pairedWithPeg": 0,
+        "weight": 53.5,
+        "position": 1,
+        "points": 13.0,
+        "anglerId": 4,
+        "anglerName": "Darren James"
+      },
+      {
+        "peg": 14,
+        "pairedWithPeg": 0,
+        "weight": 44.0,
+        "position": 3,
+        "points": 10.0,
+        "anglerId": 22,
+        "anglerName": "Tony Taylor"
+      },
+      {
+        "peg": 3,
+        "pairedWithPeg": 0,
+        "weight": 18.125,
+        "position": 8,
+        "points": 5.0,
+        "anglerId": 25,
+        "anglerName": "Kevin Miller"
+      },
+      {
+        "peg": 18,
+        "pairedWithPeg": 0,
+        "weight": 20.0,
+        "position": 6,
+        "points": 7.0,
+        "anglerId": 30,
+        "anglerName": "Mick Whitmore"
+      }
+    ]
   },
   {
     "id": 46,
@@ -3698,16 +4133,134 @@
     "venue": "How End",
     "lake": "Yasis",
     "leagueId": 10,
-    "leagueMatchNo": 3,
+    "leagueMatchNo": "3",
     "league": "Kingfisher Winter League",
     "noOfPegs": 16,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
     "positionToPointsMappingId": 1,
-    "matchEntries": []
+    "matchEntries": [
+      {
+        "peg": 16,
+        "pairedWithPeg": 0,
+        "weight": 28.0,
+        "position": 4,
+        "points": 9.0,
+        "anglerId": 1,
+        "anglerName": "Simon Drozdziol"
+      },
+      {
+        "peg": 17,
+        "pairedWithPeg": 0,
+        "weight": 69.625,
+        "position": 1,
+        "points": 13.0,
+        "anglerId": 5,
+        "anglerName": "Darryl Anderson"
+      },
+      {
+        "peg": 15,
+        "pairedWithPeg": 0,
+        "weight": 2.9375,
+        "position": 13,
+        "points": 1.0,
+        "anglerId": 6,
+        "anglerName": "Paul Balodis"
+      },
+      {
+        "peg": 5,
+        "pairedWithPeg": 0,
+        "weight": 9.9375,
+        "position": 11,
+        "points": 2.0,
+        "anglerId": 7,
+        "anglerName": "Trevor Jeans"
+      },
+      {
+        "peg": 3,
+        "pairedWithPeg": 0,
+        "weight": 10.5,
+        "position": 9,
+        "points": 4.0,
+        "anglerId": 3,
+        "anglerName": "Malcolm Harley"
+      },
+      {
+        "peg": 8,
+        "pairedWithPeg": 0,
+        "weight": 24.25,
+        "position": 5,
+        "points": 8.0,
+        "anglerId": 23,
+        "anglerName": "Nick Rowe"
+      },
+      {
+        "peg": 2,
+        "pairedWithPeg": 0,
+        "weight": 10.0,
+        "position": 10,
+        "points": 3.0,
+        "anglerId": 9,
+        "anglerName": "Graham Parker"
+      },
+      {
+        "peg": 6,
+        "pairedWithPeg": 0,
+        "weight": 14.25,
+        "position": 6,
+        "points": 7.0,
+        "anglerId": 4,
+        "anglerName": "Darren James"
+      },
+      {
+        "peg": 11,
+        "pairedWithPeg": 0,
+        "weight": 12.125,
+        "position": 7,
+        "points": 6.0,
+        "anglerId": 8,
+        "anglerName": "Pete Deverick"
+      },
+      {
+        "peg": 10,
+        "pairedWithPeg": 0,
+        "weight": 52.875,
+        "position": 3,
+        "points": 10.0,
+        "anglerId": 28,
+        "anglerName": "Paul Stacey"
+      },
+      {
+        "peg": 12,
+        "pairedWithPeg": 0,
+        "weight": 11.875,
+        "position": 8,
+        "points": 5.0,
+        "anglerId": 22,
+        "anglerName": "Tony Taylor"
+      },
+      {
+        "peg": 13,
+        "pairedWithPeg": 0,
+        "weight": 4.0,
+        "position": 12,
+        "points": 1.0,
+        "anglerId": 26,
+        "anglerName": "Doug Robinson"
+      },
+      {
+        "peg": 9,
+        "pairedWithPeg": 0,
+        "weight": 63.375,
+        "position": 2,
+        "points": 11.0,
+        "anglerId": 30,
+        "anglerName": "Mick Whitmore"
+      }
+    ]
   },
   {
     "id": 47,
@@ -3717,11 +4270,11 @@
     "venue": "How End",
     "lake": "Danis",
     "leagueId": 10,
-    "leagueMatchNo": 4,
+    "leagueMatchNo": "4",
     "league": "Kingfisher Winter League",
     "noOfPegs": 16,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -3736,11 +4289,11 @@
     "venue": "How End",
     "lake": "Yasis",
     "leagueId": 10,
-    "leagueMatchNo": 5,
+    "leagueMatchNo": "5",
     "league": "Kingfisher Winter League",
     "noOfPegs": 16,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": false,
     "isPairs": false,
     "trophyName": "",
@@ -3755,11 +4308,11 @@
     "venue": "How End",
     "lake": "Danis",
     "leagueId": 10,
-    "leagueMatchNo": 6,
+    "leagueMatchNo": "6",
     "league": "Kingfisher Winter League",
     "noOfPegs": 20,
-    "poolsFee": 5,
-    "dayTicketFee": 0,
+    "poolsFee": 5.0,
+    "dayTicketFee": 0.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Shanks & McEwan",
