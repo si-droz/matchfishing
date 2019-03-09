@@ -13,7 +13,7 @@
     "express-cors": "0.0.3",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-open": "^0.2.3",
-    "matchdep": "^1.0.1"
+    "matchdep": "^2.0.0"
   },
   "scripts": {
     "update-deps": "npm update",
