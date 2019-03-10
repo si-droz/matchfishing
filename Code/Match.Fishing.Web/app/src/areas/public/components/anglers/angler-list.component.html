@@ -1,20 +1,26 @@
+<ol class="breadcrumb">
+    <li><a ng-link="['../../Home']">Home</a></li>
+    <li class="active">Anglers</li>
+</ol>
 <h2 class="page-header">Anglers</h2>
 <ul class="nav nav-pills bottom-spacer">
-    <li role="presentation" ng-class="model.isLetterSelected(letter) ? 'Active' : ''" ng-repeat="letter in model.letters">
+    <li role="presentation" ng-class="model.isLetterSelected(letter) ? 'Active' : ''"
+        ng-repeat="letter in model.letters">
         <a ng-click="model.onSelectLetter(letter)">{{letter}}</a>
     </li>
 </ul>
 <div class="well well-sm bottom-spacer">
     <input type="text" class="form-control" id="searchText" placeholder="Search name" ng-model="searchText">
 </div>
-<table class="table table-striped table-hover">
+<table class="table table-striped table-hover table-condensed">
     <tr>
         <th>Forename</th>
         <th>Surname</th>
         <th>Nickname</th>
         <th></th>
     </tr>
-    <tr ng-repeat="angler in model.anglers | anglerFilter: model.selectedLetter:searchText | orderBy:'forename' as results">
+    <tr
+        ng-repeat="angler in model.anglers | anglerFilter: model.selectedLetter:searchText | orderBy:'forename' as results">
         <td>{{angler.forename}}</td>
         <td>{{angler.surname}}</td>
         <td>{{angler.nickname}}</td>

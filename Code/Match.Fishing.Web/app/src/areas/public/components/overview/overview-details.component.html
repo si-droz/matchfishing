@@ -12,9 +12,9 @@
         <div class="col-md-4">
             <div class="panel panel-info">
                 <div class="panel-heading">
-                    <h5>
+                    <h3 class="panel-title">
                         <strong> {{overviewResult.matchName}}</strong>
-                    </h5>
+                    </h3>
                 </div>
                 <div class="panel-body">
                     <div class="row" ng-show="overviewResult.isTrophyMatch==true">
@@ -37,21 +37,25 @@
                         <div class="col-md-4">
                             Winner:
                         </div>
-                        <div class="col-md-8" ng-if="overviewResult.isTrophyMatch==true" ng-show="overviewResult.isTrophyMatch==true">
+                        <div class="col-md-8" ng-if="overviewResult.isTrophyMatch==true"
+                            ng-show="overviewResult.isTrophyMatch==true">
                             {{overviewResult.winner}} - {{overviewResult.winnerWeight | weightToText}}
                         </div>
-                        <div class="col-md-8" ng-if="overviewResult.isTrophyMatch==false" ng-show="overviewResult.isTrophyMatch==false">
+                        <div class="col-md-8" ng-if="overviewResult.isTrophyMatch==false"
+                            ng-show="overviewResult.isTrophyMatch==false">
                             {{overviewResult.winner}} - {{overviewResult.winnerPoints}} points
                         </div>
                     </div>
-                    <div class="row" ng-if="overviewResult.isWoodenSpoon==false" >
+                    <div class="row" ng-if="overviewResult.isWoodenSpoon==false">
                         <div class="col-md-4">
                             Runner Up:
                         </div>
-                        <div class="col-md-8" ng-if="overviewResult.isTrophyMatch==true" ng-show="overviewResult.isTrophyMatch==true">
+                        <div class="col-md-8" ng-if="overviewResult.isTrophyMatch==true"
+                            ng-show="overviewResult.isTrophyMatch==true">
                             {{overviewResult.runnerUp}} - {{overviewResult.runnerUpWeight| weightToText}}
                         </div>
-                        <div class="col-md-8" ng-if="overviewResult.isTrophyMatch==false" ng-show="overviewResult.isTrophyMatch==false">
+                        <div class="col-md-8" ng-if="overviewResult.isTrophyMatch==false"
+                            ng-show="overviewResult.isTrophyMatch==false">
                             {{overviewResult.runnerUp}} - {{overviewResult.runnerUpPoints}} points
                         </div>
                     </div>
