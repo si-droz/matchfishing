@@ -18,7 +18,7 @@ namespace Match.Fishing.Controllers.v1
 
             IEnumerable<string> anglerNames = matches.SelectMany(match => match.MatchEntries)
                                                      .GroupBy(matchEntry => matchEntry.AnglerName)
-                                                     .Select(group => group.Key);
+                                                     .Select(group => @group.Key);
 
             return (from anglerName in anglerNames
                     let rounds = GetChampionshipRounds(matches, anglerName)
@@ -31,23 +31,23 @@ namespace Match.Fishing.Controllers.v1
                                MatchCount = rounds.Count(matchEntry => matchEntry.MatchFished)
                            }).ToList();
         }
-
+        
         private static List<ChampionshipRound> GetChampionshipRounds(IEnumerable<FishingMatch> matches, string anglerName)
         {
             var rounds = new List<ChampionshipRound>();
             var championshipRoundIndex = 1;
-            foreach(FishingMatch match in matches)
+            foreach (FishingMatch match in matches)
             {
                 MatchEntry anglerMatchEntry = match.MatchEntries.SingleOrDefault(matchEntry => matchEntry.AnglerName == anglerName);
                 var championshipRound = new ChampionshipRound
-                                        {
-                                            Number = championshipRoundIndex,
-                                            Weight = 0,
-                                            Points = 0,
-                                            MatchFished = false
-                                        };
+                {
+                    Number = championshipRoundIndex,
+                    Weight = 0,
+                    Points = 0,
+                    MatchFished = false
+                };
 
-                if(anglerMatchEntry != null)
+                if (anglerMatchEntry != null)
                 {
                     championshipRound.Weight = anglerMatchEntry.Weight;
                     championshipRound.Points = anglerMatchEntry.Points;

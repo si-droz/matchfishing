@@ -10,6 +10,9 @@ namespace Match.Fishing.Models
         [JsonProperty("season")]
         public string Season { get; set; }
 
+        [JsonProperty("seasonId")]
+        public int SeasonId { get; set; }
+
         [JsonProperty("name")]
         public string Name { get; set; }
 

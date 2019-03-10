@@ -7,6 +7,7 @@
         var service = this;
         const matchesUrl = `${EnvironmentConfig.serviceApi}/api/v1/matches`;
         const leaguesUrl = `${EnvironmentConfig.serviceApi}/api/v1/leagues`;
+        const leaguesCurrentSeasonUrl = `${EnvironmentConfig.serviceApi}/api/v1/leagues/current-season`;
 
         service.getLeagues = function getUniqueLeagues($http) {
             return $http.get(leaguesUrl)
@@ -32,6 +33,13 @@
                     var anglers = getAnglerDetails(uniqueAnglers, leagueMatches, topMatchCount);
 
                     return anglers;
+                });
+        };
+
+        service.getLeaguesForCurrentSeason = function getLeaguesForCurrentSeason($http) {
+            return $http.get(leaguesCurrentSeasonUrl)
+                .then(function (response) {
+                    return response.data;
                 });
         };
 
@@ -151,6 +159,6 @@
             });
 
             return topRounds;
-        }
+        };
     });
 }());

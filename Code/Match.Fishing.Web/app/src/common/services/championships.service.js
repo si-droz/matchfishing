@@ -26,7 +26,7 @@
                     matches.forEach(function (match) {
                         if (match.isTrophyMatch) {
                             if (match.isPairs) {
-                                getPairsResult(matchesService, match, overviewResults, sortOrder);                                
+                                getPairsResult(matchesService, match, overviewResults, sortOrder);
                             } else {
                                 overviewResults.push(getTrophyResult(match, sortOrder));
                             }
@@ -59,9 +59,9 @@
                 var pairsMatchSortOrder = sortOrder;
                 matchesService.getPairs($http, match.id).then(function (pairs) {
                     var delimiter = ' & ';
-                    if (pairs[0].peg2 == null){
+                    if (pairs[0].peg2 == null) {
                         delimiter = ' ';
-                    } 
+                    }
 
                     var winner = pairs[0].angler1 + delimiter + pairs[0].angler2;
                     var overviewResult = {

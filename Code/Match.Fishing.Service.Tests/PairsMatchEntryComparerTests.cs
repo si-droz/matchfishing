@@ -1,8 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Match.Fishing.Models;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Shouldly;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Match.Fishing.Service.Tests
 {

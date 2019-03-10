@@ -55,3 +55,7 @@ html {
   overflow-y: visible;
   margin-left: 200px;
 }
+
+#imageCarousel.carousel-inner .item{
+  max-height: 600px;
+} 

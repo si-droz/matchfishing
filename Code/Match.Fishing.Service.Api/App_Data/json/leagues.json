@@ -2,6 +2,7 @@
   {
     "id": 1,
     "season": "12/13",
+    "seasonId": 1,
     "name": "Kingfisher Winter League",
     "noOfRounds": 6,
     "countingRounds": 5
@@ -10,6 +11,7 @@
   {
     "id": 2,
     "season": "13/14",
+    "seasonId": 2,
     "name": "Kingfisher Winter League",
     "noOfRounds": 6,
     "countingRounds": 5
@@ -17,6 +19,7 @@
   {
     "id": 3,
     "season": "14/15",
+    "seasonId": 3,
     "name": "Kingfisher Winter League",
     "noOfRounds": 6,
     "countingRounds": 5
@@ -24,6 +27,7 @@
   {
     "id": 4,
     "season": "15/16",
+    "seasonId": 4,
     "name": "Kingfisher Winter League",
     "noOfRounds": 6,
     "countingRounds": 5
@@ -31,6 +35,7 @@
   {
     "id": 8,
     "season": "16/17",
+    "seasonId": 5,
     "name": "Kingfisher Summer League",
     "noOfRounds": 6,
     "countingRounds": 5
@@ -38,6 +43,7 @@
   {
     "id": 5,
     "season": "16/17",
+    "seasonId": 5,
     "name": "Kingfisher Winter League",
     "noOfRounds": 6,
     "countingRounds": 5
@@ -45,6 +51,7 @@
   {
     "id": 6,
     "season": "17/18",
+    "seasonId": 6,
     "name": "Kingfisher Summer League",
     "noOfRounds": 6,
     "countingRounds": 5
@@ -52,6 +59,7 @@
   {
     "id": 7,
     "season": "17/18",
+    "seasonId": 6,
     "name": "Kingfisher Winter League",
     "noOfRounds": 6,
     "countingRounds": 5
@@ -59,6 +67,7 @@
   {
     "id": 9,
     "season": "18/19",
+    "seasonId": 7,
     "name": "Kingfisher Summer League",
     "noOfRounds": 6,
     "countingRounds": 5
@@ -66,6 +75,7 @@
   {
     "id": 10,
     "season": "18/19",
+    "seasonId": 7,
     "name": "Kingfisher Winter League",
     "noOfRounds": 6,
     "countingRounds": 5
@@ -73,6 +83,7 @@
   {
     "id": 11,
     "season": "19/20",
+    "seasonId": 8,
     "name": "Kingfisher Summer League",
     "noOfRounds": 6,
     "countingRounds": 5
@@ -80,6 +91,7 @@
   {
     "id": 12,
     "season": "19/20",
+    "seasonId": 8,
     "name": "Kingfisher Winter League",
     "noOfRounds": 6,
     "countingRounds": 5
