@@ -1,10 +1,14 @@
+<ol class="breadcrumb">
+    <li><a ng-link="['../../Home']">Home</a></li>
+    <li class="active">Championships</li>
+</ol>
 <h2 class="page-header">Championships</h2>
 <ul>
-    <li class="list-unstyled" ng-repeat="season in model.seasons">
+    <li class="list-unstyled" ng-repeat="championship in model.championships | orderBy:'seasonId'">
         <div class="col-md-4">
             <div class="panel panel-info">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><strong>{{season.season}} Championship</strong></h3>
+                    <h3 class="panel-title"><strong>{{championship.season}} Championship</strong></h3>
                 </div>
                 <div class="panel-body">
                     <div class="row">
@@ -12,7 +16,7 @@
                             No of Matches:
                         </div>
                         <div class="col-md-7">
-
+                            {{championship.rounds.length}}
                         </div>
                     </div>
                     <div class="row">
@@ -20,12 +24,12 @@
                             No of Anglers:
                         </div>
                         <div class="col-md-7">
-
+                            {{championship.anglerCount}}
                         </div>
                     </div>
                 </div>
                 <div class="panel-footer">
-                    <a ng-click="model.onSelectSeason(season)" class="btn btn-primary">Results</a>
+                    <a ng-click="model.onSelectSeason(championship)" class="btn btn-primary">Results</a>
                 </div>
             </div>
         </div>

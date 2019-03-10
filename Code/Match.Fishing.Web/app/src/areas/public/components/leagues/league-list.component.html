@@ -1,6 +1,11 @@
+<ol class="breadcrumb">
+    <li><a ng-link="['../../Home']">Home</a></li>
+    <li class="active">Leagues</li>
+</ol>
 <h2 class="page-header">Leagues</h2>
 <ul class="nav nav-pills bottom-spacer">
-    <li role="presentation" ng-class="model.isSeasonSelected(season) ? 'Active' : ''" ng-repeat="season in model.seasons">
+    <li role="presentation" ng-class="model.isSeasonSelected(season) ? 'Active' : ''"
+        ng-repeat="season in model.seasons">
         <a ng-click="model.onSelectSeason(season)">{{season}}</a>
     </li>
 </ul>

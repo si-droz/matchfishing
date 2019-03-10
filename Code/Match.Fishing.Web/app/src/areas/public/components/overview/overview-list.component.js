@@ -8,7 +8,7 @@
 
         model.$onInit = function () {
             seasonsService.getUniqueSeasons($http).then(function (seasons) {
-                model.seasons = seasons.splice(1);
+                model.seasons = seasons;
             });
         };
 

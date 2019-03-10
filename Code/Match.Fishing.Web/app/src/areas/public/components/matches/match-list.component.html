@@ -1,6 +1,11 @@
+<ol class="breadcrumb">
+    <li><a ng-link="['../../Home']">Home</a></li>
+    <li class="active">Matches</li>
+</ol>
 <h2 class="page-header">Matches</h2>
 <ul class="nav nav-pills bottom-spacer">
-    <li role="presentation" ng-class="model.isSeasonSelected(season) ? 'Active' : ''" ng-repeat="season in model.seasons">
+    <li role="presentation" ng-class="model.isSeasonSelected(season) ? 'Active' : ''"
+        ng-repeat="season in model.seasons">
         <a ng-click="model.onSelectSeason(season)">{{season}}</a>
     </li>
 </ul>
@@ -18,7 +23,8 @@
     </tr>
     <tr ng-repeat="match in model.matches | matchFilter: model.selectedSeason:searchText | orderBy:'date'">
         <td>{{match.date | date:'dd-MMM-yyyy'}}</td>
-        <td>{{match.league}} {{match.leagueMatchNo}}<span ng-if="match.isTrophyMatch"><span ng-if="match.league"> / </span>{{match.trophyName}}</span> </td>
+        <td>{{match.league}} {{match.leagueMatchNo}}<span ng-if="match.isTrophyMatch"><span ng-if="match.league"> /
+                </span>{{match.trophyName}}</span> </td>
         <td>{{match.venue}}</td>
         <td>{{match.lake}}</td>
         <td>{{match.noOfPegs}}</td>

@@ -1,38 +1,5 @@
 [
   {
-    "id": 1,
-    "season": "12/13",
-    "seasonId": 1,
-    "name": "Kingfisher Winter League",
-    "noOfRounds": 6,
-    "countingRounds": 5
-
-  },
-  {
-    "id": 2,
-    "season": "13/14",
-    "seasonId": 2,
-    "name": "Kingfisher Winter League",
-    "noOfRounds": 6,
-    "countingRounds": 5
-  },
-  {
-    "id": 3,
-    "season": "14/15",
-    "seasonId": 3,
-    "name": "Kingfisher Winter League",
-    "noOfRounds": 6,
-    "countingRounds": 5
-  },
-  {
-    "id": 4,
-    "season": "15/16",
-    "seasonId": 4,
-    "name": "Kingfisher Winter League",
-    "noOfRounds": 6,
-    "countingRounds": 5
-  },
-  {
     "id": 8,
     "season": "16/17",
     "seasonId": 5,

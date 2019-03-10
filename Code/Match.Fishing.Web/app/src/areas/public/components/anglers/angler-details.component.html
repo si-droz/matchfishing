@@ -6,11 +6,11 @@
 <h2 class="page-header">{{model.angler.forename}} <span
         ng-if="model.angler.nickname">"</span>{{model.angler.nickname}}<span ng-if="model.angler.nickname">"</span>
     {{model.angler.surname}}</h2>
-<div class="row">
+<h4 class="page-header">
+    Match Results
+</h4>
+<div ng-show="model.matches.length > 0" class="row">
     <div class="col-md-12">
-        <h4 class="page-header">
-            Match Results
-        </h4>
         <ul class="nav nav-pills bottom-spacer">
             <li role="presentation" ng-class="model.isSeasonSelected(season) ? 'Active' : ''"
                 ng-repeat="season in model.seasons">
@@ -32,7 +32,8 @@
             <tr ng-repeat="match in model.matches | matchFilter: model.selectedSeason:searchText | orderBy:'date'">
                 <td>{{match.date | date:'dd-MMM-yyyy'}}</td>
                 <td>{{match.leagueMatchNo}} {{match.league}} <span
-                        ng-if="match.isTrophyMatch">{{match.trophyName}}</span> </td>
+                        ng-if="match.isTrophyMatch">{{match.trophyName}}</span>
+                </td>
                 <td>{{match.venue}}</td>
                 <td>{{match.lake}}</td>
                 <td>{{match.matchEntries[0].peg}}</td>
@@ -43,3 +44,4 @@
         </table>
     </div>
 </div>
+<div ng-hide="model.matches.length > 0" class="alert alert-info">No Match results</div>

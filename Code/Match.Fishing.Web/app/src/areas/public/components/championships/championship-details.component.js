@@ -12,8 +12,13 @@
         model.$routerOnActivate = function (next) {
             championshipsService.getChampionship($http, next.params.id).then(function (anglers) {
                 model.anglers = anglers;
-                model.rounds = anglers[0].rounds;
-                
+                var rounds = [];
+                if (anglers.length > 0) {
+                    rounds = anglers[0].rounds;
+                }
+
+                model.rounds = rounds;
+
                 var seasonId = next.params.id;
 
                 seasonsService.getSeasonDescription($http, seasonId).then(function (seasonDescription) {
