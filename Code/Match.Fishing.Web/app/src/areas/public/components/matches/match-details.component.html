@@ -1,68 +1,16 @@
-<h2 class="page-header">{{model.match.league}} {{model.match.leagueMatchNo}}<span ng-if="model.match.isTrophyMatch"><span ng-if="model.match.league"> / </span>{{model.match.trophyName}}</span></h2>
-<div class="row">
-    <div class="col-md-2">
-        <strong>Season</strong>
-    </div>
-    <div class="col-md-10">
-        {{model.match.season}}
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-2">
-        <strong>Date</strong>
-    </div>
-    <div class="col-md-10">
-        {{model.match.date | date:'dd-MMM-yyyy'}}
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-2">
-        <strong>Venue</strong>
-    </div>
-    <div class="col-md-10">
-        {{model.match.venue}} - {{model.match.lake}}
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-2">
-        <strong>League</strong>
-    </div>
-    <div class="col-md-10">
-        {{model.match.league}}
-
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-2">
-        <strong>No of Pegs</strong>
-    </div>
-    <div class="col-md-10">
-        {{model.match.noOfPegs}}
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-2">
-        <strong>Pools Fee</strong>
-    </div>
-    <div class="col-md-10">
-        {{model.match.poolsFee | currency: "£"}}
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-2">
-        <strong>Day Ticket Fee</strong>
-    </div>
-    <div class="col-md-10">
-        {{model.match.dayTicketFee | currency: "£"}}
-    </div>
-</div>
-<div class="row bottom-spacer">
-    <div class="col-md-2">
-        <strong>Is pairs match</strong>
-    </div>
-    <div class="col-md-10">
-        {{model.match.isPairs}}
-    </div>
+<div class="page-header">
+    <h2>{{model.match.season}} {{model.match.league}} {{model.match.leagueMatchNo}}
+        <span ng-if="model.match.isTrophyMatch">
+            <span ng-if="model.match.league"> /</span>
+            {{model.match.trophyName}}
+        </span>
+    </h2>
+    <p class="lead">
+        <strong>On</strong> {{model.match.date | date:'dd-MMM-yyyy'}}
+        <strong>at</strong> {{model.match.venue}} - {{model.match.lake}}
+        ({{model.match.noOfPegs}} pegs)<br /> {{model.match.dayTicketFee + model.match.poolsFee | currency: "£"}}
+        ({{model.match.dayTicketFee | currency: "£"}} day ticket + {{model.match.poolsFee | currency: "£"}} pools)
+    </p>
 </div>
 <div class="row">
     <div class="col-md-12">

@@ -35,6 +35,9 @@ module.exports = function (grunt) {
             css: {
                 src: 'app/src/css/style.css'
             },
+            images: {
+                src: 'app/src/images/'
+            },
             index: {
                 src: 'app/index.html'
             },
@@ -79,6 +82,7 @@ module.exports = function (grunt) {
                     '<%= files.appJs.src %>',
                     '<%= files.jsonData.src %>',
                     '<%= files.css.src %>',
+                    '<%= files.images.src %>',
                     '<%= files.index.src %>',
                     '<%= files.componentHtml.src %>/**/*.html'
                 ],
@@ -93,6 +97,7 @@ module.exports = function (grunt) {
                     { '<%= dirs.devPath.src %>/index.html': '<%= files.index.src %>' },
                     { '<%= dirs.devPath.src %>/web.config': '<%= files.webConfig.src %>' },
                     { expand: true, cwd: '<%= files.jsonData.src %>', src: '**/*.json', dest: '<%= dirs.devPath.src %>/json/' },
+                    { expand: true, cwd: '<%= files.images.src %>', src: '**/*.*', dest: '<%= dirs.devPath.src %>/images/' },
                     { expand: true, cwd: '<%= files.componentHtml.src %>', src: '**/*.html', dest: '<%= dirs.devPath.src %>/' },
                     { expand: true, cwd: '<%= files.bootstrapMinCss.src %>', src: '**/*.min.*', dest: '<%= dirs.devPath.src %>/css/' }
                 ]
@@ -104,6 +109,7 @@ module.exports = function (grunt) {
                     { '<%= dirs.distPath.src %>/index.html': '<%= files.index.src %>' },
                     { '<%= dirs.distPath.src %>/web.config': '<%= files.webConfig.src %>' },
                     { expand: true, cwd: '<%= files.jsonData.src %>', src: '**/*.json', dest: '<%= dirs.distPath.src %>/' },
+                    { expand: true, cwd: '<%= files.images.src %>', src: '**/*.*', dest: '<%= dirs.distPath.src %>/' },
                     { expand: true, cwd: '<%= files.componentHtml.src %>', src: '**/*.html', dest: '<%= dirs.distPath.src %>/' },
                     { expand: true, cwd: '<%= files.bootstrapMinCss.src %>', src: '**/*.min.*', dest: '<%= dirs.distPath.src %>/css/' }
                 ]

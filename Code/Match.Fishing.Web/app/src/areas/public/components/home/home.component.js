@@ -6,6 +6,7 @@
         var model = this;
 
         model.$onInit = function () {
+            $("#imageCarousel").carousel();        
         };
     }
 

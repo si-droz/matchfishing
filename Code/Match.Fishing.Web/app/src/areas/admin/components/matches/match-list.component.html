@@ -13,8 +13,8 @@
                 <th>Venue</th>
                 <th>Lake</th>
                 <th>Pegs</th>
-                <th>Pools</th>
                 <th>Peg Fee</th>
+                <th>Pools</th>                
                 <th></th>
             </tr>
             <tr ng-repeat="match in model.matches | orderBy:'date'">                
@@ -23,8 +23,8 @@
                 <td>{{match.venue}}</td>
                 <td>{{match.lake}}</td>
                 <td>{{match.noOfPegs}}</td>
-                <td>{{match.poolsFee | currency: "£"}}</td>
                 <td>{{match.dayTicketFee | currency: "£"}}</td>
+                <td>{{match.poolsFee | currency: "£"}}</td>                
                 <td>
                     <a ng-click="model.onSelectMatch(match)" class="btn btn-primary">Add Match Entries</a>
                 </td>
