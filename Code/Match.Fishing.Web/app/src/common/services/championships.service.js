@@ -58,12 +58,23 @@
             function getPairsResult(matchesService, match, overviewResults, sortOrder) {
                 var pairsMatchSortOrder = sortOrder;
                 matchesService.getPairs($http, match.id).then(function (pairs) {
-                    var delimiter = ' & ';
-                    if (pairs[0].peg2 == null) {
-                        delimiter = ' ';
+                    var runnerUp = '';
+                    var runnerUpWeight = ''
+                    var winner = '';
+                    var winnerWeight = '';
+
+                    if (pairs.length > 0) {
+                        var delimiter = ' & ';
+                        if (pairs[0].peg2 == null) {
+                            delimiter = ' ';
+                        }
+
+                        winner = pairs[0].angler1 + delimiter + pairs[0].angler2;
+                        winnerWeight = pairs[0].weight;
+                        runnerUp = pairs[1].angler1 + ' & ' + pairs[1].angler2;
+                        runnerUpWeight = pairs[1].weight;
                     }
 
-                    var winner = pairs[0].angler1 + delimiter + pairs[0].angler2;
                     var overviewResult = {
                         matchName: match.trophyName,
                         isTrophyMatch: match.isTrophyMatch,
@@ -71,9 +82,9 @@
                         matchVenue: match.venue,
                         matchLake: match.lake,
                         winner: winner,
-                        winnerWeight: pairs[0].weight,
-                        runnerUp: pairs[1].angler1 + ' & ' + pairs[1].angler2,
-                        runnerUpWeight: pairs[1].weight,
+                        winnerWeight: winnerWeight,
+                        runnerUp: runnerUp,
+                        runnerUpWeight: runnerUpWeight,
                         isWoodenSpoon: false,
                         sortOrder: pairsMatchSortOrder
                     };
@@ -116,16 +127,28 @@
             function getLeagueResult(league, anglers) {
                 var orderedAnglers = anglers.sort(function (a, b) { return b.adjustedPointsTotal - a.adjustedPointsTotal });
 
+                var winner = '';
+                var winnerPoints = '';
+                var runnerUp = '';
+                var runnerUpPoints = '';
+
+                if (orderedAnglers.length > 0) {
+                    winner = orderedAnglers[0].name;
+                    winnerPoints = orderedAnglers[0].adjustedPointsTotal;
+                    runnerUp = orderedAnglers[1].name;
+                    runnerUpPoints = orderedAnglers[1].adjustedPointsTotal;
+                }
+
                 var overviewResult = {
                     matchName: league.name,
                     isTrophyMatch: false,
                     matchDate: 'N/A',
                     matchVenue: 'N/A',
                     matchLake: 'N/A',
-                    winner: orderedAnglers[0].name,
-                    winnerPoints: orderedAnglers[0].adjustedPointsTotal,
-                    runnerUp: orderedAnglers[1].name,
-                    runnerUpPoints: orderedAnglers[1].adjustedPointsTotal,
+                    winner: winner,
+                    winnerPoints: winnerPoints,
+                    runnerUp: runnerUp,
+                    runnerUpPoints: runnerUpPoints,
                     isWoodenSpoon: false,
                     sortOrder: 3
                 };
@@ -133,16 +156,29 @@
             };
 
             function getChampionshipResult(orderedAnglers) {
+
+                var winner = '';
+                var winnerPoints = '';
+                var runnerUp = '';
+                var runnerUpPoints = '';
+
+                if (orderedAnglers.length > 0) {
+                    winner = orderedAnglers[0].name;
+                    winnerPoints = orderedAnglers[0].pointsTotal;
+                    runnerUp = orderedAnglers[1].name;
+                    runnerUpPoints = orderedAnglers[1].pointsTotal;
+                }
+
                 var overviewResult = {
                     matchName: 'Championship',
                     isTrophyMatch: false,
                     matchDate: 'N/A',
                     matchVenue: 'N/A',
                     matchLake: 'N/A',
-                    winner: orderedAnglers[0].name,
-                    winnerPoints: orderedAnglers[0].pointsTotal,
-                    runnerUp: orderedAnglers[1].name,
-                    runnerUpPoints: orderedAnglers[1].pointsTotal,
+                    winner: winner,
+                    winnerPoints: winnerPoints,
+                    runnerUp: runnerUp,
+                    runnerUpPoints: runnerUpPoints,
                     isWoodenSpoon: false,
                     sortOrder: 1
                 };
@@ -159,15 +195,22 @@
                 }, this);
 
                 var orderedAnglersForWoodenSpoon = anglersForWoodenSpoon.sort(function (a, b) { return (a.pointsTotal / a.matchCount) - (b.pointsTotal / b.matchCount) });
-                var averagePoints = orderedAnglersForWoodenSpoon[0].pointsTotal / orderedAnglersForWoodenSpoon[0].matchCount;
+
+                var winner = '';
+                var averagePoints = '';
+                if (orderedAnglers.length > 0) {
+                    averagePoints = (orderedAnglersForWoodenSpoon[0].pointsTotal / orderedAnglersForWoodenSpoon[0].matchCount).toFixed(2);
+                    winner = orderedAnglersForWoodenSpoon[0].name;
+                }
+
                 var overviewResult = {
                     matchName: 'Wooden Spoon',
                     isTrophyMatch: false,
                     matchDate: 'N/A',
                     matchVenue: 'N/A',
                     matchLake: 'N/A',
-                    winner: orderedAnglersForWoodenSpoon[0].name,
-                    winnerPoints: averagePoints.toFixed(2),
+                    winner: winner,
+                    winnerPoints: averagePoints,
                     isWoodenSpoon: true,
                     sortOrder: 2
                 };

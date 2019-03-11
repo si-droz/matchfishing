@@ -2,18 +2,34 @@
     'use strict';
     var module = angular.module('matchFishing');
 
-    function controller($http, seasonsService) {
+    function controller($http, seasonsService, championshipsService) {
         var model = this;
-        model.seasons = [];
+        model.championships = []
 
         model.$onInit = function () {
             seasonsService.getUniqueSeasons($http).then(function (seasons) {
-                model.seasons = seasons;
+                seasons.forEach(function (season) {
+                    championshipsService.getChampionship($http, season.id).then(function (anglers) {
+                        var rounds = [];
+                        if (anglers.length > 0) {
+                            rounds = anglers[0].rounds;
+                        }
+
+                        var championship = {
+                            'seasonId': season.id,
+                            'season': season.season,
+                            'anglerCount': anglers.length,
+                            'rounds': rounds
+                        };
+
+                        model.championships.push(championship);
+                    });
+                }, this);
             });
         };
 
-        model.onSelectSeason = function (season) {
-            model.$router.navigate(['OverviewDetail', { id: season.id }]);
+        model.onSelectSeason = function (championship) {
+            model.$router.navigate(['OverviewDetail', { id: championship.seasonId }]);
         };
     }
 
@@ -23,6 +39,6 @@
             $router: '<'
         },
         controllerAs: 'model',
-        controller: ['$http', 'seasonsService', controller]
+        controller: ['$http', 'seasonsService', 'championshipsService', controller]
     });
 }());
