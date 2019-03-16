@@ -55,6 +55,9 @@
 
     module.component('adminMatchEntryAdd', {
         templateUrl: '/areas/admin/components/matchEntries/match-entry-add.component.html',
+        // $routeConfig: [
+        //     { path: '/:matchId/entries', component: 'adminMatchEntryAdd', name: 'AdminMatchEntryAdd', useAsDefault: 'true' }
+        // ],
         bindings: {
             $router: '<'
         },

@@ -92,6 +92,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\v1\MatchEntriesController.cs" />
+    <Compile Include="ExtensionMethods\FishingMatchExtensions.cs" />
     <Compile Include="Models\EntryToAdd.cs" />
     <Compile Include="Models\ChampionshipRound.cs" />
     <Compile Include="Models\ChampionshipAnglerDetails.cs" />

@@ -1,10 +1,17 @@
 (function () {
     'use strict';
-    
-    var module = angular.module('matchFishing');    
 
-    function controller($http) {
-        var model = this;        
+    var module = angular.module('matchFishing');
+
+    function controller($http, seasonsService) {
+        var model = this;
+        model.seasons = [];
+
+        model.$onInit = function () {
+            seasonsService.getUniqueSeasons($http).then(function (seasons) {
+                model.seasons = seasons;
+            });
+        };
     };
 
     module.component('adminSeasonAdd', {
@@ -13,6 +20,6 @@
             $router: '<'
         },
         controllerAs: 'model',
-        controller: ['$http', controller]
+        controller: ['$http', 'seasonsService', controller]
     });
 }());

@@ -38,14 +38,12 @@
         }
     };
 
-    
-
     module.component('matchList', {
         templateUrl: '/areas/public/components/matches/match-list.component.html',
         bindings: {
             $router: '<'
         },
         controllerAs: 'model',
-        controller: ['$http', 'seasonsService','matchesService', controller]
+        controller: ['$http', 'seasonsService', 'matchesService', controller]
     });
 }());

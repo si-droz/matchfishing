@@ -1,1 +1,119 @@
+<ol class="breadcrumb">
+    <li><a ng-link="['../AdminTasks']">Admin Tasks</a></li>
+    <li class="active">Add League</li>
+</ol>
 <h2 class="page-header">Add League</h2>
+<div class="well clearfix">
+    <form name="anglerEntryForm" novalidate autocomplete="off">
+        <div class="form-row">
+            <div class="col-md-6">
+                <label class="sr-only" for="inputLeagueName">League name</label>
+                <input type="text" class="form-control" id="inputLeagueName" name="inputLeagueName"
+                    placeholder="League name" required>
+            </div>
+            <div class="col-md-3">
+                <label class="sr-only" for="inputSeason">Season</label>
+                <input type="text" class="form-control" id="inputSeason" name="inputSeason" placeholder="Season"
+                    required>
+            </div>
+            <div class="col-md-1">
+                <label class="sr-only" for="inputNoOfRounds">Number of rounds</label>
+                <input type="number" class="form-control" id="inputNoOfRounds" name="inputNoOfRounds" placeholder="Rnds"
+                    min=1 required>
+            </div>
+            <div class="col-md-1">
+                <label class="sr-only" for="inputCountingRounds">Number of rounds that count</label>
+                <input type="number" class="form-control" id="inputCountingRounds" name="inputCountingRounds"
+                    placeholder="Counting Rnds." min=1 required>
+            </div>
+            <div class="col-md-1">
+                <!-- <button type="button" class="btn btn-primary" ng-class="{'disabled': matchEntryForm.$invalid}"
+                        ng-click="model.addMatchEntry(model.entryToAdd, matchEntryForm)"
+                        ng-disabled="matchEntryForm.$invalid">Add</button> -->
+                <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></button>
+            </div>
+
+            <!-- <div class="col-md-1"
+                    ng-class="{'has-error': matchEntryForm.inputPeg.$invalid && matchEntryForm.inputPeg.$dirty}">
+                    <label class="sr-only" for="inputPeg">Peg</label>
+                    <input type="number" class="form-control" id="inputPeg" name="inputPeg" placeholder="Peg"
+                        ng-model="model.entryToAdd.peg" min=1 required peg-validator>
+                    <div ng-messages="matchEntryForm.inputPeg.$error" ng-show="matchEntryForm.inputPeg.$dirty">
+                        <div ng-message="required" class="text-danger">
+                            Peg is required</div>
+                        <div ng-message="min" class="text-danger">
+                            Peg must be greater than 0</div>
+                        <div ng-message="invalidPeg" class="text-danger">
+                            Peg already entered</div>
+                    </div>
+                </div> -->
+
+        </div>
+
+        <!-- <div class="col-md-5"
+                ng-class="{'has-error': matchEntryForm.inputAnglerName.$invalid && matchEntryForm.inputAnglerName.$dirty}">
+                <label class="sr-only" for="inputAnglerName">Angler name</label>
+                <select angler-validator class="form-control" id="inputAnglerName" placeholder="Angler name"
+                    name="inputAnglerName" ng-model="model.entryToAdd.selectedAngler"
+                    ng-options="angler.forename + ' ' + angler.surname for angler in model.anglers | orderBy:'forename'"></select>
+    
+                <div ng-messages="matchEntryForm.inputAnglerName.$error" ng-show="matchEntryForm.inputAnglerName.$dirty">
+                    <div ng-message="required" class="text-danger">
+                        Angler name is required.</div>
+                    <div ng-message="invalidAngler" class="text-danger">
+                        Angler already entered</div>
+                </div>
+            </div>
+            <div class="col-md-1"
+                ng-class="{'has-error': matchEntryForm.inputWeightPounds.$invalid && matchEntryForm.inputWeightPounds.$dirty}">
+                <label class="sr-only" for="inputWeightPounds">Weight pounds</label>
+                <input type="number" class="form-control" id="inputWeightPounds" name="inputWeightPounds" placeholder="Lbs"
+                    ng-model="model.entryToAdd.pounds" min=0 required>
+                <div ng-messages="matchEntryForm.inputWeightPounds.$error"
+                    ng-show="matchEntryForm.inputWeightPounds.$dirty">
+                    <div ng-message="required" class="text-danger">
+                        Pounds are required.</div>
+                    <div ng-message="min" class="text-danger">
+                        Pounds must be 0 or greater</div>
+                </div>
+            </div>
+            <div class="col-md-1"
+                ng-class="{'has-error': matchEntryForm.inputWeightOunces.$invalid && matchEntryForm.inputWeightOunces.$dirty}">
+                <label class="sr-only" for="inputWeightOunces">Weight ounces</label>
+                <input type="number" class="form-control" id="inputWeightOunces" name="inputWeightOunces" placeholder="Oz"
+                    ng-model="model.entryToAdd.ounces" min=0 max=15 required>
+                <div ng-messages="matchEntryForm.inputWeightOunces.$error"
+                    ng-show="matchEntryForm.inputWeightOunces.$dirty">
+                    <div ng-message="required" class="text-danger">
+                        Ounces are required.</div>
+                    <div ng-message="min" class="text-danger">
+                        Ounces must be 0 or greater</div>
+                    <div ng-message="max" class="text-danger">
+                        Ounces must be 15 or less</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-primary" ng-class="{'disabled': matchEntryForm.$invalid}"
+                    ng-click="model.addMatchEntry(model.entryToAdd, matchEntryForm)"
+                    ng-disabled="matchEntryForm.$invalid">Add</button>            
+            </div> -->
+    </form>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <table class="table table-striped table-hover table-condensed">
+            <tr>
+                <th>Name</th>
+                <th>Season</th>
+                <th>No. of Rnds.</th>
+                <th>Counting Rnds.</th>
+            </tr>
+            <tr ng-repeat="league in model.leagues | filter: {season: model.selectedSeason}">
+                <td>{{league.name}}</td>
+                <td>{{league.season}}</td>
+                <td>{{league.noOfRounds}}</td>
+                <td>{{league.countingRounds}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

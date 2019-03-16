@@ -44,8 +44,14 @@ module.exports = function (grunt) {
             componentHtml: {
                 src: 'app/src/'
             },
-            bootstrapMinCss: {
-                src: 'node_modules/bootstrap/dist/css/'
+            bootstrapDistMin: {
+                src: 'node_modules/bootstrap/dist/'
+            },
+            bootstrapDistFonts: {
+                src: 'node_modules/bootstrap/dist/fonts'
+            },
+            jqueryDist: {
+                src: 'node_modules/jquery/dist/'
             },
             webConfig: {
                 src: 'web.config'
@@ -54,19 +60,19 @@ module.exports = function (grunt) {
         concat: {
             modulesDevJs: {
                 src: '<%= files.moduleJs.src %>',
-                dest: '<%= dirs.devPath.src %>/modules.min.js'
+                dest: '<%= dirs.devPath.src %>/js/modules.min.js'
             },
             componentsDevJs: {
                 src: '<%= files.componentsJs.src %>',
-                dest: '<%= dirs.devPath.src %>/components.min.js'
+                dest: '<%= dirs.devPath.src %>/js/components.min.js'
             },
             modulesDistJs: {
                 src: '<%= files.moduleJs.src %>',
-                dest: '<%= dirs.distPath.src %>/modules.min.js'
+                dest: '<%= dirs.distPath.src %>/js/modules.min.js'
             },
             componentsDistJs: {
                 src: '<%= files.componentsJs.src %>',
-                dest: '<%= dirs.distPath.src %>/components.min.js'
+                dest: '<%= dirs.distPath.src %>/js/components.min.js'
             }
         },
         watch: {
@@ -92,26 +98,30 @@ module.exports = function (grunt) {
         copy: {
             dev: {
                 files: [
-                    { '<%= dirs.devPath.src %>/app.js': '<%= files.appJs.src %>' },
+                    { '<%= dirs.devPath.src %>/js/app.js': '<%= files.appJs.src %>' },
                     { '<%= dirs.devPath.src %>/css/style.css': '<%= files.css.src %>' },
                     { '<%= dirs.devPath.src %>/index.html': '<%= files.index.src %>' },
                     { '<%= dirs.devPath.src %>/web.config': '<%= files.webConfig.src %>' },
                     { expand: true, cwd: '<%= files.jsonData.src %>', src: '**/*.json', dest: '<%= dirs.devPath.src %>/json/' },
                     { expand: true, cwd: '<%= files.images.src %>', src: '**/*.*', dest: '<%= dirs.devPath.src %>/images/' },
                     { expand: true, cwd: '<%= files.componentHtml.src %>', src: '**/*.html', dest: '<%= dirs.devPath.src %>/' },
-                    { expand: true, cwd: '<%= files.bootstrapMinCss.src %>', src: '**/*.min.*', dest: '<%= dirs.devPath.src %>/css/' }
+                    { expand: true, cwd: '<%= files.bootstrapDistMin.src %>', src: '**/*.min.*', dest: '<%= dirs.devPath.src %>/' },
+                    { expand: true, cwd: '<%= files.bootstrapDistFonts.src %>', src: '**/*.*', dest: '<%= dirs.devPath.src %>/fonts' },
+                    { expand: true, cwd: '<%= files.jqueryDist.src %>', src: '**/*.min.*', dest: '<%= dirs.devPath.src %>/js/' }
                 ]
             },
             dist: {
                 files: [
-                    { '<%= dirs.distPath.src %>/app.js': '<%= files.appJs.src %>' },
+                    { '<%= dirs.distPath.src %>/js/app.js': '<%= files.appJs.src %>' },
                     { '<%= dirs.distPath.src %>/css/style.css': '<%= files.css.src %>' },
                     { '<%= dirs.distPath.src %>/index.html': '<%= files.index.src %>' },
                     { '<%= dirs.distPath.src %>/web.config': '<%= files.webConfig.src %>' },
                     { expand: true, cwd: '<%= files.jsonData.src %>', src: '**/*.json', dest: '<%= dirs.distPath.src %>/' },
                     { expand: true, cwd: '<%= files.images.src %>', src: '**/*.*', dest: '<%= dirs.distPath.src %>/' },
                     { expand: true, cwd: '<%= files.componentHtml.src %>', src: '**/*.html', dest: '<%= dirs.distPath.src %>/' },
-                    { expand: true, cwd: '<%= files.bootstrapMinCss.src %>', src: '**/*.min.*', dest: '<%= dirs.distPath.src %>/css/' }
+                    { expand: true, cwd: '<%= files.bootstrapDistMin.src %>', src: '**/*.min.*', dest: '<%= dirs.distPath.src %>/' },
+                    { expand: true, cwd: '<%= files.bootstrapDistFonts.src %>', src: '**/*.*', dest: '<%= dirs.distPath.src %>/fonts' },
+                    { expand: true, cwd: '<%= files.jqueryDist.src %>', src: '**/*.min.*', dest: '<%= dirs.distPath.src %>/js/' }
                 ]
             }
         },

@@ -36,7 +36,7 @@
 
             return (model.selectedSeason === season);
         };
-    }
+    };
 
     module.component('leagueList', {
         templateUrl: '/areas/public/components/leagues/league-list.component.html',
