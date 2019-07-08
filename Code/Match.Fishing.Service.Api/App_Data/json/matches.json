@@ -4962,7 +4962,98 @@
     "isPairs": false,
     "trophyName": "Phil Stone Cup",
     "positionToPointsMappingId": 1,
-    "matchEntries": []
+    "matchEntries": [
+      {
+        "peg": 8,
+        "pairedWithPeg": 0,
+        "weight": 53.0,
+        "position": 8,
+        "points": 5.0,
+        "anglerId": 1,
+        "anglerName": "Simon Drozdziol"
+      },
+      {
+        "peg": 4,
+        "pairedWithPeg": 0,
+        "weight": 60.0,
+        "position": 5,
+        "points": 8.0,
+        "anglerId": 4,
+        "anglerName": "Darren James"
+      },
+      {
+        "peg": 23,
+        "pairedWithPeg": 0,
+        "weight": 98.0,
+        "position": 2,
+        "points": 11.0,
+        "anglerId": 26,
+        "anglerName": "Doug Robinson"
+      },
+      {
+        "peg": 25,
+        "pairedWithPeg": 0,
+        "weight": 58.25,
+        "position": 6,
+        "points": 7.0,
+        "anglerId": 8,
+        "anglerName": "Pete Deverick"
+      },
+      {
+        "peg": 38,
+        "pairedWithPeg": 0,
+        "weight": 88.5,
+        "position": 3,
+        "points": 10.0,
+        "anglerId": 28,
+        "anglerName": "Paul Stacey"
+      },
+      {
+        "peg": 35,
+        "pairedWithPeg": 0,
+        "weight": 84.25,
+        "position": 4,
+        "points": 9.0,
+        "anglerId": 6,
+        "anglerName": "Paul Balodis"
+      },
+      {
+        "peg": 6,
+        "pairedWithPeg": 0,
+        "weight": 49.0,
+        "position": 10,
+        "points": 3.0,
+        "anglerId": 31,
+        "anglerName": "Neil Dawson"
+      },
+      {
+        "peg": 32,
+        "pairedWithPeg": 0,
+        "weight": 55.0,
+        "position": 7,
+        "points": 6.0,
+        "anglerId": 34,
+        "anglerName": "Alan Stacey"
+      },
+      {
+        "peg": 19,
+        "pairedWithPeg": 0,
+        "weight": 51.0,
+        "position": 9,
+        "points": 4.0,
+        "anglerId": 32,
+        "anglerName": "Chris Oddy"
+      },
+      {
+        "peg": 27,
+        "pairedWithPeg": 0,
+        "weight": 116.5,
+        "position": 1,
+        "points": 13.0,
+        "anglerId": 22,
+        "anglerName": "Tony Taylor"
+      }
+    ]
   },
   {
     "id": 54,
