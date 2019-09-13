@@ -4950,14 +4950,14 @@
     "seasonId": 8,
     "season": "19/20",
     "date": "2019-07-07",
-    "venue": "How End",
-    "lake": "Danis",
+    "venue": "Peatling Parva",
+    "lake": "Lake A",
     "leagueId": 11,
     "leagueMatchNo": "4",
     "league": "Kingfisher Summer League",
     "noOfPegs": 20,
     "poolsFee": 5.0,
-    "dayTicketFee": 0.0,
+    "dayTicketFee": 10.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Phil Stone Cup",
@@ -5072,26 +5072,383 @@
     "isPairs": true,
     "trophyName": "Pairs",
     "positionToPointsMappingId": 1,
-    "matchEntries": []
+    "matchEntries": [
+      {
+        "peg": 14,
+        "pairedWithPeg": 0,
+        "weight": 95.25,
+        "position": 1,
+        "points": 13.0,
+        "anglerId": 1,
+        "anglerName": "Simon Drozdziol"
+      }
+    ]
   },
   {
     "id": 55,
     "seasonId": 8,
     "season": "19/20",
-    "date": "2019-08-25",
-    "venue": "How End",
-    "lake": "Yasis",
-    "leagueId": 11,
-    "leagueMatchNo": "5",
-    "league": "Kingfisher Summer League",
+    "date": "2019-08-18",
+    "venue": "Peatling Parva",
+    "lake": "Lake A",
+    "leagueId": 0,
+    "leagueMatchNo": "",
+    "league": "",
     "noOfPegs": 16,
     "poolsFee": 5.0,
-    "dayTicketFee": 0.0,
+    "dayTicketFee": 10.0,
     "isTrophyMatch": true,
     "isPairs": false,
     "trophyName": "Dick Mitchell",
     "positionToPointsMappingId": 1,
-    "matchEntries": []
+    "matchEntries": [
+      {
+        "peg": 33,
+        "pairedWithPeg": 0,
+        "weight": 14.625,
+        "position": 15,
+        "points": 1.0,
+        "anglerId": 1,
+        "anglerName": "Simon Drozdziol"
+      },
+      {
+        "peg": 32,
+        "pairedWithPeg": 0,
+        "weight": 48.8125,
+        "position": 9,
+        "points": 4.0,
+        "anglerId": 4,
+        "anglerName": "Darren James"
+      },
+      {
+        "peg": 35,
+        "pairedWithPeg": 0,
+        "weight": 131.25,
+        "position": 1,
+        "points": 13.0,
+        "anglerId": 22,
+        "anglerName": "Tony Taylor"
+      },
+      {
+        "peg": 38,
+        "pairedWithPeg": 0,
+        "weight": 57.625,
+        "position": 7,
+        "points": 6.0,
+        "anglerId": 36,
+        "anglerName": "Ricky Quick"
+      },
+      {
+        "peg": 25,
+        "pairedWithPeg": 0,
+        "weight": 26.875,
+        "position": 13,
+        "points": 1.0,
+        "anglerId": 6,
+        "anglerName": "Paul Balodis"
+      },
+      {
+        "peg": 27,
+        "pairedWithPeg": 0,
+        "weight": 65.3125,
+        "position": 6,
+        "points": 7.0,
+        "anglerId": 45,
+        "anglerName": "Sean Wain"
+      },
+      {
+        "peg": 36,
+        "pairedWithPeg": 0,
+        "weight": 44.5,
+        "position": 10,
+        "points": 3.0,
+        "anglerId": 8,
+        "anglerName": "Pete Deverick"
+      },
+      {
+        "peg": 28,
+        "pairedWithPeg": 0,
+        "weight": 17.125,
+        "position": 14,
+        "points": 1.0,
+        "anglerId": 40,
+        "anglerName": "Ian Knightley"
+      },
+      {
+        "peg": 26,
+        "pairedWithPeg": 0,
+        "weight": 51.0625,
+        "position": 8,
+        "points": 5.0,
+        "anglerId": 37,
+        "anglerName": "Mark Quick"
+      },
+      {
+        "peg": 24,
+        "pairedWithPeg": 0,
+        "weight": 2.5625,
+        "position": 16,
+        "points": 1.0,
+        "anglerId": 32,
+        "anglerName": "Chris Oddy"
+      },
+      {
+        "peg": 37,
+        "pairedWithPeg": 0,
+        "weight": 76.8125,
+        "position": 4,
+        "points": 9.0,
+        "anglerId": 34,
+        "anglerName": "Alan Stacey"
+      },
+      {
+        "peg": 34,
+        "pairedWithPeg": 0,
+        "weight": 85.875,
+        "position": 3,
+        "points": 10.0,
+        "anglerId": 28,
+        "anglerName": "Paul Stacey"
+      },
+      {
+        "peg": 29,
+        "pairedWithPeg": 0,
+        "weight": 91.5625,
+        "position": 2,
+        "points": 11.0,
+        "anglerId": 31,
+        "anglerName": "Neil Dawson"
+      },
+      {
+        "peg": 23,
+        "pairedWithPeg": 0,
+        "weight": 66.1875,
+        "position": 5,
+        "points": 8.0,
+        "anglerId": 26,
+        "anglerName": "Doug Robinson"
+      },
+      {
+        "peg": 22,
+        "pairedWithPeg": 0,
+        "weight": 37.625,
+        "position": 11,
+        "points": 2.0,
+        "anglerId": 46,
+        "anglerName": "Neil Bird"
+      },
+      {
+        "peg": 31,
+        "pairedWithPeg": 0,
+        "weight": 31.6875,
+        "position": 12,
+        "points": 1.0,
+        "anglerId": 9,
+        "anglerName": "Graham Parker"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "seasonId": 8,
+    "season": "19/20",
+    "date": "2019-08-25",
+    "venue": "Float Fish Farm",
+    "lake": "Two Islands",
+    "leagueId": 11,
+    "leagueMatchNo": "5",
+    "league": "Kingfisher Summer League",
+    "noOfPegs": 20,
+    "poolsFee": 5.0,
+    "dayTicketFee": 7.0,
+    "isTrophyMatch": false,
+    "isPairs": false,
+    "trophyName": "",
+    "positionToPointsMappingId": 1,
+    "matchEntries": [
+      {
+        "peg": 1,
+        "pairedWithPeg": 0,
+        "weight": 13.75,
+        "position": 3,
+        "points": 10.0,
+        "anglerId": 8,
+        "anglerName": "Pete Deverick"
+      },
+      {
+        "peg": 4,
+        "pairedWithPeg": 0,
+        "weight": 33.875,
+        "position": 2,
+        "points": 11.0,
+        "anglerId": 28,
+        "anglerName": "Paul Stacey"
+      },
+      {
+        "peg": 6,
+        "pairedWithPeg": 0,
+        "weight": 9.0625,
+        "position": 5,
+        "points": 8.0,
+        "anglerId": 9,
+        "anglerName": "Graham Parker"
+      },
+      {
+        "peg": 7,
+        "pairedWithPeg": 0,
+        "weight": 1.0,
+        "position": 6,
+        "points": 7.0,
+        "anglerId": 34,
+        "anglerName": "Alan Stacey"
+      },
+      {
+        "peg": 12,
+        "pairedWithPeg": 0,
+        "weight": 76.3125,
+        "position": 1,
+        "points": 13.0,
+        "anglerId": 22,
+        "anglerName": "Tony Taylor"
+      },
+      {
+        "peg": 14,
+        "pairedWithPeg": 0,
+        "weight": 13.625,
+        "position": 4,
+        "points": 9.0,
+        "anglerId": 4,
+        "anglerName": "Darren James"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "seasonId": 8,
+    "season": "19/20",
+    "date": "2019-09-08",
+    "venue": "Peatling Parva",
+    "lake": "Plough",
+    "leagueId": 0,
+    "leagueMatchNo": "",
+    "league": "",
+    "noOfPegs": 20,
+    "poolsFee": 6.0,
+    "dayTicketFee": 10.0,
+    "isTrophyMatch": true,
+    "isPairs": false,
+    "trophyName": "The Breakfasts Are On Me",
+    "positionToPointsMappingId": 1,
+    "matchEntries": [
+      {
+        "peg": 8,
+        "pairedWithPeg": 0,
+        "weight": 54.5625,
+        "position": 2,
+        "points": 11.0,
+        "anglerId": 1,
+        "anglerName": "Simon Drozdziol"
+      },
+      {
+        "peg": 5,
+        "pairedWithPeg": 0,
+        "weight": 51.0625,
+        "position": 4,
+        "points": 9.0,
+        "anglerId": 4,
+        "anglerName": "Darren James"
+      },
+      {
+        "peg": 11,
+        "pairedWithPeg": 0,
+        "weight": 55.25,
+        "position": 1,
+        "points": 13.0,
+        "anglerId": 26,
+        "anglerName": "Doug Robinson"
+      },
+      {
+        "peg": 22,
+        "pairedWithPeg": 0,
+        "weight": 20.5,
+        "position": 11,
+        "points": 2.0,
+        "anglerId": 6,
+        "anglerName": "Paul Balodis"
+      },
+      {
+        "peg": 28,
+        "pairedWithPeg": 0,
+        "weight": 26.5,
+        "position": 10,
+        "points": 3.0,
+        "anglerId": 8,
+        "anglerName": "Pete Deverick"
+      },
+      {
+        "peg": 13,
+        "pairedWithPeg": 0,
+        "weight": 15.625,
+        "position": 12,
+        "points": 1.0,
+        "anglerId": 46,
+        "anglerName": "Neil Bird"
+      },
+      {
+        "peg": 24,
+        "pairedWithPeg": 0,
+        "weight": 27.3125,
+        "position": 9,
+        "points": 4.0,
+        "anglerId": 32,
+        "anglerName": "Chris Oddy"
+      },
+      {
+        "peg": 17,
+        "pairedWithPeg": 0,
+        "weight": 49.0,
+        "position": 5,
+        "points": 8.0,
+        "anglerId": 22,
+        "anglerName": "Tony Taylor"
+      },
+      {
+        "peg": 15,
+        "pairedWithPeg": 0,
+        "weight": 48.125,
+        "position": 6,
+        "points": 7.0,
+        "anglerId": 36,
+        "anglerName": "Ricky Quick"
+      },
+      {
+        "peg": 26,
+        "pairedWithPeg": 0,
+        "weight": 52.625,
+        "position": 3,
+        "points": 10.0,
+        "anglerId": 37,
+        "anglerName": "Mark Quick"
+      },
+      {
+        "peg": 20,
+        "pairedWithPeg": 0,
+        "weight": 32.75,
+        "position": 8,
+        "points": 5.0,
+        "anglerId": 40,
+        "anglerName": "Ian Knightley"
+      },
+      {
+        "peg": 2,
+        "pairedWithPeg": 0,
+        "weight": 33.25,
+        "position": 7,
+        "points": 6.0,
+        "anglerId": 31,
+        "anglerName": "Neil Dawson"
+      }
+    ]
   },
   {
     "id": 56,
