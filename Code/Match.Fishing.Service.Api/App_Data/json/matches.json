@@ -5467,7 +5467,80 @@
     "isPairs": false,
     "trophyName": "",
     "positionToPointsMappingId": 1,
-    "matchEntries": []
+    "matchEntries": [
+      {
+        "peg": 10,
+        "pairedWithPeg": 0,
+        "weight": 62.25,
+        "position": 4,
+        "points": 9.0,
+        "anglerId": 1,
+        "anglerName": "Simon Drozdziol"
+      },
+      {
+        "peg": 24,
+        "pairedWithPeg": 0,
+        "weight": 91.75,
+        "position": 2,
+        "points": 11.0,
+        "anglerId": 26,
+        "anglerName": "Doug Robinson"
+      },
+      {
+        "peg": 35,
+        "pairedWithPeg": 0,
+        "weight": 36.625,
+        "position": 6,
+        "points": 7.0,
+        "anglerId": 6,
+        "anglerName": "Paul Balodis"
+      },
+      {
+        "peg": 2,
+        "pairedWithPeg": 0,
+        "weight": 30.375,
+        "position": 7,
+        "points": 6.0,
+        "anglerId": 9,
+        "anglerName": "Graham Parker"
+      },
+      {
+        "peg": 26,
+        "pairedWithPeg": 0,
+        "weight": 27.3125,
+        "position": 8,
+        "points": 5.0,
+        "anglerId": 8,
+        "anglerName": "Pete Deverick"
+      },
+      {
+        "peg": 18,
+        "pairedWithPeg": 0,
+        "weight": 94.75,
+        "position": 1,
+        "points": 13.0,
+        "anglerId": 22,
+        "anglerName": "Tony Taylor"
+      },
+      {
+        "peg": 21,
+        "pairedWithPeg": 0,
+        "weight": 45.5,
+        "position": 5,
+        "points": 8.0,
+        "anglerId": 34,
+        "anglerName": "Alan Stacey"
+      },
+      {
+        "peg": 37,
+        "pairedWithPeg": 0,
+        "weight": 70.125,
+        "position": 3,
+        "points": 10.0,
+        "anglerId": 28,
+        "anglerName": "Paul Stacey"
+      }
+    ]
   },
   {
     "id": 57,
