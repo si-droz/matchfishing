@@ -60,7 +60,47 @@
     "season": "19/20",
     "seasonId": 8,
     "name": "Kingfisher Winter League",
+    "noOfRounds": 6,
+    "countingRounds": 5
+  },
+  {
+    "id": 13,
+    "season": "20/21",
+    "seasonId": 9,
+    "name": "Kingfisher Spring League",
+    "noOfRounds": 6,
+    "countingRounds": 5
+  },
+  {
+    "id": 14,
+    "season": "20/21",
+    "seasonId": 9,
+    "name": "Kingfisher Evening League",
     "noOfRounds": 8,
     "countingRounds": 6
+  },
+  {
+    "id": 15,
+    "season": "20/21",
+    "seasonId": 9,
+    "name": "Kingfisher Summer League",
+    "noOfRounds": 6,
+    "countingRounds": 5
+  },
+  {
+    "id": 16,
+    "season": "20/21",
+    "seasonId": 9,
+    "name": "Kingfisher Pairs Championship",
+    "noOfRounds": 6,
+    "countingRounds": 5
+  },
+  {
+    "id": 17,
+    "season": "20/21",
+    "seasonId": 9,
+    "name": "Kingfisher Winter League",
+    "noOfRounds": 6,
+    "countingRounds": 5
   }
 ]
