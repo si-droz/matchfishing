@@ -5094,7 +5094,7 @@
       {
         "peg": 12,
         "pairedWithPeg": 12,
-        "weight": 33.50,
+        "weight": 33.5,
         "position": 11,
         "points": 2.0,
         "anglerId": 6,
@@ -5166,7 +5166,7 @@
       {
         "peg": 20,
         "pairedWithPeg": 8,
-        "weight": 66,
+        "weight": 66.0,
         "position": 7,
         "points": 6.0,
         "anglerId": 32,
@@ -5941,7 +5941,89 @@
     "isPairs": false,
     "trophyName": "Appledore Cup",
     "positionToPointsMappingId": 1,
-    "matchEntries": []
+    "matchEntries": [
+      {
+        "peg": 5,
+        "pairedWithPeg": 0,
+        "weight": 8.625,
+        "position": 6,
+        "points": 7.0,
+        "anglerId": 1,
+        "anglerName": "Simon Drozdziol"
+      },
+      {
+        "peg": 14,
+        "pairedWithPeg": 0,
+        "weight": 26.3125,
+        "position": 2,
+        "points": 11.0,
+        "anglerId": 4,
+        "anglerName": "Darren James"
+      },
+      {
+        "peg": 4,
+        "pairedWithPeg": 0,
+        "weight": 1.125,
+        "position": 9,
+        "points": 4.0,
+        "anglerId": 38,
+        "anglerName": "Dave Armstrong"
+      },
+      {
+        "peg": 3,
+        "pairedWithPeg": 0,
+        "weight": 3.0,
+        "position": 8,
+        "points": 5.0,
+        "anglerId": 8,
+        "anglerName": "Pete Deverick"
+      },
+      {
+        "peg": 8,
+        "pairedWithPeg": 0,
+        "weight": 25.375,
+        "position": 3,
+        "points": 10.0,
+        "anglerId": 6,
+        "anglerName": "Paul Balodis"
+      },
+      {
+        "peg": 7,
+        "pairedWithPeg": 0,
+        "weight": 9.125,
+        "position": 5,
+        "points": 8.0,
+        "anglerId": 40,
+        "anglerName": "Ian Knightley"
+      },
+      {
+        "peg": 6,
+        "pairedWithPeg": 0,
+        "weight": 7.1875,
+        "position": 7,
+        "points": 6.0,
+        "anglerId": 37,
+        "anglerName": "Mark Quick"
+      },
+      {
+        "peg": 9,
+        "pairedWithPeg": 0,
+        "weight": 44.375,
+        "position": 1,
+        "points": 13.0,
+        "anglerId": 36,
+        "anglerName": "Ricky Quick"
+      },
+      {
+        "peg": 13,
+        "pairedWithPeg": 0,
+        "weight": 17.1875,
+        "position": 4,
+        "points": 9.0,
+        "anglerId": 28,
+        "anglerName": "Paul Stacey"
+      }
+    ]
   },
   {
     "id": 59,

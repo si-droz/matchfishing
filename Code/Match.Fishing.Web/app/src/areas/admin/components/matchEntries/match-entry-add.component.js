@@ -50,6 +50,7 @@
             matchesService.addMatchEntry($http, entryToAdd).then(function (matchEntries) {
                 model.match.matchEntries = matchEntries;
             });
+            $('#inputPeg').focus();
         };
     };
 
