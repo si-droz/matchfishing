@@ -6231,7 +6231,143 @@
     "isPairs": false,
     "trophyName": "",
     "positionToPointsMappingId": 1,
-    "matchEntries": []
+    "matchEntries": [
+      {
+        "peg": 2,
+        "pairedWithPeg": 0,
+        "weight": 89.0,
+        "position": 4,
+        "points": 9.0,
+        "anglerId": 1,
+        "anglerName": "Simon Drozdziol"
+      },
+      {
+        "peg": 34,
+        "pairedWithPeg": 0,
+        "weight": 90.125,
+        "position": 3,
+        "points": 10.0,
+        "anglerId": 4,
+        "anglerName": "Darren James"
+      },
+      {
+        "peg": 24,
+        "pairedWithPeg": 0,
+        "weight": 31.75,
+        "position": 14,
+        "points": 1.0,
+        "anglerId": 6,
+        "anglerName": "Paul Balodis"
+      },
+      {
+        "peg": 7,
+        "pairedWithPeg": 0,
+        "weight": 115.0625,
+        "position": 2,
+        "points": 11.0,
+        "anglerId": 28,
+        "anglerName": "Paul Stacey"
+      },
+      {
+        "peg": 28,
+        "pairedWithPeg": 0,
+        "weight": 49.0,
+        "position": 12,
+        "points": 1.0,
+        "anglerId": 38,
+        "anglerName": "Dave Armstrong"
+      },
+      {
+        "peg": 4,
+        "pairedWithPeg": 0,
+        "weight": 72.8125,
+        "position": 8,
+        "points": 5.0,
+        "anglerId": 40,
+        "anglerName": "Ian Knightley"
+      },
+      {
+        "peg": 30,
+        "pairedWithPeg": 0,
+        "weight": 38.75,
+        "position": 13,
+        "points": 1.0,
+        "anglerId": 37,
+        "anglerName": "Mark Quick"
+      },
+      {
+        "peg": 21,
+        "pairedWithPeg": 0,
+        "weight": 8.25,
+        "position": 15,
+        "points": 1.0,
+        "anglerId": 8,
+        "anglerName": "Pete Deverick"
+      },
+      {
+        "peg": 36,
+        "pairedWithPeg": 0,
+        "weight": 73.0,
+        "position": 7,
+        "points": 6.0,
+        "anglerId": 42,
+        "anglerName": "Paul Walters"
+      },
+      {
+        "peg": 10,
+        "pairedWithPeg": 0,
+        "weight": 53.375,
+        "position": 11,
+        "points": 2.0,
+        "anglerId": 39,
+        "anglerName": "Steve Carthy"
+      },
+      {
+        "peg": 13,
+        "pairedWithPeg": 0,
+        "weight": 82.0,
+        "position": 6,
+        "points": 7.0,
+        "anglerId": 35,
+        "anglerName": "Ed Blain"
+      },
+      {
+        "peg": 27,
+        "pairedWithPeg": 0,
+        "weight": 87.0,
+        "position": 5,
+        "points": 8.0,
+        "anglerId": 26,
+        "anglerName": "Doug Robinson"
+      },
+      {
+        "peg": 32,
+        "pairedWithPeg": 0,
+        "weight": 118.5,
+        "position": 1,
+        "points": 13.0,
+        "anglerId": 47,
+        "anglerName": "Keith Gardner"
+      },
+      {
+        "peg": 16,
+        "pairedWithPeg": 0,
+        "weight": 59.4375,
+        "position": 10,
+        "points": 3.0,
+        "anglerId": 50,
+        "anglerName": "Pete Carter"
+      },
+      {
+        "peg": 19,
+        "pairedWithPeg": 0,
+        "weight": 64.9375,
+        "position": 9,
+        "points": 4.0,
+        "anglerId": 49,
+        "anglerName": "Mark Carter"
+      }
+    ]
   },
   {
     "id": 60,
