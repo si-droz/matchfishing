@@ -6376,8 +6376,8 @@
     "date": "2019-11-17",
     "venue": "Wold Farm",
     "lake": "Moat",
-    "leagueId": 18,
-    "leagueMatchNo": "2",
+    "leagueId": 12,
+    "leagueMatchNo": "1",
     "league": "Kingfisher Winter League",
     "noOfPegs": 18,
     "poolsFee": 6.0,
@@ -6451,15 +6451,6 @@
         "anglerName": "Pete Deverick"
       },
       {
-        "peg": 10,
-        "pairedWithPeg": 0,
-        "weight": 0.0,
-        "position": 14,
-        "points": 1.0,
-        "anglerId": 9,
-        "anglerName": "Graham Parker"
-      },
-      {
         "peg": 6,
         "pairedWithPeg": 0,
         "weight": 9.75,
@@ -6476,24 +6467,6 @@
         "points": 11.0,
         "anglerId": 35,
         "anglerName": "Ed Blain"
-      },
-      {
-        "peg": 7,
-        "pairedWithPeg": 0,
-        "weight": 0.0,
-        "position": 15,
-        "points": 1.0,
-        "anglerId": 51,
-        "anglerName": "Chris Lovelock"
-      },
-      {
-        "peg": 3,
-        "pairedWithPeg": 0,
-        "weight": 0.0,
-        "position": 16,
-        "points": 1.0,
-        "anglerId": 48,
-        "anglerName": "Adam Griffiths"
       },
       {
         "peg": 15,
@@ -6530,6 +6503,33 @@
         "points": 6.0,
         "anglerId": 22,
         "anglerName": "Tony Taylor"
+      },
+      {
+        "peg": 10,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
+        "position": 14,
+        "points": 1.0,
+        "anglerId": 9,
+        "anglerName": "Graham Parker"
+      },
+      {
+        "peg": 7,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
+        "position": 15,
+        "points": 1.0,
+        "anglerId": 51,
+        "anglerName": "Chris Lovelock"
+      },
+      {
+        "peg": 3,
+        "pairedWithPeg": 0,
+        "weight": 0.0,
+        "position": 16,
+        "points": 1.0,
+        "anglerId": 48,
+        "anglerName": "Adam Griffiths"
       }
     ]
   },
@@ -6537,7 +6537,7 @@
     "id": 61,
     "seasonId": 8,
     "season": "19/20",
-    "date": "2019-12-01",
+    "date": "2019-12-29",
     "venue": "Rookery",
     "lake": "Raven",
     "leagueId": 12,
