@@ -102,5 +102,21 @@
     "name": "Kingfisher Winter League",
     "noOfRounds": 6,
     "countingRounds": 5
+  },
+  {
+    "id": 18,
+    "season": "20/21",
+    "seasonId": 9,
+    "name": "Kingfisher Autumn League",
+    "noOfRounds": 6,
+    "countingRounds": 5
+  },
+  {
+    "id": 19,
+    "season": "20/21",
+    "seasonId": 9,
+    "name": "Kingfisher Teams of 3",
+    "noOfRounds": 6,
+    "countingRounds": 5
   }
 ]
