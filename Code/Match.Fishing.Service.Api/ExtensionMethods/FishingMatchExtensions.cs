@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using Match.Fishing.Enums;
 using Match.Fishing.Models;
@@ -11,30 +10,46 @@ namespace Match.Fishing.ExtensionMethods
     {
         public static void CalculateMatchPoints(this FishingMatch fishingMatch)
         {
-            List<MatchEntry> sortedMatchEntries = fishingMatch.MatchEntries.OrderByDescending(matchEntry => matchEntry.Weight).ToList();
+            var matchEntriesBySection = fishingMatch.MatchEntries
+                                              .OrderBy(matchEntry => matchEntry.Weight)
+                                              .GroupBy(m => m.Section);
+            
+            var pointsMapping = DataFileService.GetDataFile<PositionToPointsMapping>(DataFileType.PositionToPointsMapping)
+                                               .SingleOrDefault(mapping => mapping.Id == fishingMatch.PositionToPointsMappingId);
 
-            PositionToPointsMapping positionToPointsMapping = DataFileService.GetDataFile<PositionToPointsMapping>(DataFileType.PositionToPointsMapping)
-                                                                             .SingleOrDefault(mapping => mapping.Id == fishingMatch.PositionToPointsMappingId);
-
-            if (positionToPointsMapping == null) throw new Exception("Position to points mapping not found");
-
-            for (var index = 0; index < sortedMatchEntries.Count; index++)
+            if (pointsMapping == null)
             {
-                sortedMatchEntries[index].Position = index + 1;
+                throw new Exception("Position to points mapping not found");
+            }
 
-                if (Math.Abs(sortedMatchEntries[index].Weight) <= 0)
+            foreach (var section in matchEntriesBySection)
+            {
+                var position = 0;
+                foreach (var matchEntry in section.OrderByDescending(m => m.Weight))
                 {
-                    sortedMatchEntries[index].Points = positionToPointsMapping.DidNotWeighPoints;
-                    continue;
-                }
+                    position += 1;
+                    matchEntry.Position = position;
+                    if (Math.Abs(matchEntry.Weight) <= 0)
+                    {
+                        matchEntry.Points = pointsMapping.DidNotWeighPoints;
+                        continue;
+                    }
 
-                if (index > positionToPointsMapping.PositionToPoints.Count - 1)
-                {
-                    sortedMatchEntries[index].Points = positionToPointsMapping.PositionToPoints.Last().Points;
-                    continue;
-                }
+                    var points = pointsMapping.PositionToPoints
+                                              .SingleOrDefault(p => p.Position == matchEntry.Position)?.Points
+                                 ?? pointsMapping.PositionToPoints.Last().Points;
 
-                sortedMatchEntries[index].Points = positionToPointsMapping.PositionToPoints[index].Points;
+                    matchEntry.Points = points;
+                }
+            }
+
+            var winner = fishingMatch.MatchEntries
+                                     .OrderByDescending(me => me.Weight)
+                                     .FirstOrDefault();
+
+            if (winner != null)
+            {
+                winner.Points += pointsMapping.WinnerAdditionalPoints;
             }
         }
     }

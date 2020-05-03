@@ -8,10 +8,16 @@ namespace Match.Fishing.Models
     {
         [JsonProperty("id")]
         public int Id { get; set; }
+
         [JsonProperty("name")]
         public string Name { get; set; }
+        
         [JsonProperty("dnwPoints")]
         public int DidNotWeighPoints { get; set; }
+
+        [JsonProperty("winnerAdditionalPoints")]
+        public int WinnerAdditionalPoints { get; set; }
+
         [JsonProperty("positionToPoints")]
         public List<PositionToPoint> PositionToPoints { get; set; }
     }

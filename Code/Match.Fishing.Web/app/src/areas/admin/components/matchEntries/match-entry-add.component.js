@@ -33,7 +33,8 @@
                 entryToAdd.selectedAngler != null &&
                 entryToAdd.pounds >= 0 &&
                 entryToAdd.ounces >= 0 &&
-                entryToAdd.ounces < 16;
+                entryToAdd.ounces < 16 &&
+                entryToAdd.section > 0;
 
             if (!isValid) return;
 

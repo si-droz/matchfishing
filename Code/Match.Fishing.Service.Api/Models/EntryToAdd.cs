@@ -18,5 +18,8 @@ namespace Match.Fishing.Models
 
         [JsonProperty("ounces")]
         public int Ounces { get; set; }
+
+        [JsonProperty("section")]
+        public int Section { get; set; }
     }
 }

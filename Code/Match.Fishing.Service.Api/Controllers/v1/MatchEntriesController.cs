@@ -40,7 +40,8 @@ namespace Match.Fishing.Controllers.v1
                 AnglerName = entryToAdd.AnglerName,
                 AnglerId = entryToAdd.AnglerId,
                 Peg = entryToAdd.Peg,
-                Weight = entryToAdd.Pounds + (entryToAdd.Ounces / OuncesInPound)
+                Weight = entryToAdd.Pounds + (entryToAdd.Ounces / OuncesInPound),
+                Section = entryToAdd.Section
             };
 
             fishingMatch.MatchEntries.Add(matchEntry);

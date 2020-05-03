@@ -74,6 +74,20 @@
                     Ounces must be 15 or less</div>
             </div>
         </div>
+
+        <div class="col-md-1"
+            ng-class="{'has-error': matchEntryForm.inputSection.$invalid && matchEntryForm.inputSection.$dirty}">
+            <label class="sr-only" for="inputSection">Peg</label>
+            <input type="number" class="form-control" id="inputSection" name="inputSection" placeholder="Section"
+                ng-model="model.entryToAdd.section" min=1 required>
+            <div ng-messages="matchEntryForm.inputSection.$error" ng-show="matchEntryForm.inputSection.$dirty">
+                <div ng-message="required" class="text-danger">
+                    Section is required</div>
+                <div ng-message="min" class="text-danger">
+                    Section must be greater than 0</div>
+            </div>
+        </div>
+
         <div class="col-md-3">
             <button type="button" class="btn btn-primary" ng-class="{'disabled': matchEntryForm.$invalid}"
                 ng-click="model.addMatchEntry(model.entryToAdd, matchEntryForm)"
@@ -90,13 +104,15 @@
                 <th>Peg</th>
                 <th>Angler</th>
                 <th>Weight</th>
+                <th>Section</th>
                 <th>Points</th>
             </tr>
-            <tr ng-repeat="angler in model.match.matchEntries | orderBy:'-weight'">
-                <td>{{$index + 1}}</td>
+            <tr ng-repeat="angler in model.match.matchEntries | orderBy:['section','-weight']">
+                <td>{{angler.position}}</td>
                 <td>{{angler.peg}}</td>
                 <td>{{angler.anglerName}}</td>
                 <td>{{angler.weight | weightToText}}</td>
+                <td>{{angler.section}}</td>
                 <td>{{angler.points}}</td>
             </tr>
         </table>

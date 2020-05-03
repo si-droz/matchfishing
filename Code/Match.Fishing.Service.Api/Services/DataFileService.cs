@@ -15,7 +15,7 @@ namespace Match.Fishing.Services
         {
             string jsonFilePath = HostingEnvironment.MapPath(string.Format(JsonPath, dataFileType.ToString().ToLower()));
 
-            if (string.IsNullOrWhiteSpace(jsonFilePath)) throw new ArgumentNullException();
+            if (string.IsNullOrWhiteSpace(jsonFilePath)) throw new ArgumentNullException(nameof(dataFileType));
 
             string jsonContent = File.ReadAllText(jsonFilePath);
 
@@ -28,7 +28,7 @@ namespace Match.Fishing.Services
         {
             string jsonFilePath = HostingEnvironment.MapPath(string.Format(JsonPath, dataFileType.ToString().ToLower()));
 
-            if (string.IsNullOrWhiteSpace(jsonFilePath)) throw new ArgumentNullException();
+            if (string.IsNullOrWhiteSpace(jsonFilePath)) throw new ArgumentNullException(nameof(dataFileType));
 
             string jsonDataToWrite = JsonConvert.SerializeObject(model, Formatting.Indented);
 

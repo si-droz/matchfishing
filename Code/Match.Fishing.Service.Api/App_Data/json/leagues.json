@@ -67,7 +67,7 @@
     "id": 13,
     "season": "20/21",
     "seasonId": 9,
-    "name": "Kingfisher Spring League",
+    "name": "Kingfisher Spring Series",
     "noOfRounds": 6,
     "countingRounds": 5
   },
@@ -75,7 +75,7 @@
     "id": 14,
     "season": "20/21",
     "seasonId": 9,
-    "name": "Kingfisher Evening League",
+    "name": "Kingfisher Evening Series",
     "noOfRounds": 8,
     "countingRounds": 6
   },
@@ -83,7 +83,7 @@
     "id": 15,
     "season": "20/21",
     "seasonId": 9,
-    "name": "Kingfisher Summer League",
+    "name": "Kingfisher Summer Series",
     "noOfRounds": 6,
     "countingRounds": 5
   },
@@ -93,13 +93,197 @@
     "seasonId": 9,
     "name": "Kingfisher Pairs Championship",
     "noOfRounds": 6,
-    "countingRounds": 5
+    "countingRounds": 5,
+    "teams": [
+      {
+        "id": 1,
+        "teamName": "Alan & Graham",
+        "anglerIds": [
+          {
+            "anglerId": 34,
+            "anglerName": "Alan Stacey"
+          },
+          {
+            "anglerId": 9,
+            "anglerName": "Graham Parker"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "teamName": "Kev & Alfie",
+        "anglerIds": [
+          {
+            "anglerId": 25,
+            "anglerName": "Kev Miller"
+          },
+          {
+            "anglerId": 27,
+            "anglerName": "Alfie Miller"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "teamName": "Ed & Steve C",
+        "anglerIds": [
+          {
+            "anglerId": 35,
+            "anglerName": "Ed Blain"
+          },
+          {
+            "anglerId": 39,
+            "anglerName": "Steve Carthy"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "teamName": "Chris O & Jon C",
+        "anglerIds": [
+          {
+            "anglerId": 32,
+            "anglerName": "Chris Oddy"
+          },
+          {
+            "anglerId": 53,
+            "anglerName": "Jon Carberry"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "teamName": "Darren & Sean",
+        "anglerIds": [
+          {
+            "anglerId": 4,
+            "anglerName": "Darren James"
+          },
+          {
+            "anglerId": 45,
+            "anglerName": "Sean Wain"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "teamName": "Dave A & Tom B",
+        "anglerIds": [
+          {
+            "anglerId": 38,
+            "anglerName": "Dave Armstrong"
+          },
+          {
+            "anglerId": 52,
+            "anglerName": "Tom Buck"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "teamName": "Doug R & Paul S",
+        "anglerIds": [
+          {
+            "anglerId": 26,
+            "anglerName": "Doug Robinson"
+          },
+          {
+            "anglerId": 28,
+            "anglerName": "Paul Stacey"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "teamName": "Ian K & Mark Q",
+        "anglerIds": [
+          {
+            "anglerId": 40,
+            "anglerName": "Ian Knightley"
+          },
+          {
+            "anglerId": 37,
+            "anglerName": "Mark Quick"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "teamName": "Kath C & Nelly D",
+        "anglerIds": [
+          {
+            "anglerId": 54,
+            "anglerName": "Kath Carberry"
+          },
+          {
+            "anglerId": 31,
+            "anglerName": "Nelly Dawson"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "teamName": "Paul B & Tony T",
+        "anglerIds": [
+          {
+            "anglerId": 6,
+            "anglerName": "Paul Balodis"
+          },
+          {
+            "anglerId": 22,
+            "anglerName": "Tony Taylor"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "teamName": "Pete D & Steve G",
+        "anglerIds": [
+          {
+            "anglerId": 8,
+            "anglerName": "Pete Derrick"
+          },
+          {
+            "anglerId": 56,
+            "anglerName": "Steve Goddard"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "teamName": "Simon & Tim J",
+        "anglerIds": [
+          {
+            "anglerId": 1,
+            "anglerName": "Simon Drozdziol"
+          },
+          {
+            "anglerId": 33,
+            "anglerName": "Tim Jones"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "teamName": "Toby B & Neill B",
+        "anglerIds": [
+          {
+            "anglerId": 57,
+            "anglerName": "Toby Bird"
+          },
+          {
+            "anglerId": 46,
+            "anglerName": "Neill Bird"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": 17,
     "season": "20/21",
     "seasonId": 9,
-    "name": "Kingfisher Winter League",
+    "name": "Kingfisher Winter Series",
     "noOfRounds": 6,
     "countingRounds": 5
   },
@@ -107,7 +291,7 @@
     "id": 18,
     "season": "20/21",
     "seasonId": 9,
-    "name": "Kingfisher Autumn League",
+    "name": "Kingfisher Autumn Accumulator",
     "noOfRounds": 6,
     "countingRounds": 5
   },
@@ -117,6 +301,7 @@
     "seasonId": 9,
     "name": "Kingfisher Teams of 3",
     "noOfRounds": 6,
-    "countingRounds": 5
+    "countingRounds": 5,
+    "teams":  [] 
   }
 ]
