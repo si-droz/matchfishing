@@ -8910,7 +8910,218 @@
     "isPairs": false,
     "trophyName": "",
     "positionToPointsMappingId": 2,
-    "matchEntries": []
+    "matchEntries": [
+      {
+        "peg": 2,
+        "pairedWithPeg": 0,
+        "weight": 51.25,
+        "position": 3,
+        "points": 3.0,
+        "anglerId": 55,
+        "anglerName": "Terry Robinson",
+        "section": 1
+      },
+      {
+        "peg": 3,
+        "pairedWithPeg": 0,
+        "weight": 40.5,
+        "position": 4,
+        "points": 2.0,
+        "anglerId": 34,
+        "anglerName": "Alan Stacey",
+        "section": 1
+      },
+      {
+        "peg": 5,
+        "pairedWithPeg": 0,
+        "weight": 112.5,
+        "position": 2,
+        "points": 4.0,
+        "anglerId": 57,
+        "anglerName": "Toby Bird",
+        "section": 1
+      },
+      {
+        "peg": 6,
+        "pairedWithPeg": 0,
+        "weight": 122.75,
+        "position": 1,
+        "points": 5.0,
+        "anglerId": 28,
+        "anglerName": "Paul Stacey",
+        "section": 1
+      },
+      {
+        "peg": 8,
+        "pairedWithPeg": 0,
+        "weight": 31.1875,
+        "position": 3,
+        "points": 3.0,
+        "anglerId": 32,
+        "anglerName": "Chris Oddy",
+        "section": 2
+      },
+      {
+        "peg": 9,
+        "pairedWithPeg": 0,
+        "weight": 27.5,
+        "position": 4,
+        "points": 2.0,
+        "anglerId": 38,
+        "anglerName": "Dave Armstrong",
+        "section": 2
+      },
+      {
+        "peg": 11,
+        "pairedWithPeg": 0,
+        "weight": 100.8125,
+        "position": 1,
+        "points": 5.0,
+        "anglerId": 33,
+        "anglerName": "Tim Jones",
+        "section": 2
+      },
+      {
+        "peg": 13,
+        "pairedWithPeg": 0,
+        "weight": 39.375,
+        "position": 2,
+        "points": 4.0,
+        "anglerId": 31,
+        "anglerName": "Neil Dawson",
+        "section": 2
+      },
+      {
+        "peg": 17,
+        "pairedWithPeg": 0,
+        "weight": 110.0625,
+        "position": 1,
+        "points": 5.0,
+        "anglerId": 1,
+        "anglerName": "Simon Drozdziol",
+        "section": 3
+      },
+      {
+        "peg": 19,
+        "pairedWithPeg": 0,
+        "weight": 36.1875,
+        "position": 4,
+        "points": 2.0,
+        "anglerId": 37,
+        "anglerName": "Mark Quick",
+        "section": 3
+      },
+      {
+        "peg": 20,
+        "pairedWithPeg": 0,
+        "weight": 50.875,
+        "position": 3,
+        "points": 3.0,
+        "anglerId": 4,
+        "anglerName": "Darren James",
+        "section": 3
+      },
+      {
+        "peg": 22,
+        "pairedWithPeg": 0,
+        "weight": 90.5625,
+        "position": 2,
+        "points": 4.0,
+        "anglerId": 58,
+        "anglerName": "Ashley Prestidge",
+        "section": 3
+      },
+      {
+        "peg": 23,
+        "pairedWithPeg": 0,
+        "weight": 64.125,
+        "position": 3,
+        "points": 3.0,
+        "anglerId": 6,
+        "anglerName": "Paul Balodis",
+        "section": 4
+      },
+      {
+        "peg": 25,
+        "pairedWithPeg": 0,
+        "weight": 17.8125,
+        "position": 4,
+        "points": 2.0,
+        "anglerId": 60,
+        "anglerName": "James Aston",
+        "section": 4
+      },
+      {
+        "peg": 26,
+        "pairedWithPeg": 0,
+        "weight": 149.5625,
+        "position": 1,
+        "points": 6.0,
+        "anglerId": 59,
+        "anglerName": "Pete Archer",
+        "section": 4
+      },
+      {
+        "peg": 28,
+        "pairedWithPeg": 0,
+        "weight": 68.75,
+        "position": 2,
+        "points": 4.0,
+        "anglerId": 45,
+        "anglerName": "Sean Wain",
+        "section": 4
+      },
+      {
+        "peg": 30,
+        "pairedWithPeg": 0,
+        "weight": 44.625,
+        "position": 3,
+        "points": 3.0,
+        "anglerId": 40,
+        "anglerName": "Ian Knightley",
+        "section": 5
+      },
+      {
+        "peg": 33,
+        "pairedWithPeg": 0,
+        "weight": 70.75,
+        "position": 1,
+        "points": 5.0,
+        "anglerId": 22,
+        "anglerName": "Tony Taylor",
+        "section": 5
+      },
+      {
+        "peg": 35,
+        "pairedWithPeg": 0,
+        "weight": 69.4375,
+        "position": 2,
+        "points": 4.0,
+        "anglerId": 26,
+        "anglerName": "Doug Robinson",
+        "section": 5
+      },
+      {
+        "peg": 37,
+        "pairedWithPeg": 0,
+        "weight": 21.875,
+        "position": 4,
+        "points": 2.0,
+        "anglerId": 8,
+        "anglerName": "Pete Deverick",
+        "section": 5
+      },
+      {
+        "peg": 39,
+        "pairedWithPeg": 0,
+        "weight": 17.25,
+        "position": 5,
+        "points": 1.0,
+        "anglerId": 56,
+        "anglerName": "Steve Goddard",
+        "section": 5
+      }
+    ]
   },
   {
     "id": 76,
