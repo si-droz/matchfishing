@@ -17,7 +17,7 @@ namespace Match.Fishing.Controllers.v1
         }
 
         [Route("api/v1/matches/{id}")]
-        public FishingMatch Get([FromUri]int id)
+        public FishingMatch Get([FromUri] int id)
         {
             List<FishingMatch> matches = Get().ToList();
             FishingMatch fishingMatchToReturn = matches.SingleOrDefault(match => match.Id == id);
@@ -25,7 +25,7 @@ namespace Match.Fishing.Controllers.v1
         }
 
         [Route("api/v1/seasons/{seasonId}/matches")]
-        public IEnumerable<FishingMatch> GetMatchesForSeason([FromUri]int seasonId)
+        public IEnumerable<FishingMatch> GetMatchesForSeason([FromUri] int seasonId)
         {
             List<FishingMatch> matches = Get().ToList();
             IEnumerable<FishingMatch> matchesToReturn = matches.Where(match => match.SeasonId == seasonId)
@@ -37,12 +37,35 @@ namespace Match.Fishing.Controllers.v1
         public IEnumerable<FishingMatch> GetMatchesForAngler([FromUri] int anglerId)
         {
             List<FishingMatch> matches = Get().ToList();
-            IEnumerable<FishingMatch> anglerMatches = matches.Where(m => m.MatchEntries.Any(me => me.AnglerId == anglerId));
+            IEnumerable<FishingMatch> anglerMatches = matches.Where(match => match.MatchEntries
+                                                                                  .Any(matchEntry => matchEntry.AnglerId == anglerId))
+                                                             .Select(match => new FishingMatch
+                                                             {
+                                                                 Date = match.Date,
+                                                                 DayTicketFee = match.DayTicketFee,
+                                                                 Id = match.Id,
+                                                                 IsPairs = match.IsPairs,
+                                                                 IsTrophyMatch = match.IsTrophyMatch,
+                                                                 Lake = match.Lake,
+                                                                 League = match.League,
+                                                                 LeagueId = match.LeagueId,
+                                                                 LeagueMatchNo = match.LeagueMatchNo,
+                                                                 NoOfPegs = match.NoOfPegs,
+                                                                 PoolsFee = match.PoolsFee,
+                                                                 PositionToPointsMappingId = match.PositionToPointsMappingId,
+                                                                 Season = match.Season,
+                                                                 SeasonId = match.SeasonId,
+                                                                 TrophyName = match.TrophyName,
+                                                                 Venue = match.Venue,
+                                                                 MatchEntries = match.MatchEntries
+                                                                                     .Where(me => me.AnglerId == anglerId)
+                                                                                     .ToList()
+                                                             });
             return anglerMatches;
         }
 
         [Route("api/v1/matches/{id}/pairs")]
-        public IEnumerable<PairResult> GetPairsMatch([FromUri]int id)
+        public IEnumerable<PairResult> GetPairsMatch([FromUri] int id)
         {
             FishingMatch fishingMatch = Get(id);
             var pairResults = new List<PairResult>();
@@ -97,6 +120,6 @@ namespace Match.Fishing.Controllers.v1
             DataFileService.WriteDataFile(DataFileType.Matches, fishingMatches);
 
             return Ok();
-        }        
+        }
     }
 }
